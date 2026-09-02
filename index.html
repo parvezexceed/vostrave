@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>VOSTRAVE — Premium Men's Clothing | ঢাকা</title>
+<meta name="description" content="VOSTRAVE — প্রিমিয়াম মেনস ক্লোদিং। Shirt, Polo — সব In-Stock। সারা দেশে ক্যাশ অন ডেলিভারি। অর্ডার: 01706-100110">
+<meta property="og:title" content="VOSTRAVE — Premium Men's Clothing">
+<meta property="og:description" content="Wear Your Story. Premium shirts & polos, in stock now. Cash on delivery all over Bangladesh.">
+<meta property="og:image" content="og-image.jpg">
+<meta property="og:type" content="website">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+<link rel="apple-touch-icon" href="apple-touch-icon-180.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@400;500;600&family=Noto+Sans+Bengali:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+/* ═══ VOSTRAVE — Dark Velvet Premium Theme ═══ */
+:root{
+  --midnight:#1B0F29;
+  --plum:#3A2252;
+  --amethyst:#5C3A86;
+  --orchid:#8E6BB8;
+  --gold:#C9A25E;
+  --gold-lt:#E8C98F;
+  --cream:#F4EDE4;
+  --muted:#A892C4;
+  --card:#1F1230;
+  --border:rgba(201,162,94,.22);
+  --danger:#E29A9A;
+  --ok:#9FD49F;
+  --wa:#25D366;
+  --serif:'Playfair Display','Noto Serif Bengali',Georgia,serif;
+  --sans:'Inter','Noto Sans Bengali',Helvetica,Arial,sans-serif;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:var(--midnight);color:var(--cream);font-family:var(--sans);line-height:1.7;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+h1,h2,h3{font-family:var(--serif);font-weight:600}
+
+/* ── Topbar ── */
+.topbar{background:linear-gradient(90deg,#2A1538,#3A2252,#2A1538);text-align:center;padding:8px 14px;font-size:13px;color:var(--gold-lt);letter-spacing:.4px;border-bottom:1px solid var(--border)}
+
+/* ── Nav ── */
+.nav{position:sticky;top:0;z-index:50;display:flex;align-items:center;justify-content:space-between;gap:12px;padding:10px 5%;background:rgba(21,11,34,.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--border)}
+.nav-logo{display:flex;align-items:center;gap:10px}
+.nav-logo img{width:40px;height:40px;border-radius:8px;object-fit:cover}
+.nav-logo span{font-family:var(--serif);letter-spacing:5px;color:var(--gold);font-size:18px}
+.nav-links{display:flex;gap:26px;font-size:14.5px}
+.nav-links a{color:var(--muted);transition:.2s}
+.nav-links a:hover{color:var(--gold-lt)}
+.nav-call{font-size:14px;color:var(--gold);border:1px solid var(--border);padding:7px 14px;border-radius:999px;white-space:nowrap;transition:.2s}
+.nav-call:hover{background:var(--gold);color:var(--midnight)}
+@media(max-width:820px){.nav-links{display:none}}
+
+/* ── Hero ── */
+.hero{position:relative;min-height:88vh;display:flex;align-items:center;justify-content:center;text-align:center;background:url('../hero.jpg') center/cover no-repeat}
+.hero::before{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(21,11,34,.62),rgba(21,11,34,.86))}
+.hero-overlay{position:relative;z-index:1;max-width:760px;padding:60px 22px}
+.hero-logo{width:min(220px,42vw);margin:0 auto 18px;border-radius:14px}
+.hero-kicker{color:var(--gold);letter-spacing:6px;font-size:12px;margin-bottom:14px}
+.hero h1{font-size:clamp(34px,6vw,58px);color:var(--cream);letter-spacing:1px;line-height:1.25}
+.hero-sub{color:var(--muted);font-size:17px;margin:16px auto 30px;max-width:520px}
+.hero-cta{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
+
+/* ── Buttons ── */
+.btn{display:inline-block;padding:13px 30px;border-radius:999px;font-size:15px;font-weight:600;cursor:pointer;border:1px solid transparent;transition:.22s;font-family:var(--sans)}
+.btn-gold{background:linear-gradient(135deg,var(--gold-lt),var(--gold));color:#2A1538;box-shadow:0 8px 24px rgba(201,162,94,.25)}
+.btn-wa2{background:linear-gradient(135deg,#48d06c,#1fae53);color:#fff;box-shadow:0 8px 24px rgba(31,174,83,.3);margin-bottom:10px}
+.btn-gold:hover{transform:translateY(-2px);box-shadow:0 12px 30px rgba(201,162,94,.4)}
+.btn-ghost{border-color:var(--border);color:var(--gold-lt);background:rgba(58,34,82,.35)}
+.btn-ghost:hover{background:var(--plum)}
+.btn-block{width:100%;text-align:center;margin-top:6px;font-size:16px}
+
+/* ── Trust strip ── */
+.trust{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:1px;background:var(--border);border-block:1px solid var(--border)}
+.trust-item{background:var(--card);padding:20px;text-align:center}
+.trust-item b{color:var(--gold-lt);display:block;font-size:15px}
+.trust-item span{color:var(--muted);font-size:13px}
+
+/* ── Sections ── */
+.section{padding:76px 5%;max-width:1200px;margin:0 auto}
+.section-title{text-align:center;font-size:clamp(26px,4vw,38px);color:var(--gold);letter-spacing:2px}
+.section-title small{font-size:14px;color:var(--muted);font-family:var(--sans);font-weight:400}
+.section-sub{text-align:center;color:var(--muted);margin:8px 0 34px;font-size:15px}
+
+/* ── Filters ── */
+.filters{display:flex;gap:10px;justify-content:center;margin-bottom:34px;flex-wrap:wrap}
+.chip{padding:9px 22px;border-radius:999px;border:1px solid var(--border);background:var(--card);color:var(--muted);cursor:pointer;font-size:14px;font-family:var(--sans);transition:.2s}
+.chip:hover{color:var(--gold-lt)}
+.chip.active{background:linear-gradient(135deg,var(--gold-lt),var(--gold));color:#2A1538;font-weight:600;border-color:transparent}
+
+/* ── Product grid ── */
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:22px}
+.pcard{background:var(--card);border:1px solid var(--border);border-radius:18px;overflow:hidden;transition:.25s;display:flex;flex-direction:column}
+.pcard:hover{transform:translateY(-5px);border-color:var(--gold);box-shadow:0 16px 40px rgba(0,0,0,.45)}
+.pimg{position:relative;aspect-ratio:4/5;overflow:hidden;background:#0d0616}
+.pimg img{width:100%;height:100%;object-fit:cover;transition:.5s}
+.pcard:hover .pimg img{transform:scale(1.06)}
+.badge{position:absolute;top:12px;left:12px;font-size:11.5px;font-weight:600;padding:5px 12px;border-radius:999px;letter-spacing:.5px}
+.badge-in{background:rgba(31,74,44,.92);color:#BDF0C8;border:1px solid rgba(159,212,159,.4)}
+.badge-low{background:rgba(94,62,16,.92);color:#FFDFA8;border:1px solid rgba(201,162,94,.45)}
+.badge-out{background:rgba(74,26,26,.92);color:#F0BDBD;border:1px solid rgba(226,154,154,.4)}
+.cat-tag{position:absolute;top:12px;right:12px;font-size:11px;padding:4px 11px;border-radius:999px;background:rgba(21,11,34,.8);color:var(--orchid);border:1px solid var(--border);letter-spacing:1px}
+.pbody{padding:16px 16px 18px;display:flex;flex-direction:column;gap:10px;flex:1}
+.pname{font-size:14.5px;color:var(--cream);font-weight:500;min-height:44px;line-height:1.5}
+.pprice{font-family:var(--serif);color:var(--gold-lt);font-size:21px}
+.pprice small{color:var(--muted);font-size:12px;font-family:var(--sans);font-weight:400}
+.psizes{font-size:12px;color:var(--muted)}
+.pbtn{margin-top:auto;padding:11px;border-radius:10px;text-align:center;background:linear-gradient(135deg,var(--gold-lt),var(--gold));color:#2A1538;font-weight:700;font-size:14.5px;cursor:pointer;border:none;font-family:var(--sans);transition:.2s}
+.pbtn:hover{filter:brightness(1.08)}
+.pbtn[disabled]{background:#3a2d4a;color:#8a7aa0;cursor:not-allowed;filter:none}
+
+/* ── Why ── */
+.why{background:url('../velvet-bg.jpg') center/cover fixed;position:relative;max-width:none}
+.why::before{content:"";position:absolute;inset:0;background:rgba(21,11,34,.88)}
+.why>*{position:relative}
+.why-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:18px;max-width:1200px;margin:0 auto}
+.why-card{background:rgba(31,18,48,.85);border:1px solid var(--border);border-radius:16px;padding:26px 22px;backdrop-filter:blur(4px)}
+.why-card span{font-size:30px}
+.why-card h3{color:var(--gold-lt);font-size:18px;margin:10px 0 6px}
+.why-card p{color:var(--muted);font-size:14px}
+
+/* ── Steps ── */
+.steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px}
+.step{background:var(--card);border:1px solid var(--border);border-radius:16px;padding:26px 20px;text-align:center}
+.step b{display:inline-flex;width:44px;height:44px;border-radius:50%;align-items:center;justify-content:center;background:linear-gradient(135deg,var(--gold-lt),var(--gold));color:#2A1538;font-size:20px;margin-bottom:10px}
+.step h3{color:var(--cream);font-size:17px;margin-bottom:6px}
+.step p{color:var(--muted);font-size:13.5px}
+
+/* ── Size guide ── */
+.sizetable-wrap{display:flex;justify-content:center}
+.sizetable{border-collapse:collapse;min-width:min(480px,90vw);background:var(--card);border-radius:14px;overflow:hidden;border:1px solid var(--border)}
+.sizetable th{background:var(--plum);color:var(--gold-lt);padding:12px 22px;font-family:var(--serif);letter-spacing:1px}
+.sizetable td{padding:11px 22px;text-align:center;border-top:1px solid #ffffff10;color:var(--cream)}
+.sizetable tr:nth-child(odd) td{background:#ffffff06}
+
+/* ── Contact ── */
+.contact-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:18px;max-width:900px;margin:0 auto}
+.contact-card{background:var(--card);border:1px solid var(--border);border-radius:16px;padding:30px 20px;text-align:center;transition:.22s}
+.contact-card:hover{border-color:var(--gold);transform:translateY(-4px)}
+.contact-card span{font-size:30px}
+.contact-card b{display:block;color:var(--cream);margin:10px 0 4px;font-size:17px}
+.contact-card i{color:var(--gold);font-style:normal;font-size:14.5px;word-break:break-all}
+.contact-loc{text-align:center;color:var(--muted);margin-top:26px;font-size:14.5px}
+
+/* ── Footer ── */
+.footer{border-top:1px solid var(--border);text-align:center;padding:50px 20px 40px;background:#120A1E}
+.footer-logo{width:min(210px,50vw);margin:0 auto 10px;border-radius:12px}
+.footer-tag{color:var(--orchid);letter-spacing:5px;font-size:12px;text-transform:uppercase;margin-bottom:16px}
+.footer-line{color:var(--muted);font-size:14px}
+.footer-copy{color:#6d5a8a;font-size:12.5px;margin-top:18px}
+
+/* ── Floating WA ── */
+.wa-float{position:fixed;right:22px;bottom:22px;z-index:60;width:58px;height:58px;border-radius:50%;background:var(--wa);color:#fff;display:flex;align-items:center;justify-content:center;box-shadow:0 10px 26px rgba(37,211,102,.4);transition:.2s}
+.wa-float:hover{transform:scale(1.08)}
+
+/* ── Modal ── */
+.modal-overlay{position:fixed;inset:0;z-index:100;background:rgba(10,5,18,.78);backdrop-filter:blur(6px);display:none;align-items:center;justify-content:center;padding:16px}
+.modal-overlay.open{display:flex}
+.modal{background:var(--card);border:1px solid var(--gold);border-radius:20px;max-width:520px;width:100%;max-height:92vh;overflow-y:auto;padding:30px 26px;position:relative;animation:pop .25s ease}
+@keyframes pop{from{transform:scale(.94);opacity:0}to{transform:scale(1);opacity:1}}
+.modal-close{position:absolute;top:14px;right:14px;background:transparent;border:1px solid var(--border);color:var(--muted);width:34px;height:34px;border-radius:50%;cursor:pointer;font-size:15px}
+.modal-close:hover{color:var(--danger);border-color:var(--danger)}
+.modal-title{color:var(--gold);text-align:center;font-size:26px;margin-bottom:18px}
+.order-product{display:flex;gap:14px;align-items:center;background:#120A1E;border:1px solid var(--border);border-radius:14px;padding:12px;margin-bottom:20px}
+.order-product img{width:64px;height:80px;object-fit:cover;border-radius:10px}
+.order-product b{display:block;color:var(--cream);font-size:14px;line-height:1.45}
+.order-product span{color:var(--gold-lt);font-family:var(--serif);font-size:18px}
+.order-product .o-stock{display:block;font-family:var(--sans);font-size:12px;color:var(--ok);margin-top:2px}
+#orderForm label{display:block;color:var(--muted);font-size:13.5px;margin-bottom:13px}
+#orderForm input,#orderForm textarea,#orderForm select{width:100%;margin-top:5px;background:#120A1E;border:1px solid var(--border);border-radius:10px;padding:11px 13px;color:var(--cream);font-size:15px;font-family:var(--sans);outline:none;transition:.2s}
+#orderForm input:focus,#orderForm textarea:focus,#orderForm select:focus{border-color:var(--gold)}
+#orderForm input.err,#orderForm textarea.err{border-color:var(--danger)}
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.delivery-row{display:flex;flex-wrap:wrap;gap:8px 18px;align-items:center;color:var(--muted);font-size:13.5px;margin-bottom:13px}
+.radio{display:flex;align-items:center;gap:6px;cursor:pointer;margin-bottom:0!important}
+.radio input{width:auto!important;margin:0!important;accent-color:var(--gold)}
+.total-bar{display:flex;justify-content:space-between;align-items:center;background:var(--plum);border:1px solid var(--border);border-radius:12px;padding:13px 16px;margin:6px 0 14px}
+.total-bar span{color:var(--muted);font-size:14.5px}
+.total-bar b{color:var(--gold-lt);font-family:var(--serif);font-size:23px}
+.form-err{color:var(--danger);font-size:13.5px;min-height:20px;text-align:center}
+.form-hint{color:var(--muted);font-size:12.5px;text-align:center;margin-top:12px}
+.form-hint a{color:var(--gold)}
+.success-view{display:none;text-align:center;padding:16px 4px}
+.success-view.show{display:block}
+.success-tick{width:74px;height:74px;border-radius:50%;background:rgba(31,74,44,.6);border:2px solid var(--ok);color:var(--ok);font-size:38px;display:flex;align-items:center;justify-content:center;margin:6px auto 16px}
+.success-view h2{color:var(--gold-lt);margin-bottom:8px}
+.success-view p{color:var(--muted);font-size:14.5px;margin-bottom:14px}
+.success-summary{background:#120A1E;border:1px solid var(--border);border-radius:12px;padding:14px;text-align:left;font-size:13.5px;color:var(--cream);white-space:pre-line;margin-bottom:16px}
+
+/* ── Toast ── */
+.toast{position:fixed;left:50%;bottom:26px;transform:translateX(-50%) translateY(80px);background:#2A1538;border:1px solid var(--gold);color:var(--cream);padding:12px 24px;border-radius:999px;font-size:14px;z-index:120;opacity:0;transition:.3s;pointer-events:none;max-width:90vw;text-align:center}
+.toast.show{transform:translateX(-50%) translateY(0);opacity:1}
+
+</style>
+</head>
+<body>
+
+<!-- টপ বার -->
+<div class="topbar">
+  <span id="topNote">সারা দেশে ক্যাশ অন ডেলিভারি 🚚 • অর্ডার: 01706-100110</span>
+</div>
+
+<!-- নেভিগেশন -->
+<nav class="nav">
+  <a class="nav-logo" href="#top"><img src="monogram.png" alt="VOSTRAVE logo"><span>VOSTRAVE</span></a>
+  <div class="nav-links">
+    <a href="#collection">কালেকশন</a>
+    <a href="#how">কীভাবে অর্ডার</a>
+    <a href="#why">কেন VOSTRAVE</a>
+    <a href="#contact">যোগাযোগ</a>
+  </div>
+  <a class="nav-call" href="tel:+8801706100110">📞 01706-100110</a>
+</nav>
+
+<!-- হিরো -->
+<header class="hero" id="top">
+  <div class="hero-overlay">
+    <img class="hero-logo" src="logo-primary.png" alt="VOSTRAVE — Wear Your Story">
+    <p class="hero-kicker">PREMIUM MEN'S CLOTHING • DHAKA</p>
+    <h1>আপনার স্টাইল, আপনার গল্প</h1>
+    <p class="hero-sub">প্রিমিয়াম Shirt ও Polo — যা দেখছেন, তাই স্টকে আছে। সারা দেশে ক্যাশ অন ডেলিভারি।</p>
+    <div class="hero-cta">
+      <a href="#collection" class="btn btn-gold">কালেকশন দেখুন ↓</a>
+      <a href="#" class="btn btn-ghost" id="heroWa">WhatsApp-এ অর্ডার</a>
+    </div>
+  </div>
+</header>
+
+<!-- ট্রাস্ট স্ট্রিপ -->
+<section class="trust">
+  <div class="trust-item"><b>✓ সব প্রোডাক্ট In-Stock</b><span>যা দেখছেন তাই পাবেন</span></div>
+  <div class="trust-item"><b>🚚 ক্যাশ অন ডেলিভারি</b><span>সারা বাংলাদেশে</span></div>
+  <div class="trust-item"><b>🧵 প্রিমিয়াম ফেব্রিক</b><span>সোর্স-ভেরিফায়েড কোয়ালিটি</span></div>
+  <div class="trust-item"><b>⚡ দ্রুত ডেলিভারি</b><span>ঢাকায় ২৪–৭২ ঘণ্টা</span></div>
+</section>
+
+<!-- প্রোডাক্ট কালেকশন -->
+<section class="section" id="collection">
+  <h2 class="section-title">আমাদের কালেকশন</h2>
+  <p class="section-sub">স্টক ও দাম প্রতিদিন চেক করা হয় • অর্ডার দিলেই কনফার্ম</p>
+  <div class="filters" id="filters">
+    <button class="chip active" data-filter="all">সবগুলো</button>
+    <button class="chip" data-filter="Shirt">Shirt</button>
+    <button class="chip" data-filter="Polo">Polo</button>
+    <button class="chip" data-filter="Katua">Katua</button>
+  </div>
+  <div class="grid" id="productGrid"><!-- JS দিয়ে লোড হবে --></div>
+  <noscript><p class="section-sub">প্রোডাক্ট দেখতে ব্রাউজারে JavaScript চালু করুন, অথবা কল করুন: 01706-100110</p></noscript>
+</section>
+
+<!-- কেন VOSTRAVE -->
+<section class="section why" id="why">
+  <h2 class="section-title">কেন VOSTRAVE?</h2>
+  <div class="why-grid">
+    <div class="why-card"><span>🧵</span><h3>প্রিমিয়াম কোয়ালিটি</h3><p>আপনার অর্ডার পৌঁছে গেছে! ✅<br><b>আমি শীঘ্রই ফোন/মেসেজে কনফার্সম করে দিব।</b></p>
+      <div class="success-summary" id="successSummary"></div>
+      <a class="btn btn-wa2 btn-block" id="successWaBtn" href="#" target="_blank" rel="noopener">💬 চাইলে WhatsApp-এও পাঠিয়ে দিন (ঐচ্ছিক)</a>
+      <button class="btn btn-gold btn-block" id="successAgain">➕ আরও প্রোডাক্ট দেখুন</button>
+      <p class="form-hint">জরুরি কিছু হলে কল করুন: <a href="tel:+8801706100110"><b>01706-100110</b></a></p>
+    </div>
+  </div>
+</div>
+
+<div class="toast" id="toast"></div>
+
+<script>
+/* ══════════════════════════════════════════════════════════════
+   VOSTRAVE — সেটিংস + প্রোডাক্ট লিস্ট
+   ──────────────────────────────────────────────────────────────
+   ✏️  পরে কিছু বদলাতে হলে শুধু এই ফাইলটা এডিট করো:
+      GitHub repo → js/products.js → ✏️ (Edit) → Commit changes
+      Vercel নিজে থেকেই ~৩০ সেকেন্ডে সাইট আপডেট করে ফেলবে।
+══════════════════════════════════════════════════════════════ */
+
+const CONFIG = {
+  siteName: "VOSTRAVE",
+  tagline: "Wear Your Story",
+  whatsapp: "8801706100110",        // তোমার WhatsApp (017... → 88017...)
+  phoneDisplay: "01706-100110",
+  phone: "01706100110",
+  email: "parvezsarkar116@gmail.com",
+  deliveryInsideDhaka: 60,          // ঢাকার ভিতরে ডেলিভারি চার্জ (৳)
+  deliveryOutsideDhaka: 120,        // ঢাকার বাইরে ডেলিভারি চার্জ (৳)
+  currency: "৳",
+  launchNote: "সারা দেশে ক্যাশ অন ডেলিভারি • অর্ডার: 01706-100110"
+};
+
+/* ──────────────────────────────────────────────────────────────
+   প্রোডাক্ট যোগ/এডিট করার নিয়ম:
+   {
+     name: "প্রোডাক্টের নাম",
+     category: "Shirt" অথবা "Polo",
+     price: তোমার বিক্রয়মূল্য (৳),
+     sourcePrice: সোর্স শপের দাম — শুধু তোমার হিসাবের জন্য (সাইটে দেখায় না),
+     stock: "in" = স্টকে আছে | "low" = স্টক সীমিত | "out" = স্টক শেষ,
+     sizes: ["M","L","XL","XXL"],
+     img: "products/ছবির-নাম.webp"
+   }
+   ⛔ কোমা (,) মিস করো না!
+────────────────────────────────────────────────────────────── */
+const PRODUCTS = [
+  // ═══ SHIRTS (সোর্স দাম + মুনাফা = বিক্রয়মূল্য) ═══
+  { name: "Soft Chalk Fancy Half Sleeve Shirt", category: "Shirt",
+    price: 1190, sourcePrice: 1090, stock: "in",
+    sizes: ["M","L","XL","XXL"], img: "soft-chalk-shirt.webp" },
+
+  { name: "Light Ice Blue Half Sleeve Shirt", category: "Shirt",
+    price: 1190, sourcePrice: 1090, stock: "in",
+    sizes: ["M","L","XL","XXL"], img: "light-ice-blue-shirt.webp" },
+
+  { name: "Floral Print White Half Sleeve Shirt", category: "Shirt",
+    price: 1190, sourcePrice: 1090, stock: "low",
+    sizes: ["M","L","XL","XXL"], img: "floral-white-shirt.webp" },
+
+  { name: "White & Navy Micro-Stripe Oxford Shirt", category: "Shirt",
+    price: 1449, sourcePrice: 1299, stock: "in",
+    sizes: ["M","L","XL","XXL"], img: "white-navy-oxford.webp" },
+
+  { name: "White & Black Micro-Stripe Oxford Shirt", category: "Shirt",
+    price: 1449, sourcePrice: 1299, stock: "in",
+    sizes: ["M","L","XL","XXL"], img: "white-black-oxford.webp" },
+
+  { name: "White & Rose Micro-Stripe Oxford Shirt", category: "Shirt",
+    price: 1449, sourcePrice: 1299, stock: "low",
+    sizes: ["M","L","XL","XXL"], img: "white-rose-oxford.webp" },
+
+  { name: "Pine Green Chevron Dobby Cotton Shirt", category: "Shirt",
+    price: 1595, sourcePrice: 1495, stock: "low",
+    sizes: ["M","L","XL","XXL"], img: "pine-green-dobby.webp" },
+
+  { name: "Tobacco Brown Dobby Cotton Shirt", category: "Shirt",
+    price: 1595, sourcePrice: 1495, stock: "low",
+    sizes: ["M","L","XL","XXL"], img: "tobacco-brown-dobby.webp" },
+
+  // ═══ POLOS ═══
+  { name: "Knit Oversized Sage Frost Polo", category: "Polo",
+    price: 1190, sourcePrice: 1090, stock: "in",
+    sizes: ["M","L","XL","XXL"], img: "sage-frost-polo.webp" },
+
+  { name: "Knit Oversized Rustic Wine Polo", category: "Polo",
+    price: 1190, sourcePrice: 1090, stock: "in",
+    sizes: ["M","L","XL","XXL"], img: "rustic-wine-polo.webp" },
+
+  { name: "Rust Red Oversized Polo", category: "Polo",
+    price: 1500, sourcePrice: 1350, stock: "low",
+    sizes: ["M","L","XL","XXL"], img: "rust-red-polo.webp" },
+
+  { name: "Graphite Oversized Polo", category: "Polo",
+    price: 1500, sourcePrice: 1350, stock: "in",
+    sizes: ["M","L","XL","XXL"], img: "graphite-polo.webp" },
+
+  // ═══ KATUA (EMBER ৳750 → ৮৯০ | FORD ৳875 → ৯৯৯) ═══
+  { name: "EMBER Maroon Katua", category: "Katua",
+    price: 890, sourcePrice: 750, stock: "in",
+    sizes: ["S","M","L","XL","2XL"], img: "ember-maroon-katua.jpg" },
+
+  { name: "EMBER Cerulean Blue Katua", category: "Katua",
+    price: 890, sourcePrice: 750, stock: "in",
+    sizes: ["S","M","L","XL","2XL"], img: "ember-cerulean-katua.jpg" },
+
+  { name: "EMBER Steel Grey Katua", category: "Katua",
+    price: 890, sourcePrice: 750, stock: "in",
+    sizes: ["S","M","L","XL","2XL"], img: "ember-steel-grey-katua.jpg" },
+
+  { name: "EMBER Royal Blue Katua", category: "Katua",
+    price: 890, sourcePrice: 750, stock: "in",
+    sizes: ["S","M","L","XL","2XL"], img: "ember-royal-blue-katua.jpg" },
+
+  { name: "FORD Soft Peach Katua", category: "Katua",
+    price: 999, sourcePrice: 875, stock: "in",
+    sizes: ["S","M","L","XL","XXL"], img: "ford-soft-peach-katua.jpg" },
+
+  { name: "FORD Cream White Katua", category: "Katua",
+    price: 999, sourcePrice: 875, stock: "in",
+    sizes: ["S","M","L","XL","XXL"], img: "ford-cream-white-katua.jpg" }
+];
+
+/* 🔔 শেষ চেক: ১ সেপ্টেম্বর ২০২৬, সোর্স শপের দাম/স্টক দেখে লেখা।
+   সোর্স শপে কিছু বদলালে এখানে price / stock আপডেট করে দাও। */
+
+</script>
+<script>
+/* ═══ VOSTRAVE — Site Logic (এই ফাইল না ছোঁয়াই ভালো) ═══ */
+(function () {
+  "use strict";
+
+  const $ = (id) => document.getElementById(id);
+  const tk = (n) => CONFIG.currency + Number(n).toLocaleString("en-US");
+
+  /* ── টপবার / হিরো / কনfig থেকে টেক্সট বসানো ── */
+  $("topNote").textContent = CONFIG.launchNote;
+  $("dIn").textContent = CONFIG.deliveryInsideDhaka;
+  $("dOut").textContent = CONFIG.deliveryOutsideDhaka;
+
+  const waBase = "https://wa.me/" + CONFIG.whatsapp;
+  const genericMsg = "আসসালামু আলাইকুম! VOSTRAVE থেকে পোশাক কিনতে চাই।";
+  const waGeneric = waBase + "?text=" + encodeURIComponent(genericMsg);
+  $("heroWa").href = waGeneric; $("heroWa").target = "_blank";
+  $("waCard").href = waGeneric; $("waCard").target = "_blank";
+  $("waFloat").href = waGeneric; $("waFloat").target = "_blank";
+
+  /* ── টোস্ট ── */
+  let toastTimer;
+  function toast(msg, ms = 3400) {
+    const t = $("toast");
+    t.textContent = msg; t.classList.add("show");
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(() => t.classList.remove("show"), ms);
+  }
+
+  /* ── স্টক ব্যাজ ── */
+  function badge(stock) {
+    if (stock === "low") return { cls: "badge-low", txt: "স্টক সীমিত" };
+    if (stock === "out") return { cls: "badge-out", txt: "স্টক শেষ" };
+    return { cls: "badge-in", txt: "✓ In Stock" };
+  }
+
+  /* ── প্রোডাক্ট গ্রিড রেন্ডার ── */
+  let currentFilter = "all";
+  function renderProducts() {
+    const grid = $("productGrid");
+    grid.innerHTML = "";
+    const list = PRODUCTS.filter(p => currentFilter === "all" || p.category === currentFilter);
+    list.forEach((p) => {
+      const idx = PRODUCTS.indexOf(p);
+      const b = badge(p.stock);
+      const out = p.stock === "out";
+      const card = document.createElement("div");
+      card.className = "pcard";
+      card.innerHTML =
+        '<div class="pimg">' +
+          '<img src="' + p.img + '" alt="' + p.name + '" loading="lazy" onerror="this.src=\'fallback.png\'">' +
+          '<span class="badge ' + b.cls + '">' + b.txt + "</span>" +
+          '<span class="cat-tag">' + p.category.toUpperCase() + "</span>" +
+        "</div>" +
+        '<div class="pbody">' +
+          '<div class="pname">' + p.name + "</div>" +
+          '<div class="pprice">' + tk(p.price) + ' <small>/ প্রতি পিস • COD</small></div>' +
+          '<div class="psizes">সাইজ: ' + p.sizes.join(" / ") + "</div>" +
+          '<button class="pbtn" data-idx="' + idx + '"' + (out ? " disabled" : "") + ">" +
+            (out ? "স্টক শেষ — শীঘ্রই আসছে" : "🛍️ অর্ডার করুন") +
+          "</button>" +
+        "</div>";
+      grid.appendChild(card);
+    });
+    grid.querySelectorAll(".pbtn:not([disabled])").forEach(btn =>
+      btn.addEventListener("click", () => openOrder(Number(btn.dataset.idx)))
+    );
+  }
+  renderProducts();
+
+  /* ── ফিল্টার চিপ ── */
+  $("filters").querySelectorAll(".chip").forEach(chip => {
+    chip.addEventListener("click", () => {
+      $("filters").querySelectorAll(".chip").forEach(c => c.classList.remove("active"));
+      chip.classList.add("active");
+      currentFilter = chip.dataset.filter;
+      renderProducts();
+    });
+  });
+
+  /* ── অর্ডার মোডাল ── */
+  const modal = $("orderModal");
+  let current = null;
+
+  function openOrder(idx) {
+    current = PRODUCTS[idx];
+    $("oImg").src = current.img;
+    $("oImg").alt = current.name;
+    $("oName").textContent = current.name;
+    $("oPrice").textContent = tk(current.price);
+    $("oStock").textContent = current.stock === "low" ? "⚠ স্টক সীমিত — তাড়াতাড়ি করুন" : "✓ In Stock — আজই ডিসপ্যাচ সম্ভব";
+    $("oStock").style.color = current.stock === "low" ? "#FFDFA8" : "";
+    const sz = $("fSize");
+    sz.innerHTML = '<option value="">সাইজ বাছুন…</option>' +
+      current.sizes.map(s => '<option value="' + s + '">' + s + "</option>").join("");
+    $("fQty").value = 1;
+    $("formErr").textContent = "";
+    $("orderFormView").style.display = "block";
+    $("orderSuccessView").classList.remove("show");
+    calcTotal();
+    modal.classList.add("open");
+    document.body.style.overflow = "hidden";
+  }
+
+  function closeModal() {
+    modal.classList.remove("open");
+    document.body.style.overflow = "";
+  }
+  $("modalClose").addEventListener("click", closeModal);
+  modal.addEventListener("click", (e) => { if (e.target === modal) closeModal(); });
+  document.addEventListener("keydown", (e) => { if (e.key === "Escape") closeModal(); });
+
+  function getArea() {
+    return document.querySelector('input[name="area"]:checked').value;
+  }
+  function deliveryCharge() {
+    return getArea() === "inside" ? CONFIG.deliveryInsideDhaka : CONFIG.deliveryOutsideDhaka;
+  }
+  function areaText() {
+    return getArea() === "inside"
+      ? "ঢাকার ভিতরে (+" + tk(CONFIG.deliveryInsideDhaka) + ")"
+      : "ঢাকার বাইরে (+" + tk(CONFIG.deliveryOutsideDhaka) + ")";
+  }
+  function calcTotal() {
+    if (!current) return;
+    const qty = Math.max(1, Math.min(10, parseInt($("fQty").value || "1", 10)));
+    $("oTotal").textContent = tk(current.price * qty + deliveryCharge());
+  }
+  $("fQty").addEventListener("input", calcTotal);
+  document.querySelectorAll('input[name="area"]').forEach(r => r.addEventListener("change", calcTotal));
+
+  /* ── ভ্যালিডেশন ── */
+  function markErr(el, on) { el.classList.toggle("err", !!on); }
+  function validate() {
+    const name = $("fName").value.trim();
+    let phone = $("fPhone").value.trim().replace(/[\s()-]/g, "");
+    if (phone.startsWith("+88")) phone = phone.slice(3);
+    else if (phone.startsWith("88")) phone = "0" + phone.slice(2);
+    const addr = $("fAddress").value.trim();
+    const size = $("fSize").value;
+    let ok = true;
+    markErr($("fName"), name.length < 3); if (name.length < 3) ok = false;
+    const phoneOk = /^01[3-9]\d{8}$/.test(phone);
+    markErr($("fPhone"), !phoneOk); if (!phoneOk) { ok = false; $("formErr").textContent = "সঠিক ১১ ডিজিটের মোবাইল নম্বর দিন (01 দিয়ে শুরু)"; }
+    markErr($("fAddress"), addr.length < 8); if (addr.length < 8) ok = false;
+    if (!size) { ok = false; $("formErr").textContent = "সাইজ বেছে নিন"; $("fSize").style.borderColor = "#E29A9A"; }
+    else $("fSize").style.borderColor = "";
+    if (ok) $("formErr").textContent = "";
+    return ok;
+  }
+  ["fName","fPhone","fAddress"].forEach(id => $(id).addEventListener("input", () => $(id).classList.remove("err")));
+
+  /* ── অর্ডার টেক্সট ── */
+  function orderText() {
+    const qty = parseInt($("fQty").value || "1", 10);
+    const total = current.price * qty + deliveryCharge();
+    const lines = [
+      "🛍️ নতুন অর্ডার — " + CONFIG.siteName,
+      "",
+      "▸ প্রোডাক্ট: " + current.name,
+      "▸ সাইজ: " + $("fSize").value,
+      "▸ পরিমাণ: " + qty + " পিস",
+      "▸ দাম: " + tk(current.price) + " × " + qty,
+      "▸ ডেলিভারি: " + areaText(),
+      "————————————",
+      "💰 মোট (COD): " + tk(total),
+      "",
+      "👤 নাম: " + $("fName").value.trim(),
+      "📱 ফোন: " + $("fPhone").value.trim(),
+      "📍 ঠিকানা: " + $("fAddress").value.trim()
+    ];
+    const note = $("fNote").value.trim();
+    if (note) lines.push("📝 নোট: " + note);
+    return lines.join("\n");
+  }
+
+  /* ── ইমেইল কপি (FormSubmit — একটানা সেটআপ লাগে, README দেখো) ── */
+  function emailCopy() {
+    const qty = parseInt($("fQty").value || "1", 10);
+    const total = current.price * qty + deliveryCharge();
+    fetch("https://formsubmit.co/ajax/" + CONFIG.email, {
+      method: "POST",
+      headers: { "Content-Type": "application/json", "Accept": "application/json" },
+      body: JSON.stringify({
+        _subject: "🛍️ নতুন অর্ডার — VOSTRAVE",
+        _template: "table",
+        প্রোডাক্ট: current.name,
+        সাইজ: $("fSize").value,
+        পরিমাণ: qty + " পিস",
+        দাম: tk(current.price),
+        ডেলিভারি: areaText(),
+        মোট_COD: tk(total),
+        নাম: $("fName").value.trim(),
+        ফোন: $("fPhone").value.trim(),
+        ঠিকানা: $("fAddress").value.trim(),
+        নোট: $("fNote").value.trim() || "—"
+      })
+    }).catch(() => { /* WhatsApp-ই মূল চ্যানেল, ইমেইল ব্যুর্থ হলে সমস্যা নাই */ });
+  }
+
+  /* ── সাবমিট ── */
+  $("orderForm").addEventListener("submit", function (e) {
+    e.preventDefault();
+    if (!current) return;
+    if (!validate()) return;
+    emailCopy(); // ব্যাকআপ কপি ইমেইলে (activate থাকলে)
+    const waUrl = waBase + "?text=" + encodeURIComponent(orderText());
+    $("successWaBtn").href = waUrl; // ঐচ্ছিক শেয়ার
+    // সাকসেস স্ক্রিন
+    $("successSummary").textContent = orderText();
+    $("orderFormView").style.display = "none";
+    $("orderSuccessView").classList.add("show");
+    toast("✅ অর্ডার পাঠানো হয়েছে! শীঘ্রই কনফার্সম করা হবে");
+    toast("✅ অর্ডার তৈরি! এখন WhatsApp-এ মেসেজটা Send করুন");
+  });
+
+  $("successAgain").addEventListener("click", function () {
+    closeModal();
+    document.getElementById("collection").scrollIntoView({ behavior: "smooth" });
+  });
+})();
+
+</script>
+</body>
+</html>
