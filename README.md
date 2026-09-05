@@ -4,13 +4,18 @@ Single-page static site (`index.html`) — no build step. Deploys on Vercel stra
 
 ## How to update the live site
 
-1. Unzip `vostrave-code.zip` and `vostrave-images.zip` into the **root of your GitHub repo** (same folder as the old `index.html`).
-   - `index.html`, `README.md`, brand files (`monogram-gold.png`, `wordmark-gold.png`, `logo-gold.png`, `hero-portrait.jpg`, `og-image.jpg`, `fallback.png`, favicons) → repo root
-   - the `images/` folder (all product angles + size charts) → repo root, so paths look like `images/waffle-t-shirt-black-1.jpg`
-   - keep your existing `*.webp` / `*katua.jpg` files where they are (the 18 original products still use them)
+**Everything is flat** — `index.html`, the brand files and all product photos / size charts sit side by side in the **root of the GitHub repo** (no images sub-folder). Product paths therefore look like `waffle-t-shirt-black-1.jpg`.
+
+1. Upload / replace `index.html` (and any new or changed `.jpg` photos) in the repo root — *Add file → Upload files* on GitHub.
 2. Commit → Vercel redeploys in ~30 seconds.
 
+If you add a photo, make sure the file name in `PRODUCTS` matches the uploaded file exactly (case-sensitive).
+
 Old files that are no longer used and can be deleted: `hero.jpg`, `velvet-bg.jpg`, `logo-primary.png`, `monogram.png`, `wordmark.png`.
+
+## Categories
+
+The category strip above the grid is built automatically from the `CATEGORIES` list (search `const CATEGORIES`) — each box shows the first 3 product photos of that category and the item count. To add a category, add its name to `CATEGORIES` and give products that `category`; empty categories are hidden automatically. The list order = box order.
 
 ## Editing products
 
@@ -20,9 +25,9 @@ Everything lives in the `PRODUCTS` array inside `index.html` (search for `const 
 { id: "unique-slug", name: "Product name", category: "Waffle T-Shirt",
   price: 450, sourcePrice: 350, stock: "in",            // "in" | "low" | "out"
   sizes: ["M","L","XL"],
-  img: "images/main.jpg",                                // card photo
-  gallery: ["images/angle-2.jpg", "images/angle-3.jpg"], // extra angles on the detail view
-  sizeChart: "images/sizechart-tee-waffle.jpg",
+  img: "main.jpg",                                // card photo
+  gallery: ["angle-2.jpg", "angle-3.jpg"], // extra angles on the detail view
+  sizeChart: "sizechart-tee-waffle.jpg",
   desc: "One-paragraph description.",
   bullets: ["Fabric", "Fit", "Care"] }
 ```
@@ -33,7 +38,7 @@ Everything lives in the `PRODUCTS` array inside `index.html` (search for `const 
 
 ## Size charts
 
-Branded size-chart images are in `images/sizechart-*.jpg`:
+Branded size-chart images are the `sizechart-*.jpg` files:
 
 | file | used for |
 |---|---|
