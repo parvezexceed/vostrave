@@ -1,284 +1,374 @@
 <!DOCTYPE html>
-<html lang="bn">
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>VOSTRAVE — Premium Men's Clothing | ঢাকা</title>
-<meta name="description" content="VOSTRAVE — প্রিমিয়াম মেনস ক্লোদিং। Shirt, Polo — সব In-Stock। সারা দেশে ক্যাশ অন ডেলিভারি। অর্ডার: 01706-100110">
+<title>VOSTRAVE — Premium Men's Clothing | Dhaka</title>
+<meta name="description" content="VOSTRAVE — premium men's shirts, polos, t-shirts, jeans and jackets. Everything you see is in stock. Cash on delivery all over Bangladesh.">
 <meta property="og:title" content="VOSTRAVE — Premium Men's Clothing">
-<meta property="og:description" content="Wear Your Story. Premium shirts & polos, in stock now. Cash on delivery all over Bangladesh.">
+<meta property="og:description" content="Wear Your Story. Premium shirts, polos, tees and more — in stock now. Cash on delivery all over Bangladesh.">
 <meta property="og:image" content="og-image.jpg">
 <meta property="og:type" content="website">
 <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
 <link rel="apple-touch-icon" href="apple-touch-icon-180.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@400;500;600&family=Noto+Sans+Bengali:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
-/* ═══ VOSTRAVE — Dark Velvet Premium Theme ═══ */
+/* ═══ VOSTRAVE — Ivory & Gold Theme ═══ */
 :root{
   --midnight:#1B0F29;
   --plum:#3A2252;
   --amethyst:#5C3A86;
   --orchid:#8E6BB8;
-  --gold:#C9A25E;
-  --gold-lt:#E8C98F;
-  --cream:#F4EDE4;
-  --muted:#A892C4;
-  --card:#1F1230;
-  --border:rgba(201,162,94,.22);
-  --danger:#E29A9A;
-  --ok:#9FD49F;
+  --gold:#B8904A;
+  --gold-lt:#D9BC84;
+  --gold-pale:#F3E8D2;
+  --ink:#1E1528;
+  --text:#3B3346;
+  --muted:#7A7086;
+  --bg:#FFFFFF;
+  --ivory:#FAF7F2;
+  --card:#FFFFFF;
+  --border:#ECE4F1;
+  --border-gold:rgba(184,144,74,.35);
+  --danger:#C0504D;
+  --ok:#2E7D4F;
   --wa:#25D366;
-  --serif:'Playfair Display','Noto Serif Bengali',Georgia,serif;
-  --sans:'Inter','Noto Sans Bengali',Helvetica,Arial,sans-serif;
+  --shadow:0 10px 30px rgba(27,15,41,.08);
+  --shadow-lg:0 24px 60px rgba(27,15,41,.14);
+  --serif:'Playfair Display',Georgia,'Times New Roman',serif;
+  --sans:'Inter',Helvetica,Arial,sans-serif;
 }
 *{margin:0;padding:0;box-sizing:border-box}
 html{scroll-behavior:smooth}
-body{background:var(--midnight);color:var(--cream);font-family:var(--sans);line-height:1.7;-webkit-font-smoothing:antialiased}
+body{background:var(--bg);color:var(--text);font-family:var(--sans);line-height:1.7;-webkit-font-smoothing:antialiased}
 img{max-width:100%;display:block}
 a{color:inherit;text-decoration:none}
-h1,h2,h3{font-family:var(--serif);font-weight:600}
-
-/* ── Topbar ── */
-.topbar{background:linear-gradient(90deg,#2A1538,#3A2252,#2A1538);text-align:center;padding:8px 14px;font-size:13px;color:var(--gold-lt);letter-spacing:.4px;border-bottom:1px solid var(--border)}
+h1,h2,h3{font-family:var(--serif);font-weight:600;color:var(--ink)}
+button{font-family:var(--sans)}
 
 /* ── Nav ── */
-.nav{position:sticky;top:0;z-index:50;display:flex;align-items:center;justify-content:space-between;gap:12px;padding:10px 5%;background:rgba(21,11,34,.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--border)}
-.nav-logo{display:flex;align-items:center;gap:10px}
-.nav-logo img{width:40px;height:40px;border-radius:8px;object-fit:cover}
-.nav-logo span{font-family:var(--serif);letter-spacing:5px;color:var(--gold);font-size:18px}
-.nav-links{display:flex;gap:26px;font-size:14.5px}
-.nav-links a{color:var(--muted);transition:.2s}
-.nav-links a:hover{color:var(--gold-lt)}
-.nav-call{font-size:14px;color:var(--gold);border:1px solid var(--border);padding:7px 14px;border-radius:999px;white-space:nowrap;transition:.2s}
-.nav-call:hover{background:var(--gold);color:var(--midnight)}
+.nav{position:sticky;top:0;z-index:50;display:flex;align-items:center;justify-content:space-between;gap:12px;padding:12px 5%;background:rgba(255,255,255,.9);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:1px solid var(--border)}
+.nav-logo{display:flex;align-items:center;gap:12px}
+.nav-logo img{width:34px;height:34px;object-fit:contain}
+.nav-logo span{font-family:var(--serif);letter-spacing:6px;color:var(--plum);font-size:18px;font-weight:600}
+.nav-links{display:flex;gap:28px;font-size:14.5px;font-weight:500}
+.nav-links a{color:var(--muted);transition:.2s;position:relative;padding:4px 0}
+.nav-links a::after{content:"";position:absolute;left:0;right:0;bottom:-2px;height:1.5px;background:var(--gold);transform:scaleX(0);transition:.25s;transform-origin:left}
+.nav-links a:hover{color:var(--plum)}
+.nav-links a:hover::after{transform:scaleX(1)}
+.nav-cta{font-size:13.5px;font-weight:600;color:var(--plum);border:1px solid var(--border-gold);padding:9px 18px;border-radius:999px;white-space:nowrap;transition:.2s;background:#fff}
+.nav-cta:hover{background:var(--plum);color:#fff;border-color:var(--plum)}
 @media(max-width:820px){.nav-links{display:none}}
 
 /* ── Hero ── */
-.hero{position:relative;min-height:88vh;display:flex;align-items:center;justify-content:center;text-align:center;background:url('hero.jpg') center/cover no-repeat}
-.hero::before{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(21,11,34,.62),rgba(21,11,34,.86))}
-.hero-overlay{position:relative;z-index:1;max-width:760px;padding:60px 22px}
-.hero-logo{width:min(220px,42vw);margin:0 auto 18px;border-radius:14px}
-.hero-kicker{color:var(--gold);letter-spacing:6px;font-size:12px;margin-bottom:14px}
-.hero h1{font-size:clamp(34px,6vw,58px);color:var(--cream);letter-spacing:1px;line-height:1.25}
-.hero-sub{color:var(--muted);font-size:17px;margin:16px auto 30px;max-width:520px}
-.hero-cta{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
+.hero{background:linear-gradient(180deg,#FFFFFF 0%,var(--ivory) 100%);border-bottom:1px solid var(--border)}
+.hero-inner{max-width:1200px;margin:0 auto;padding:64px 5% 72px;display:grid;grid-template-columns:1.05fr .95fr;gap:48px;align-items:center}
+.hero-kicker{color:var(--gold);letter-spacing:5px;font-size:12px;font-weight:600;margin-bottom:18px;text-transform:uppercase}
+.hero h1{font-size:clamp(38px,5.4vw,64px);line-height:1.12;letter-spacing:-.5px;color:var(--ink);font-weight:600}
+.hero h1 em{font-style:italic;color:var(--plum)}
+.hero-sub{color:var(--muted);font-size:17px;margin:20px 0 32px;max-width:520px}
+.hero-cta{display:flex;gap:14px;flex-wrap:wrap;align-items:center}
+.hero-mini{display:flex;gap:28px;margin-top:38px;flex-wrap:wrap}
+.hero-mini div{font-size:13px;color:var(--muted)}
+.hero-mini b{display:block;font-family:var(--serif);font-size:24px;color:var(--plum);font-weight:600;line-height:1.2}
+.hero-visual{position:relative}
+.hero-visual .frame{position:relative;border-radius:22px;overflow:hidden;box-shadow:var(--shadow-lg);aspect-ratio:4/5;max-width:440px;margin-left:auto;border:1px solid var(--border)}
+.hero-visual .frame img{width:100%;height:100%;object-fit:cover}
+.hero-visual .frame::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(27,15,41,0) 55%,rgba(27,15,41,.55))}
+.hero-visual .stamp{position:absolute;left:-18px;bottom:36px;background:#fff;border:1px solid var(--border);box-shadow:var(--shadow);border-radius:14px;padding:14px 18px;display:flex;align-items:center;gap:12px}
+.hero-visual .stamp img{width:34px;height:34px;object-fit:contain}
+.hero-visual .stamp b{display:block;font-size:13px;color:var(--ink)}
+.hero-visual .stamp span{font-size:12px;color:var(--muted)}
+.hero-visual .halo{position:absolute;right:-40px;top:-40px;width:220px;height:220px;border-radius:50%;background:radial-gradient(circle,rgba(217,188,132,.35),rgba(217,188,132,0) 70%);z-index:-1}
+@media(max-width:900px){
+  .hero-inner{grid-template-columns:1fr;padding:44px 5% 52px;gap:36px}
+  .hero-visual .frame{margin:0 auto;max-width:380px}
+  .hero-visual .stamp{left:8px}
+}
 
 /* ── Buttons ── */
-.btn{display:inline-block;padding:13px 30px;border-radius:999px;font-size:15px;font-weight:600;cursor:pointer;border:1px solid transparent;transition:.22s;font-family:var(--sans)}
-.btn-gold{background:linear-gradient(135deg,var(--gold-lt),var(--gold));color:#2A1538;box-shadow:0 8px 24px rgba(201,162,94,.25)}
-.btn-gold:hover{transform:translateY(-2px);box-shadow:0 12px 30px rgba(201,162,94,.4)}
-.btn-ghost{border-color:var(--border);color:var(--gold-lt);background:rgba(58,34,82,.35)}
-.btn-ghost:hover{background:var(--plum)}
+.btn{display:inline-block;padding:13px 30px;border-radius:999px;font-size:15px;font-weight:600;cursor:pointer;border:1px solid transparent;transition:.22s;font-family:var(--sans);line-height:1.4}
+.btn-gold{background:linear-gradient(135deg,var(--gold-lt),var(--gold));color:#2A1538;box-shadow:0 8px 22px rgba(184,144,74,.28)}
+.btn-gold:hover{transform:translateY(-2px);box-shadow:0 12px 28px rgba(184,144,74,.4)}
+.btn-ghost{border-color:var(--border-gold);color:var(--plum);background:#fff}
+.btn-ghost:hover{background:var(--gold-pale)}
+.btn-plum{background:var(--plum);color:#fff}
+.btn-plum:hover{background:var(--midnight)}
 .btn-block{width:100%;text-align:center;margin-top:6px;font-size:16px}
 
 /* ── Trust strip ── */
-.trust{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:1px;background:var(--border);border-block:1px solid var(--border)}
-.trust-item{background:var(--card);padding:20px;text-align:center}
-.trust-item b{color:var(--gold-lt);display:block;font-size:15px}
+.trust{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:1px;background:var(--border);border-bottom:1px solid var(--border)}
+.trust-item{background:#fff;padding:22px 20px;text-align:center}
+.trust-item b{color:var(--plum);display:block;font-size:15px;font-weight:600}
 .trust-item span{color:var(--muted);font-size:13px}
 
 /* ── Sections ── */
 .section{padding:76px 5%;max-width:1200px;margin:0 auto}
-.section-title{text-align:center;font-size:clamp(26px,4vw,38px);color:var(--gold);letter-spacing:2px}
+.section-title{text-align:center;font-size:clamp(26px,4vw,38px);color:var(--ink);letter-spacing:.5px}
 .section-title small{font-size:14px;color:var(--muted);font-family:var(--sans);font-weight:400}
 .section-sub{text-align:center;color:var(--muted);margin:8px 0 34px;font-size:15px}
+.gold-rule{width:56px;height:2px;background:linear-gradient(90deg,var(--gold-lt),var(--gold));margin:14px auto 0;border-radius:2px}
 
 /* ── Filters ── */
 .filters{display:flex;gap:10px;justify-content:center;margin-bottom:34px;flex-wrap:wrap}
-.chip{padding:9px 22px;border-radius:999px;border:1px solid var(--border);background:var(--card);color:var(--muted);cursor:pointer;font-size:14px;font-family:var(--sans);transition:.2s}
-.chip:hover{color:var(--gold-lt)}
-.chip.active{background:linear-gradient(135deg,var(--gold-lt),var(--gold));color:#2A1538;font-weight:600;border-color:transparent}
+.chip{padding:9px 20px;border-radius:999px;border:1px solid var(--border);background:#fff;color:var(--muted);cursor:pointer;font-size:13.5px;font-family:var(--sans);transition:.2s;font-weight:500}
+.chip:hover{color:var(--plum);border-color:var(--border-gold)}
+.chip.active{background:linear-gradient(135deg,var(--gold-lt),var(--gold));color:#2A1538;font-weight:600;border-color:transparent;box-shadow:0 6px 16px rgba(184,144,74,.25)}
 
 /* ── Product grid ── */
 .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:22px}
-.pcard{background:var(--card);border:1px solid var(--border);border-radius:18px;overflow:hidden;transition:.25s;display:flex;flex-direction:column}
-.pcard:hover{transform:translateY(-5px);border-color:var(--gold);box-shadow:0 16px 40px rgba(0,0,0,.45)}
-.pimg{position:relative;aspect-ratio:4/5;overflow:hidden;background:#0d0616}
+.pcard{background:var(--card);border:1px solid var(--border);border-radius:18px;overflow:hidden;transition:.25s;display:flex;flex-direction:column;cursor:pointer}
+.pcard:hover{transform:translateY(-5px);border-color:var(--gold-lt);box-shadow:var(--shadow-lg)}
+.pimg{position:relative;aspect-ratio:4/5;overflow:hidden;background:var(--ivory)}
 .pimg img{width:100%;height:100%;object-fit:cover;transition:.5s}
 .pcard:hover .pimg img{transform:scale(1.06)}
-.badge{position:absolute;top:12px;left:12px;font-size:11.5px;font-weight:600;padding:5px 12px;border-radius:999px;letter-spacing:.5px}
-.badge-in{background:rgba(31,74,44,.92);color:#BDF0C8;border:1px solid rgba(159,212,159,.4)}
-.badge-low{background:rgba(94,62,16,.92);color:#FFDFA8;border:1px solid rgba(201,162,94,.45)}
-.badge-out{background:rgba(74,26,26,.92);color:#F0BDBD;border:1px solid rgba(226,154,154,.4)}
-.cat-tag{position:absolute;top:12px;right:12px;font-size:11px;padding:4px 11px;border-radius:999px;background:rgba(21,11,34,.8);color:var(--orchid);border:1px solid var(--border);letter-spacing:1px}
+.badge{position:absolute;top:12px;left:12px;font-size:11.5px;font-weight:600;padding:5px 12px;border-radius:999px;letter-spacing:.4px;backdrop-filter:blur(4px)}
+.badge-in{background:rgba(255,255,255,.92);color:var(--ok);border:1px solid rgba(46,125,79,.25)}
+.badge-low{background:rgba(255,255,255,.92);color:#9A6A12;border:1px solid rgba(184,144,74,.45)}
+.badge-out{background:rgba(255,255,255,.92);color:var(--danger);border:1px solid rgba(192,80,77,.35)}
+.cat-tag{position:absolute;top:12px;right:12px;font-size:10.5px;padding:4px 11px;border-radius:999px;background:rgba(58,34,82,.85);color:#fff;letter-spacing:1px;backdrop-filter:blur(4px)}
 .pbody{padding:16px 16px 18px;display:flex;flex-direction:column;gap:10px;flex:1}
-.pname{font-size:14.5px;color:var(--cream);font-weight:500;min-height:44px;line-height:1.5}
-.pprice{font-family:var(--serif);color:var(--gold-lt);font-size:21px}
+.pname{font-size:14.5px;color:var(--ink);font-weight:500;min-height:44px;line-height:1.5}
+.pprice{font-family:var(--serif);color:var(--plum);font-size:21px;font-weight:600}
 .pprice small{color:var(--muted);font-size:12px;font-family:var(--sans);font-weight:400}
 .psizes{font-size:12px;color:var(--muted)}
 .pbtn{margin-top:auto;padding:11px;border-radius:10px;text-align:center;background:linear-gradient(135deg,var(--gold-lt),var(--gold));color:#2A1538;font-weight:700;font-size:14.5px;cursor:pointer;border:none;font-family:var(--sans);transition:.2s}
-.pbtn:hover{filter:brightness(1.08)}
-.pbtn[disabled]{background:#3a2d4a;color:#8a7aa0;cursor:not-allowed;filter:none}
+.pbtn:hover{filter:brightness(1.06);box-shadow:0 8px 18px rgba(184,144,74,.3)}
+.pbtn[disabled]{background:#EEE9F2;color:#A79DB3;cursor:not-allowed;filter:none;box-shadow:none}
+.pview{font-size:12.5px;color:var(--gold);font-weight:600;text-align:center;letter-spacing:.3px}
 
 /* ── Why ── */
-.why{background:url('velvet-bg.jpg') center/cover fixed;position:relative;max-width:none}
-.why::before{content:"";position:absolute;inset:0;background:rgba(21,11,34,.88)}
-.why>*{position:relative}
+.why{background:linear-gradient(180deg,var(--ivory),#fff);max-width:none;border-block:1px solid var(--border)}
 .why-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:18px;max-width:1200px;margin:0 auto}
-.why-card{background:rgba(31,18,48,.85);border:1px solid var(--border);border-radius:16px;padding:26px 22px;backdrop-filter:blur(4px)}
-.why-card span{font-size:30px}
-.why-card h3{color:var(--gold-lt);font-size:18px;margin:10px 0 6px}
+.why-card{background:#fff;border:1px solid var(--border);border-radius:16px;padding:28px 22px;transition:.22s}
+.why-card:hover{border-color:var(--gold-lt);box-shadow:var(--shadow)}
+.why-card span{font-size:28px;display:inline-flex;width:52px;height:52px;align-items:center;justify-content:center;border-radius:14px;background:var(--gold-pale)}
+.why-card h3{color:var(--ink);font-size:18px;margin:14px 0 6px}
 .why-card p{color:var(--muted);font-size:14px}
 
 /* ── Steps ── */
 .steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px}
-.step{background:var(--card);border:1px solid var(--border);border-radius:16px;padding:26px 20px;text-align:center}
-.step b{display:inline-flex;width:44px;height:44px;border-radius:50%;align-items:center;justify-content:center;background:linear-gradient(135deg,var(--gold-lt),var(--gold));color:#2A1538;font-size:20px;margin-bottom:10px}
-.step h3{color:var(--cream);font-size:17px;margin-bottom:6px}
+.step{background:#fff;border:1px solid var(--border);border-radius:16px;padding:28px 20px;text-align:center;transition:.22s}
+.step:hover{border-color:var(--gold-lt);box-shadow:var(--shadow)}
+.step b{display:inline-flex;width:44px;height:44px;border-radius:50%;align-items:center;justify-content:center;background:linear-gradient(135deg,var(--gold-lt),var(--gold));color:#2A1538;font-size:18px;margin-bottom:12px;font-family:var(--serif)}
+.step h3{color:var(--ink);font-size:17px;margin-bottom:6px}
 .step p{color:var(--muted);font-size:13.5px}
 
 /* ── Size guide ── */
-.sizetable-wrap{display:flex;justify-content:center}
-.sizetable{border-collapse:collapse;min-width:min(480px,90vw);background:var(--card);border-radius:14px;overflow:hidden;border:1px solid var(--border)}
-.sizetable th{background:var(--plum);color:var(--gold-lt);padding:12px 22px;font-family:var(--serif);letter-spacing:1px}
-.sizetable td{padding:11px 22px;text-align:center;border-top:1px solid #ffffff10;color:var(--cream)}
-.sizetable tr:nth-child(odd) td{background:#ffffff06}
+.sizetable-wrap{display:flex;justify-content:center;overflow-x:auto}
+.sizetable{border-collapse:collapse;min-width:min(520px,92vw);background:#fff;border-radius:14px;overflow:hidden;border:1px solid var(--border);box-shadow:var(--shadow)}
+.sizetable th{background:var(--plum);color:var(--gold-lt);padding:13px 22px;font-family:var(--serif);letter-spacing:1px;font-weight:600}
+.sizetable td{padding:11px 22px;text-align:center;border-top:1px solid var(--border);color:var(--text)}
+.sizetable tr:nth-child(odd) td{background:var(--ivory)}
+.sizetable td:first-child{font-weight:600;color:var(--plum)}
 
 /* ── Contact ── */
 .contact-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:18px;max-width:900px;margin:0 auto}
-.contact-card{background:var(--card);border:1px solid var(--border);border-radius:16px;padding:30px 20px;text-align:center;transition:.22s}
-.contact-card:hover{border-color:var(--gold);transform:translateY(-4px)}
+.contact-card{background:#fff;border:1px solid var(--border);border-radius:16px;padding:30px 20px;text-align:center;transition:.22s}
+.contact-card:hover{border-color:var(--gold-lt);transform:translateY(-4px);box-shadow:var(--shadow)}
 .contact-card span{font-size:30px}
-.contact-card b{display:block;color:var(--cream);margin:10px 0 4px;font-size:17px}
-.contact-card i{color:var(--gold);font-style:normal;font-size:14.5px;word-break:break-all}
+.contact-card b{display:block;color:var(--ink);margin:10px 0 4px;font-size:17px}
+.contact-card i{color:var(--gold);font-style:normal;font-size:14.5px;word-break:break-all;font-weight:500}
 .contact-loc{text-align:center;color:var(--muted);margin-top:26px;font-size:14.5px}
 
 /* ── Footer ── */
-.footer{border-top:1px solid var(--border);text-align:center;padding:50px 20px 40px;background:#120A1E}
-.footer-logo{width:min(210px,50vw);margin:0 auto 10px;border-radius:12px}
-.footer-tag{color:var(--orchid);letter-spacing:5px;font-size:12px;text-transform:uppercase;margin-bottom:16px}
+.footer{border-top:1px solid var(--border);text-align:center;padding:56px 20px 44px;background:var(--ivory)}
+.footer-logo{width:min(200px,50vw);margin:0 auto 14px}
+.footer-tag{color:var(--gold);letter-spacing:5px;font-size:12px;text-transform:uppercase;margin-bottom:16px;font-weight:600}
 .footer-line{color:var(--muted);font-size:14px}
-.footer-copy{color:#6d5a8a;font-size:12.5px;margin-top:18px}
+.footer-copy{color:#A79DB3;font-size:12.5px;margin-top:18px}
 
 /* ── Floating WA ── */
 .wa-float{position:fixed;right:22px;bottom:22px;z-index:60;width:58px;height:58px;border-radius:50%;background:var(--wa);color:#fff;display:flex;align-items:center;justify-content:center;box-shadow:0 10px 26px rgba(37,211,102,.4);transition:.2s}
 .wa-float:hover{transform:scale(1.08)}
 
-/* ── Modal ── */
-.modal-overlay{position:fixed;inset:0;z-index:100;background:rgba(10,5,18,.78);backdrop-filter:blur(6px);display:none;align-items:center;justify-content:center;padding:16px}
+/* ── Modal (shared) ── */
+.modal-overlay{position:fixed;inset:0;z-index:100;background:rgba(27,15,41,.55);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);display:none;align-items:center;justify-content:center;padding:16px}
 .modal-overlay.open{display:flex}
-.modal{background:var(--card);border:1px solid var(--gold);border-radius:20px;max-width:520px;width:100%;max-height:92vh;overflow-y:auto;padding:30px 26px;position:relative;animation:pop .25s ease}
+.modal{background:#fff;border:1px solid var(--border-gold);border-radius:20px;max-width:520px;width:100%;max-height:92vh;overflow-y:auto;padding:30px 26px;position:relative;animation:pop .25s ease;box-shadow:var(--shadow-lg)}
 @keyframes pop{from{transform:scale(.94);opacity:0}to{transform:scale(1);opacity:1}}
-.modal-close{position:absolute;top:14px;right:14px;background:transparent;border:1px solid var(--border);color:var(--muted);width:34px;height:34px;border-radius:50%;cursor:pointer;font-size:15px}
+.modal-close{position:absolute;top:14px;right:14px;background:#fff;border:1px solid var(--border);color:var(--muted);width:34px;height:34px;border-radius:50%;cursor:pointer;font-size:15px;z-index:2;transition:.2s}
 .modal-close:hover{color:var(--danger);border-color:var(--danger)}
-.modal-title{color:var(--gold);text-align:center;font-size:26px;margin-bottom:18px}
-.order-product{display:flex;gap:14px;align-items:center;background:#120A1E;border:1px solid var(--border);border-radius:14px;padding:12px;margin-bottom:20px}
+.modal-title{color:var(--ink);text-align:center;font-size:26px;margin-bottom:18px}
+.order-product{display:flex;gap:14px;align-items:center;background:var(--ivory);border:1px solid var(--border);border-radius:14px;padding:12px;margin-bottom:20px}
 .order-product img{width:64px;height:80px;object-fit:cover;border-radius:10px}
-.order-product b{display:block;color:var(--cream);font-size:14px;line-height:1.45}
-.order-product span{color:var(--gold-lt);font-family:var(--serif);font-size:18px}
-.order-product .o-stock{display:block;font-family:var(--sans);font-size:12px;color:var(--ok);margin-top:2px}
-#orderForm label{display:block;color:var(--muted);font-size:13.5px;margin-bottom:13px}
-#orderForm input,#orderForm textarea,#orderForm select{width:100%;margin-top:5px;background:#120A1E;border:1px solid var(--border);border-radius:10px;padding:11px 13px;color:var(--cream);font-size:15px;font-family:var(--sans);outline:none;transition:.2s}
-#orderForm input:focus,#orderForm textarea:focus,#orderForm select:focus{border-color:var(--gold)}
+.order-product b{display:block;color:var(--ink);font-size:14px;line-height:1.45}
+.order-product span{color:var(--plum);font-family:var(--serif);font-size:18px;font-weight:600}
+.order-product .o-stock{display:block;font-family:var(--sans);font-size:12px;color:var(--ok);margin-top:2px;font-weight:500}
+#orderForm label{display:block;color:var(--muted);font-size:13.5px;margin-bottom:13px;font-weight:500}
+#orderForm input,#orderForm textarea,#orderForm select{width:100%;margin-top:5px;background:#fff;border:1px solid #DDD5E4;border-radius:10px;padding:11px 13px;color:var(--ink);font-size:15px;font-family:var(--sans);outline:none;transition:.2s;font-weight:400}
+#orderForm input:focus,#orderForm textarea:focus,#orderForm select:focus{border-color:var(--gold);box-shadow:0 0 0 3px rgba(184,144,74,.15)}
 #orderForm input.err,#orderForm textarea.err{border-color:var(--danger)}
 .form-row{display:grid;grid-template-columns:1fr 1fr;gap:12px}
 .delivery-row{display:flex;flex-wrap:wrap;gap:8px 18px;align-items:center;color:var(--muted);font-size:13.5px;margin-bottom:13px}
 .radio{display:flex;align-items:center;gap:6px;cursor:pointer;margin-bottom:0!important}
 .radio input{width:auto!important;margin:0!important;accent-color:var(--gold)}
-.total-bar{display:flex;justify-content:space-between;align-items:center;background:var(--plum);border:1px solid var(--border);border-radius:12px;padding:13px 16px;margin:6px 0 14px}
-.total-bar span{color:var(--muted);font-size:14.5px}
+.total-bar{display:flex;justify-content:space-between;align-items:center;background:var(--plum);border-radius:12px;padding:13px 16px;margin:6px 0 14px}
+.total-bar span{color:#D8CCE6;font-size:14.5px}
 .total-bar b{color:var(--gold-lt);font-family:var(--serif);font-size:23px}
 .form-err{color:var(--danger);font-size:13.5px;min-height:20px;text-align:center}
 .form-hint{color:var(--muted);font-size:12.5px;text-align:center;margin-top:12px}
-.form-hint a{color:var(--gold)}
+.form-hint a{color:var(--gold);font-weight:600}
 .success-view{display:none;text-align:center;padding:16px 4px}
 .success-view.show{display:block}
-.success-tick{width:74px;height:74px;border-radius:50%;background:rgba(31,74,44,.6);border:2px solid var(--ok);color:var(--ok);font-size:38px;display:flex;align-items:center;justify-content:center;margin:6px auto 16px}
-.success-view h2{color:var(--gold-lt);margin-bottom:8px}
+.success-tick{width:74px;height:74px;border-radius:50%;background:rgba(46,125,79,.1);border:2px solid var(--ok);color:var(--ok);font-size:38px;display:flex;align-items:center;justify-content:center;margin:6px auto 16px}
+.success-view h2{color:var(--ink);margin-bottom:8px}
 .success-view p{color:var(--muted);font-size:14.5px;margin-bottom:14px}
-.success-summary{background:#120A1E;border:1px solid var(--border);border-radius:12px;padding:14px;text-align:left;font-size:13.5px;color:var(--cream);white-space:pre-line;margin-bottom:16px}
+.success-summary{background:var(--ivory);border:1px solid var(--border);border-radius:12px;padding:14px;text-align:left;font-size:13.5px;color:var(--text);white-space:pre-line;margin-bottom:16px}
+
+/* ── Product detail modal ── */
+.detail-overlay{align-items:flex-start;overflow-y:auto;padding:24px 16px}
+.detail{background:#fff;border:1px solid var(--border-gold);border-radius:22px;max-width:1040px;width:100%;position:relative;animation:pop .25s ease;box-shadow:var(--shadow-lg);margin:auto;overflow:hidden}
+.detail-grid{display:grid;grid-template-columns:1.05fr 1fr;gap:0}
+.d-media{padding:26px;background:var(--ivory);border-right:1px solid var(--border)}
+.d-main{position:relative;border-radius:16px;overflow:hidden;aspect-ratio:4/5;background:#fff;border:1px solid var(--border);cursor:zoom-in}
+.d-main img{width:100%;height:100%;object-fit:cover;transition:opacity .25s}
+.d-main.chart img{object-fit:contain;background:#fff}
+.d-main .badge{top:14px;left:14px}
+.d-nav{position:absolute;top:50%;transform:translateY(-50%);width:38px;height:38px;border-radius:50%;background:rgba(255,255,255,.92);border:1px solid var(--border);color:var(--plum);font-size:18px;cursor:pointer;display:flex;align-items:center;justify-content:center;box-shadow:var(--shadow);transition:.2s}
+.d-nav:hover{background:#fff;border-color:var(--gold)}
+.d-prev{left:12px}.d-next{right:12px}
+.d-thumbs{display:flex;gap:10px;margin-top:12px;overflow-x:auto;padding-bottom:4px}
+.d-thumb{flex:0 0 74px;width:74px;height:92px;border-radius:10px;overflow:hidden;border:2px solid transparent;cursor:pointer;background:#fff;position:relative;transition:.2s}
+.d-thumb img{width:100%;height:100%;object-fit:cover}
+.d-thumb.chart img{object-fit:contain;padding:6px}
+.d-thumb.active{border-color:var(--gold)}
+.d-thumb i{position:absolute;left:0;right:0;bottom:0;font-size:9.5px;font-style:normal;background:rgba(58,34,82,.85);color:#fff;text-align:center;padding:2px 0;letter-spacing:.5px}
+.d-info{padding:34px 32px 30px;display:flex;flex-direction:column}
+.d-cat{color:var(--gold);letter-spacing:3px;font-size:11.5px;font-weight:600;text-transform:uppercase}
+.d-name{font-size:clamp(22px,2.4vw,30px);line-height:1.25;margin:8px 0 12px;color:var(--ink)}
+.d-price{font-family:var(--serif);color:var(--plum);font-size:30px;font-weight:600;display:flex;align-items:baseline;gap:10px}
+.d-price small{font-family:var(--sans);font-size:12.5px;color:var(--muted);font-weight:400}
+.d-stock{display:inline-flex;align-items:center;gap:6px;font-size:12.5px;font-weight:600;margin:10px 0 18px;padding:5px 12px;border-radius:999px;border:1px solid}
+.d-stock.in{color:var(--ok);border-color:rgba(46,125,79,.3);background:rgba(46,125,79,.06)}
+.d-stock.low{color:#9A6A12;border-color:rgba(184,144,74,.45);background:var(--gold-pale)}
+.d-stock.out{color:var(--danger);border-color:rgba(192,80,77,.35);background:rgba(192,80,77,.06)}
+.d-desc{color:var(--text);font-size:14.5px;line-height:1.75}
+.d-bullets{margin:16px 0 18px;padding:0;list-style:none;display:grid;gap:7px}
+.d-bullets li{font-size:13.5px;color:var(--text);padding-left:22px;position:relative}
+.d-bullets li::before{content:"✦";position:absolute;left:2px;top:0;color:var(--gold);font-size:11px}
+.d-sizes{margin:6px 0 4px}
+.d-sizes label{font-size:12.5px;color:var(--muted);font-weight:600;letter-spacing:.5px;text-transform:uppercase;display:flex;justify-content:space-between;align-items:center}
+.d-sizes label a{color:var(--gold);text-transform:none;letter-spacing:0;font-weight:600;cursor:pointer}
+.size-pills{display:flex;gap:8px;flex-wrap:wrap;margin-top:8px}
+.size-pill{padding:8px 15px;border-radius:10px;border:1px solid #DDD5E4;font-size:13.5px;font-weight:600;color:var(--ink);background:#fff;cursor:pointer;transition:.18s}
+.size-pill:hover{border-color:var(--gold)}
+.size-pill.active{background:var(--plum);color:#fff;border-color:var(--plum)}
+.d-actions{margin-top:auto;padding-top:20px;display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.d-actions .btn{text-align:center;padding:14px 20px}
+.d-meta{margin-top:14px;font-size:12.5px;color:var(--muted);display:flex;gap:16px;flex-wrap:wrap}
+.d-meta span::before{content:"✓";color:var(--ok);margin-right:5px;font-weight:700}
+@media(max-width:860px){
+  .detail-grid{grid-template-columns:1fr}
+  .d-media{border-right:none;border-bottom:1px solid var(--border);padding:18px}
+  .d-info{padding:24px 20px 26px}
+  .d-actions{grid-template-columns:1fr}
+}
+
+/* ── Lightbox ── */
+.lightbox{position:fixed;inset:0;z-index:130;background:rgba(27,15,41,.92);display:none;align-items:center;justify-content:center;padding:20px;cursor:zoom-out}
+.lightbox.open{display:flex}
+.lightbox img{max-width:100%;max-height:100%;object-fit:contain;border-radius:8px;background:#fff}
 
 /* ── Toast ── */
-.toast{position:fixed;left:50%;bottom:26px;transform:translateX(-50%) translateY(80px);background:#2A1538;border:1px solid var(--gold);color:var(--cream);padding:12px 24px;border-radius:999px;font-size:14px;z-index:120;opacity:0;transition:.3s;pointer-events:none;max-width:90vw;text-align:center}
+.toast{position:fixed;left:50%;bottom:26px;transform:translateX(-50%) translateY(80px);background:var(--plum);border:1px solid var(--gold);color:#fff;padding:12px 24px;border-radius:999px;font-size:14px;z-index:140;opacity:0;transition:.3s;pointer-events:none;max-width:90vw;text-align:center;box-shadow:var(--shadow-lg)}
 .toast.show{transform:translateX(-50%) translateY(0);opacity:1}
-
+.empty{grid-column:1/-1;text-align:center;color:var(--muted);padding:40px 0}
 </style>
 </head>
 <body>
 
-<!-- টপ বার -->
-<div class="topbar">
-  <span id="topNote">সারা দেশে ক্যাশ অন ডেলিভারি 🚚 • অর্ডার: 01706-100110</span>
-</div>
-
-<!-- নেভিগেশন -->
+<!-- Navigation -->
 <nav class="nav">
-  <a class="nav-logo" href="#top"><img src="monogram.png" alt="VOSTRAVE logo"><span>VOSTRAVE</span></a>
+  <a class="nav-logo" href="#top"><img src="monogram-gold.png" alt="VOSTRAVE"><span>VOSTRAVE</span></a>
   <div class="nav-links">
-    <a href="#collection">কালেকশন</a>
-    <a href="#how">কীভাবে অর্ডার</a>
-    <a href="#why">কেন VOSTRAVE</a>
-    <a href="#contact">যোগাযোগ</a>
+    <a href="#collection">Collection</a>
+    <a href="#how">How to Order</a>
+    <a href="#why">Why VOSTRAVE</a>
+    <a href="#contact">Contact</a>
   </div>
-  <a class="nav-call" href="tel:+8801706100110">📞 01706-100110</a>
+  <a class="nav-cta" href="#collection">Shop the Collection</a>
 </nav>
 
-<!-- হিরো -->
+<!-- Hero -->
 <header class="hero" id="top">
-  <div class="hero-overlay">
-    <img class="hero-logo" src="logo-primary.png" alt="VOSTRAVE — Wear Your Story">
-    <p class="hero-kicker">PREMIUM MEN'S CLOTHING • DHAKA</p>
-    <h1>আপনার স্টাইল, আপনার গল্প</h1>
-    <p class="hero-sub">প্রিমিয়াম Shirt ও Polo — যা দেখছেন, তাই স্টকে আছে। সারা দেশে ক্যাশ অন ডেলিভারি।</p>
-    <div class="hero-cta">
-      <a href="#collection" class="btn btn-gold">কালেকশন দেখুন ↓</a>
-      <a href="#" class="btn btn-ghost" id="heroWa">WhatsApp-এ অর্ডার</a>
+  <div class="hero-inner">
+    <div>
+      <p class="hero-kicker">Premium Men's Clothing • Dhaka</p>
+      <h1>Wear Your <em>Story.</em><br>Dress the Part.</h1>
+      <p class="hero-sub">Curated shirts, polos, tees, denim and outerwear — every piece hand-checked, in stock and delivered to your door with cash on delivery.</p>
+      <div class="hero-cta">
+        <a href="#collection" class="btn btn-gold">Explore the Collection ↓</a>
+        <a href="#" class="btn btn-ghost" id="heroWa">Chat on WhatsApp</a>
+      </div>
+      <div class="hero-mini">
+        <div><b id="statCount">90+</b>styles in stock</div>
+        <div><b>64</b>districts delivered</div>
+        <div><b>COD</b>pay on delivery</div>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="halo"></div>
+      <div class="frame"><img src="hero-portrait.jpg" alt="VOSTRAVE — premium menswear"></div>
+      <div class="stamp"><img src="monogram-gold.png" alt=""><div><b>Quality checked</b><span>Every piece, before dispatch</span></div></div>
     </div>
   </div>
 </header>
 
-<!-- ট্রাস্ট স্ট্রিপ -->
+<!-- Trust strip -->
 <section class="trust">
-  <div class="trust-item"><b>✓ সব প্রোডাক্ট In-Stock</b><span>যা দেখছেন তাই পাবেন</span></div>
-  <div class="trust-item"><b>🚚 ক্যাশ অন ডেলিভারি</b><span>সারা বাংলাদেশে</span></div>
-  <div class="trust-item"><b>🧵 প্রিমিয়াম ফেব্রিক</b><span>সোর্স-ভেরিফায়েড কোয়ালিটি</span></div>
-  <div class="trust-item"><b>⚡ দ্রুত ডেলিভারি</b><span>ঢাকায় ২৪–৭২ ঘণ্টা</span></div>
+  <div class="trust-item"><b>✓ Everything In Stock</b><span>What you see is what you get</span></div>
+  <div class="trust-item"><b>🚚 Cash on Delivery</b><span>All over Bangladesh</span></div>
+  <div class="trust-item"><b>🧵 Premium Fabrics</b><span>Source-verified quality</span></div>
+  <div class="trust-item"><b>⚡ Fast Delivery</b><span>24–72 hours inside Dhaka</span></div>
 </section>
 
-<!-- প্রোডাক্ট কালেকশন -->
+<!-- Collection -->
 <section class="section" id="collection">
-  <h2 class="section-title">আমাদের কালেকশন</h2>
-  <p class="section-sub">স্টক ও দাম প্রতিদিন চেক করা হয় • অর্ডার দিলেই কনফার্ম</p>
+  <h2 class="section-title">Our Collection</h2>
+  <div class="gold-rule"></div>
+  <p class="section-sub" style="margin-top:14px">Stock and prices are checked daily • Tap any product for details, more angles and the size chart</p>
   <div class="filters" id="filters">
-    <button class="chip active" data-filter="all">সবগুলো</button>
-    <button class="chip" data-filter="Shirt">Shirt</button>
-    <button class="chip" data-filter="Polo">Polo</button>
-    <button class="chip" data-filter="Katua">Katua</button>
+    <button class="chip active" data-filter="all">All Products</button>
+    <!--CHIPS-->
   </div>
-  <div class="grid" id="productGrid"><!-- JS দিয়ে লোড হবে --></div>
-  <noscript><p class="section-sub">প্রোডাক্ট দেখতে ব্রাউজারে JavaScript চালু করুন, অথবা কল করুন: 01706-100110</p></noscript>
+  <div class="grid" id="productGrid"></div>
+  <noscript><p class="section-sub">Please enable JavaScript to view the collection, or message us on WhatsApp.</p></noscript>
 </section>
 
-<!-- কেন VOSTRAVE -->
+<!-- Why -->
 <section class="section why" id="why">
-  <h2 class="section-title">কেন VOSTRAVE?</h2>
+  <h2 class="section-title">Why VOSTRAVE?</h2>
+  <div class="gold-rule" style="margin-bottom:34px"></div>
   <div class="why-grid">
-    <div class="why-card"><span>🧵</span><h3>প্রিমিয়াম কোয়ালিটি</h3><p>প্রতিটা পণ্য হাতে দেখে, স্টিচ আর ফেব্রিক যাচাই করে তবেই ডিসপ্যাচ করা হয়।</p></div>
-    <div class="why-card"><span>📦</span><h3>In-Stock নিশ্চয়তা</h3><p>সাইটে যা In-Stock দেখাচ্ছে, সেটা সত্যিই স্টকে আছে। অর্ডার করে অপেক্ষার ভয় নেই।</p></div>
-    <div class="why-card"><span>💰</span><h3>ফেয়ার প্রাইস</h3><p>মূল্যের তালিকা পরিষ্কার — কোনো লুকানো চার্জ নেই। প্রোডাক্ট হাতে পেয়ে টাকা দেবেন।</p></div>
-    <div class="why-card"><span>🤝</span><h3>সরাসরি সাপোর্ট</h3><p>কোনো প্রশ্ন থাকলে WhatsApp বা কলে সরাসরি কথা বলুন — বট না, আমি নিজে উত্তর দিই।</p></div>
+    <div class="why-card"><span>🧵</span><h3>Premium Quality</h3><p>Every piece is inspected by hand — stitching, fabric and finish — before it is dispatched.</p></div>
+    <div class="why-card"><span>📦</span><h3>In-Stock Guarantee</h3><p>If it shows "In Stock" here, it is genuinely in stock. No waiting, no substitutions.</p></div>
+    <div class="why-card"><span>💰</span><h3>Fair, Transparent Pricing</h3><p>The price you see is the price you pay — no hidden charges. Pay only when the product is in your hands.</p></div>
+    <div class="why-card"><span>🤝</span><h3>Direct Support</h3><p>Questions about size or fabric? Message us on WhatsApp — a real person answers, not a bot.</p></div>
   </div>
 </section>
 
-<!-- কীভাবে অর্ডার -->
+<!-- How to order -->
 <section class="section" id="how">
-  <h2 class="section-title">কীভাবে অর্ডার করবেন</h2>
+  <h2 class="section-title">How to Order</h2>
+  <div class="gold-rule" style="margin-bottom:34px"></div>
   <div class="steps">
-    <div class="step"><b>১</b><h3>পছন্দ করুন</h3><p>কালেকশন থেকে প্রোডাক্ট বেছে নিয়ে "অর্ডার করুন" চাপুন</p></div>
-    <div class="step"><b>২</b><h3>তথ্য দিন</h3><p>নাম, ফোন, ঠিকানা আর সাইজ লিখুন (৩০ সেকেন্ডের কাজ)</p></div>
-    <div class="step"><b>৩</b><h3>কনফার্সম বাটন চাপুন</h3><p>বাটন চাপলেই অর্ডারের সব তথ্য সরাসরি আমার কাছে চলে আসবে</p></div>
-    <div class="step"><b>৪</b><h3>হাতে পেয়ে পেমেন্ট</h3><p>ক্যাশ অন ডেলিভারি — পণ্য হাতে পেয়ে টাকা দেবেন</p></div>
+    <div class="step"><b>1</b><h3>Choose</h3><p>Pick a product from the collection and tap "Order Now".</p></div>
+    <div class="step"><b>2</b><h3>Fill in Details</h3><p>Your name, phone, address and size — it takes 30 seconds.</p></div>
+    <div class="step"><b>3</b><h3>Confirm</h3><p>Press confirm and your order comes straight to us.</p></div>
+    <div class="step"><b>4</b><h3>Pay on Delivery</h3><p>Cash on delivery — pay when the product is in your hands.</p></div>
   </div>
 </section>
 
-<!-- সাইজ গাইড -->
+<!-- Size guide -->
 <section class="section sizeguide">
-  <h2 class="section-title">সাইজ গাইড <small>(আনুমানিক)</small></h2>
+  <h2 class="section-title">General Size Guide <small>(approximate)</small></h2>
+  <div class="gold-rule" style="margin-bottom:34px"></div>
   <div class="sizetable-wrap">
     <table class="sizetable">
-      <tr><th>সাইজ</th><th>Chest (ইঞ্চি)</th><th>Length (ইঞ্চি)</th></tr>
+      <tr><th>Size</th><th>Chest (inches)</th><th>Length (inches)</th></tr>
       <tr><td>S</td><td>36–37</td><td>26–27</td></tr>
       <tr><td>M</td><td>38–39</td><td>27–28</td></tr>
       <tr><td>L</td><td>40–41</td><td>28–29</td></tr>
@@ -286,41 +376,80 @@ h1,h2,h3{font-family:var(--serif);font-weight:600}
       <tr><td>XXL</td><td>44–45</td><td>30–31</td></tr>
     </table>
   </div>
-  <p class="section-sub">সাইজ নিয়ে সন্দেহ থাকলে অর্ডারের আগে WhatsApp-এ জিজ্ঞেস করে নিন — আমি মেপে বলে দিব।</p>
+  <p class="section-sub" style="margin-top:22px">Each product has its own detailed size chart on the product page. Unsure? Ask us on WhatsApp before ordering — we will measure it for you.</p>
 </section>
 
-<!-- যোগাযোগ -->
+<!-- Contact -->
 <section class="section contact" id="contact">
-  <h2 class="section-title">যোগাযোগ</h2>
-  <p class="section-sub">অর্ডার, প্রশ্ন, সাইজ — যেকোনো কিছুর জন্য সরাসরি কথা বলুন</p>
+  <h2 class="section-title">Get in Touch</h2>
+  <div class="gold-rule"></div>
+  <p class="section-sub" style="margin-top:14px">Orders, questions, sizing — talk to us directly</p>
   <div class="contact-grid">
-    <a class="contact-card" href="tel:+8801706100110"><span>📞</span><b>কল করুন</b><i>01706-100110</i></a>
+    <a class="contact-card" href="tel:+8801706100110"><span>📞</span><b>Call Us</b><i>01706-100110</i></a>
     <a class="contact-card" id="waCard" href="#"><span>💬</span><b>WhatsApp</b><i>01706-100110</i></a>
-    <a class="contact-card" href="mailto:parvezsarkar116@gmail.com"><span>✉️</span><b>ইমেইল</b><i>parvezsarkar116@gmail.com</i></a>
+    <a class="contact-card" href="mailto:parvezsarkar116@gmail.com"><span>✉️</span><b>Email</b><i>parvezsarkar116@gmail.com</i></a>
   </div>
-  <p class="contact-loc">📍 ঢাকা, বাংলাদেশ • সারা দেশে হোম ডেলিভারি</p>
+  <p class="contact-loc">📍 Dhaka, Bangladesh • Home delivery nationwide</p>
 </section>
 
-<!-- ফুটার -->
+<!-- Footer -->
 <footer class="footer">
-  <img src="wordmark.png" alt="VOSTRAVE" class="footer-logo">
+  <img src="wordmark-gold.png" alt="VOSTRAVE" class="footer-logo">
   <p class="footer-tag">Wear Your Story</p>
-  <p class="footer-line">Premium Men's Clothing • ঢাকা, বাংলাদেশ<br>📞 01706-100110 • ✉️ parvezsarkar116@gmail.com</p>
-  <p class="footer-copy">© 2026 VOSTRAVE • সর্বস্বত্ব সংরক্ষিত</p>
+  <p class="footer-line">Premium Men's Clothing • Dhaka, Bangladesh<br>📞 01706-100110 • ✉️ parvezsarkar116@gmail.com</p>
+  <p class="footer-copy">© 2026 VOSTRAVE • All rights reserved</p>
 </footer>
 
-<!-- ফ্লোটিং WhatsApp -->
+<!-- Floating WhatsApp -->
 <a class="wa-float" id="waFloat" href="#" aria-label="WhatsApp">
   <svg viewBox="0 0 32 32" width="28" height="28" fill="currentColor"><path d="M16 2.7C8.7 2.7 2.8 8.6 2.8 15.9c0 2.6.8 5 2.1 7L2.7 29.3l6.6-2.1c1.9 1.2 4.2 1.9 6.7 1.9 7.3 0 13.2-5.9 13.2-13.2S23.3 2.7 16 2.7zm0 24c-2.3 0-4.4-.7-6.2-1.8l-.4-.3-3.9 1.2 1.2-3.8-.3-.4c-1.2-1.8-1.9-4-1.9-6.3C4.5 9.5 9.7 4.3 16 4.3s11.5 5.2 11.5 11.6c.1 6.3-5.2 11.4-11.5 10.8zm6.5-8.2c-.4-.2-2.1-1-2.4-1.2-.3-.1-.6-.2-.8.2-.2.4-.9 1.2-1.1 1.4-.2.2-.4.3-.8.1-2.2-1.1-3.6-2-5-4.4-.4-.7.4-.6 1-2.1.1-.2.1-.4 0-.6-.1-.2-.8-2-1.1-2.8-.3-.7-.6-.6-.8-.6h-.7c-.2 0-.6.1-1 .5-.3.4-1.3 1.3-1.3 3.1s1.3 3.6 1.5 3.9c.2.2 2.6 4 6.3 5.6 2.3 1 3.2 1 4.2.9.7-.1 2.1-.9 2.4-1.7.3-.9.3-1.6.2-1.7-.1-.2-.4-.3-.8-.5z"/></svg>
 </a>
 
-<!-- অর্ডার মোডাল -->
+<!-- Product detail modal -->
+<div class="modal-overlay detail-overlay" id="detailModal">
+  <div class="detail">
+    <button class="modal-close" id="detailClose" aria-label="Close">✕</button>
+    <div class="detail-grid">
+      <div class="d-media">
+        <div class="d-main" id="dMain">
+          <img id="dMainImg" src="" alt="">
+          <span class="badge" id="dBadge"></span>
+          <button class="d-nav d-prev" id="dPrev" aria-label="Previous image">‹</button>
+          <button class="d-nav d-next" id="dNext" aria-label="Next image">›</button>
+        </div>
+        <div class="d-thumbs" id="dThumbs"></div>
+      </div>
+      <div class="d-info">
+        <p class="d-cat" id="dCat"></p>
+        <h2 class="d-name" id="dName"></h2>
+        <div class="d-price"><span id="dPrice"></span><small>per piece • cash on delivery</small></div>
+        <span class="d-stock" id="dStock"></span>
+        <p class="d-desc" id="dDesc"></p>
+        <ul class="d-bullets" id="dBullets"></ul>
+        <div class="d-sizes">
+          <label>Select size <a id="dChartLink">View size chart</a></label>
+          <div class="size-pills" id="dSizes"></div>
+        </div>
+        <div class="d-actions">
+          <button class="btn btn-gold" id="dOrder">🛍️ Order Now</button>
+          <a class="btn btn-ghost" id="dWa" href="#" target="_blank" rel="noopener">Ask on WhatsApp</a>
+        </div>
+        <div class="d-meta"><span>Cash on delivery</span><span>Quality checked</span><span>Delivery ৳<i id="dDelIn" style="font-style:normal"></i> Dhaka / ৳<i id="dDelOut" style="font-style:normal"></i> outside</span></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Lightbox -->
+<div class="lightbox" id="lightbox"><img id="lightboxImg" src="" alt=""></div>
+
+<!-- Order modal -->
 <div class="modal-overlay" id="orderModal">
   <div class="modal">
-    <button class="modal-close" id="modalClose" aria-label="বন্ধ করুন">✕</button>
+    <button class="modal-close" id="modalClose" aria-label="Close">✕</button>
 
     <div id="orderFormView">
-      <h2 class="modal-title">অর্ডার করুন</h2>
+      <h2 class="modal-title">Place Your Order</h2>
       <div class="order-product">
         <img id="oImg" src="" alt="">
         <div>
@@ -331,35 +460,34 @@ h1,h2,h3{font-family:var(--serif);font-weight:600}
       </div>
 
       <form id="orderForm" novalidate>
-        <label>আপনার নাম *<input type="text" id="fName" placeholder="যেমন: রাকিব হাসান" autocomplete="name"></label>
-        <label>মোবাইল নম্বর *<input type="tel" id="fPhone" placeholder="01XXXXXXXXX" maxlength="11" inputmode="numeric" autocomplete="tel"></label>
-        <label>পুরো ঠিকানা (বাসা/হোল্ডিং, রোড, এলাকা, থানা, জেলা) *<textarea id="fAddress" rows="2" placeholder="যেমন: বাসা ১২, রোড ৫, মিরপুর ১০, ঢাকা"></textarea></label>
+        <label>Your name *<input type="text" id="fName" placeholder="e.g. Rakib Hasan" autocomplete="name"></label>
+        <label>Mobile number *<input type="tel" id="fPhone" placeholder="01XXXXXXXXX" maxlength="14" inputmode="numeric" autocomplete="tel"></label>
+        <label>Full address (house/holding, road, area, thana, district) *<textarea id="fAddress" rows="2" placeholder="e.g. House 12, Road 5, Mirpur 10, Dhaka"></textarea></label>
         <div class="form-row">
-          <label>সাইজ *<select id="fSize"></select></label>
-          <label>পরিমাণ<input type="number" id="fQty" min="1" max="10" value="1"></label>
+          <label>Size *<select id="fSize"></select></label>
+          <label>Quantity<input type="number" id="fQty" min="1" max="10" value="1"></label>
         </div>
         <div class="delivery-row">
-          <span>ডেলিভারি এরিয়া:</span>
-          <label class="radio"><input type="radio" name="area" value="inside" checked> ঢাকার ভিতরে (+৳<span id="dIn">60</span>)</label>
-          <label class="radio"><input type="radio" name="area" value="outside"> ঢাকার বাইরে (+৳<span id="dOut">120</span>)</label>
+          <span>Delivery area:</span>
+          <label class="radio"><input type="radio" name="area" value="inside" checked> Inside Dhaka (+৳<span id="dIn">60</span>)</label>
+          <label class="radio"><input type="radio" name="area" value="outside"> Outside Dhaka (+৳<span id="dOut">120</span>)</label>
         </div>
-        <label>নোট (ঐচ্ছিক)<input type="text" id="fNote" placeholder="যেমন: বিকেলের পর ডেলিভারি দেবেন"></label>
+        <label>Note (optional)<input type="text" id="fNote" placeholder="e.g. Please deliver after 4 pm"></label>
 
-        <div class="total-bar"><span>মোট (COD):</span><b id="oTotal">৳০</b></div>
+        <div class="total-bar"><span>Total (COD):</span><b id="oTotal">৳0</b></div>
         <p class="form-err" id="formErr"></p>
-        <button type="submit" class="btn btn-gold btn-block">✅ অর্ডার কনফার্সম করুন</button>
-        <p class="form-hint">বাটন চাপলেই অর্ডারের সব তথ্য সরাসরি আমার ইনবক্সে চলে আসবে — আমি ফোন/মেসেজে কনফার্সম করে ডিসপ্যাচ করে দিব।</p>
+        <button type="submit" class="btn btn-gold btn-block">✅ Confirm Order</button>
+        <p class="form-hint">Your order details are sent straight to us. We will confirm by phone or message before dispatch.</p>
       </form>
     </div>
 
     <div id="orderSuccessView" class="success-view">
       <div class="success-tick">✓</div>
-      <h2>ধন্যবাদ! 🎉</h2>
-      <p>আপনার অর্ডার পৌঁছে গেছে! ✅<br><b>আমি শীঘ্রই ফোন/মেসেজে কনফার্সম করে দিব।</b></p>
-      
+      <h2>Thank you! 🎉</h2>
+      <p>Your order has been received. ✅<br><b>We will confirm it shortly by phone or message.</b></p>
       <div class="success-summary" id="successSummary"></div>
-      <button class="btn btn-gold btn-block" id="successAgain">➕ আরও প্রোডাক্ট দেখুন</button>
-      <p class="form-hint">জরুরি কিছু হলে কল করুন: <a href="tel:+8801706100110"><b>01706-100110</b></a></p>
+      <button class="btn btn-gold btn-block" id="successAgain">➕ Continue Shopping</button>
+      <p class="form-hint">Need it urgently? Call <a href="tel:+8801706100110"><b>01706-100110</b></a></p>
     </div>
   </div>
 </div>
@@ -368,141 +496,824 @@ h1,h2,h3{font-family:var(--serif);font-weight:600}
 
 <script>
 /* ══════════════════════════════════════════════════════════════
-   VOSTRAVE — সেটিংস + প্রোডাক্ট লিস্ট
+   VOSTRAVE — Settings + Product list
    ──────────────────────────────────────────────────────────────
-   ✏️  পরে কিছু বদলাতে হলে শুধু এই ফাইলটা এডিট করো:
-      GitHub repo → js/products.js → ✏️ (Edit) → Commit changes
-      Vercel নিজে থেকেই ~৩০ সেকেন্ডে সাইট আপডেট করে ফেলবে।
+   To edit a product later: change it in the PRODUCTS array below
+   and commit on GitHub — Vercel redeploys automatically.
 ══════════════════════════════════════════════════════════════ */
 
 const CONFIG = {
   siteName: "VOSTRAVE",
   tagline: "Wear Your Story",
-  whatsapp: "8801706100110",        // তোমার WhatsApp (017... → 88017...)
+  whatsapp: "8801706100110",        // WhatsApp number (017... → 88017...)
   phoneDisplay: "01706-100110",
   phone: "01706100110",
   email: "parvezsarkar116@gmail.com",
-  deliveryInsideDhaka: 60,          // ঢাকার ভিতরে ডেলিভারি চার্জ (৳)
-  deliveryOutsideDhaka: 120,        // ঢাকার বাইরে ডেলিভারি চার্জ (৳)
-  currency: "৳",
-  launchNote: "সারা দেশে ক্যাশ অন ডেলিভারি • অর্ডার: 01706-100110"
+  deliveryInsideDhaka: 60,          // delivery charge inside Dhaka (৳)
+  deliveryOutsideDhaka: 120,        // delivery charge outside Dhaka (৳)
+  currency: "৳"
 };
 
+/* Category filter chips shown above the grid (in this order). */
+const CATEGORIES = ["Premium T-Shirt", "Premium Mens Shirt", "Exclusive Offer", "Baggy Jeans", "Remi Cotton Pants", "Waffle T-Shirt", "Mock Neck T-Shirt", "Waffle Cuban Polo", "Zipper Polo", "Cuban Shirt", "Cuban Pants", "Polo", "Winter Collection", "Shirt", "Katua"];
+
 /* ──────────────────────────────────────────────────────────────
-   প্রোডাক্ট যোগ/এডিট করার নিয়ম:
+   Product schema:
    {
-     name: "প্রোডাক্টের নাম",
-     category: "Shirt" অথবা "Polo",
-     price: তোমার বিক্রয়মূল্য (৳),
-     sourcePrice: সোর্স শপের দাম — শুধু তোমার হিসাবের জন্য (সাইটে দেখায় না),
-     stock: "in" = স্টকে আছে | "low" = স্টক সীমিত | "out" = স্টক শেষ,
-     sizes: ["M","L","XL","XXL"],
-     img: "products/ছবির-নাম.webp"
+     id: "unique-slug",
+     name: "Product name",
+     category: "one of CATEGORIES",
+     price: your selling price (৳),
+     sourcePrice: source shop price — for your reference only (not shown),
+     stock: "in" | "low" | "out",
+     sizes: ["M","L","XL"],
+     img: "images/main-photo.jpg",         // card image
+     gallery: ["images/angle-2.jpg", ...], // extra angles on the detail page
+     sizeChart: "images/sizechart-xxx.jpg",
+     desc: "Short description",
+     bullets: ["Fabric", "Fit", ...]
    }
-   ⛔ কোমা (,) মিস করো না!
+   New products are listed first so they appear at the top of "All Products".
 ────────────────────────────────────────────────────────────── */
 const PRODUCTS = [
-  // ═══ SHIRTS (সোর্স দাম + মুনাফা = বিক্রয়মূল্য) ═══
-  { name: "Soft Chalk Fancy Half Sleeve Shirt", category: "Shirt",
+  // ═══ PREMIUM T-SHIRT ═══
+  { id: "black-acid-wash-porsche-graphic-t-shirt", name: "Black Acid Wash Porsche Graphic T-Shirt", category: "Premium T-Shirt",
+    price: 450, sourcePrice: 350, stock: "in",
+    sizes: ["M", "L", "XL"],
+    img: "images/black-acid-wash-porsche-graphic-t-shirt-1.jpg",
+    gallery: ["images/black-acid-wash-porsche-graphic-t-shirt-2.jpg", "images/black-acid-wash-porsche-graphic-t-shirt-3.jpg"],
+    sizeChart: "images/sizechart-tee-drop.jpg",
+    desc: "Heavyweight acid-wash cotton tee with a relaxed drop-shoulder cut. The vintage stone-washed texture gives every piece a slightly unique, lived-in finish, while the high-density screen print stays sharp wash after wash.",
+    bullets: ["100% combed cotton, 200+ GSM heavyweight jersey", "Acid / stone-washed vintage finish", "Drop-shoulder oversized fit with ribbed crew neck", "High-density front graphic print", "Pre-shrunk — machine wash cold, inside out"] },
+  { id: "black-acid-wash-outdoor-graphic-t-shirt", name: "Black Acid Wash Outdoor Graphic T-Shirt", category: "Premium T-Shirt",
+    price: 450, sourcePrice: 350, stock: "in",
+    sizes: ["M", "L", "XL"],
+    img: "images/black-acid-wash-outdoor-graphic-t-shirt-1.jpg",
+    gallery: ["images/black-acid-wash-outdoor-graphic-t-shirt-2.jpg", "images/black-acid-wash-outdoor-graphic-t-shirt-3.jpg"],
+    sizeChart: "images/sizechart-tee-drop.jpg",
+    desc: "Heavyweight acid-wash cotton tee with a relaxed drop-shoulder cut. The vintage stone-washed texture gives every piece a slightly unique, lived-in finish, while the high-density screen print stays sharp wash after wash.",
+    bullets: ["100% combed cotton, 200+ GSM heavyweight jersey", "Acid / stone-washed vintage finish", "Drop-shoulder oversized fit with ribbed crew neck", "High-density front graphic print", "Pre-shrunk — machine wash cold, inside out"] },
+  { id: "acid-wash-graphic-drop-shoulder-t-shirt", name: "Acid Wash Graphic Drop Shoulder T-Shirt", category: "Premium T-Shirt",
+    price: 450, sourcePrice: 350, stock: "in",
+    sizes: ["M", "L", "XL"],
+    img: "images/acid-wash-graphic-drop-shoulder-t-shirt-1.jpg",
+    gallery: ["images/acid-wash-graphic-drop-shoulder-t-shirt-2.jpg", "images/acid-wash-graphic-drop-shoulder-t-shirt-3.jpg"],
+    sizeChart: "images/sizechart-tee-drop.jpg",
+    desc: "Heavyweight acid-wash cotton tee with a relaxed drop-shoulder cut. The vintage stone-washed texture gives every piece a slightly unique, lived-in finish, while the high-density screen print stays sharp wash after wash.",
+    bullets: ["100% combed cotton, 200+ GSM heavyweight jersey", "Acid / stone-washed vintage finish", "Drop-shoulder oversized fit with ribbed crew neck", "High-density front graphic print", "Pre-shrunk — machine wash cold, inside out"] },
+  { id: "black-acid-wash-87-graphic-t-shirt", name: "Black Acid Wash 87 Graphic T-Shirt", category: "Premium T-Shirt",
+    price: 450, sourcePrice: 350, stock: "low",
+    sizes: ["M", "L", "XL"],
+    img: "images/black-acid-wash-87-graphic-t-shirt-1.jpg",
+    gallery: ["images/black-acid-wash-87-graphic-t-shirt-2.jpg", "images/black-acid-wash-87-graphic-t-shirt-3.jpg"],
+    sizeChart: "images/sizechart-tee-drop.jpg",
+    desc: "Heavyweight acid-wash cotton tee with a relaxed drop-shoulder cut. The vintage stone-washed texture gives every piece a slightly unique, lived-in finish, while the high-density screen print stays sharp wash after wash.",
+    bullets: ["100% combed cotton, 200+ GSM heavyweight jersey", "Acid / stone-washed vintage finish", "Drop-shoulder oversized fit with ribbed crew neck", "High-density front graphic print", "Pre-shrunk — machine wash cold, inside out"] },
+  { id: "black-acid-wash-drop-shoulder-t-shirt", name: "Black Acid Wash Drop Shoulder T-Shirt", category: "Premium T-Shirt",
+    price: 450, sourcePrice: 350, stock: "low",
+    sizes: ["M", "L", "XL"],
+    img: "images/black-acid-wash-drop-shoulder-t-shirt-1.jpg",
+    gallery: ["images/black-acid-wash-drop-shoulder-t-shirt-2.jpg", "images/black-acid-wash-drop-shoulder-t-shirt-3.jpg"],
+    sizeChart: "images/sizechart-tee-drop.jpg",
+    desc: "Heavyweight acid-wash cotton tee with a relaxed drop-shoulder cut. The vintage stone-washed texture gives every piece a slightly unique, lived-in finish, while the high-density screen print stays sharp wash after wash.",
+    bullets: ["100% combed cotton, 200+ GSM heavyweight jersey", "Acid / stone-washed vintage finish", "Drop-shoulder oversized fit with ribbed crew neck", "High-density front graphic print", "Pre-shrunk — machine wash cold, inside out"] },
+  // ═══ PREMIUM MENS SHIRT ═══
+  { id: "zaven-premium-cotton-dobby-stripe-shirt", name: "Premium Cotton Dobby Stripe Shirt - Navy", category: "Premium Mens Shirt",
+    price: 800, sourcePrice: 700, stock: "low",
+    sizes: ["M (40)", "L (42)", "XL (44)"],
+    img: "images/zaven-premium-cotton-dobby-stripe-shirt-1.jpg",
+    gallery: ["images/zaven-premium-cotton-dobby-stripe-shirt-2.jpg", "images/zaven-premium-cotton-dobby-stripe-shirt-3.jpg", "images/zaven-premium-cotton-dobby-stripe-shirt-4.jpg"],
+    sizeChart: "images/sizechart-shirt-zaven.jpg",
+    desc: "A refined striped shirt in breathable cotton dobby weave — the texture catches light subtly, so it reads smart without looking formal. Half-sleeve cut with a soft spread collar for a clean, easy summer look.",
+    bullets: ["Premium cotton dobby fabric — soft, breathable, lightweight", "Regular fit, half sleeve, spread collar", "Woven stripe pattern (not printed) — will not fade", "Durable stitching and matte buttons", "Ideal for office, casual outings and dinners"] },
+  { id: "zaven-premium-ramie-cotton-striped-shirt-brown-smart-casual-m-l-xl", name: "Premium Ramie Cotton Striped Shirt - Brown", category: "Premium Mens Shirt",
+    price: 800, sourcePrice: 700, stock: "in",
+    sizes: ["M (40)", "L (42)", "XL (44)"],
+    img: "images/zaven-premium-ramie-cotton-striped-shirt-brown-smart-casual-m-l-xl-1.jpg",
+    gallery: ["images/zaven-premium-ramie-cotton-striped-shirt-brown-smart-casual-m-l-xl-2.jpg", "images/zaven-premium-ramie-cotton-striped-shirt-brown-smart-casual-m-l-xl-3.jpg"],
+    sizeChart: "images/sizechart-shirt-zaven.jpg",
+    desc: "Woven from a ramie-cotton blend, this brown striped shirt is airy, quick-drying and naturally crisp — a smart-casual staple that keeps its shape through hot, humid days.",
+    bullets: ["Ramie-cotton blend — cool, breathable, quick drying", "Regular fit, half sleeve", "Yarn-dyed stripe — colour stays sharp", "Reinforced collar and placket", "Pairs with chinos, jeans or Remi cotton pants"] },
+  { id: "jackword-embossed-shirt-grey", name: "Jackword Embossed Shirt - Grey", category: "Premium Mens Shirt",
+    price: 799, sourcePrice: 699, stock: "in",
+    sizes: ["M", "L", "XL"],
+    img: "images/jackword-embossed-shirt-grey-1.jpg",
+    gallery: ["images/jackword-embossed-shirt-grey-2.jpg", "images/jackword-embossed-shirt-grey-3.jpg", "images/jackword-embossed-shirt-grey-4.jpg"],
+    sizeChart: "images/sizechart-shirt-jackword.jpg",
+    desc: "Full-sleeve shirt in a premium embossed jacquard fabric with a tonal geometric diamond pattern. Structured yet soft, it works as a stand-alone statement piece or layered under a jacket.",
+    bullets: ["Premium embossed jacquard (Jackword) fabric", "Smart casual regular fit, full sleeve", "Tonal geometric texture — subtle, elegant", "Soft hand feel, durable and long lasting", "Available in Grey, Green and White"] },
+  { id: "jackword-embossed-shirt-green", name: "Jackword Embossed Shirt - Green", category: "Premium Mens Shirt",
+    price: 700, sourcePrice: 600, stock: "in",
+    sizes: ["M", "L", "XL"],
+    img: "images/jackword-embossed-shirt-green-1.jpg",
+    gallery: ["images/jackword-embossed-shirt-green-2.jpg", "images/jackword-embossed-shirt-green-3.jpg", "images/jackword-embossed-shirt-green-4.jpg"],
+    sizeChart: "images/sizechart-shirt-jackword.jpg",
+    desc: "Full-sleeve shirt in a premium embossed jacquard fabric with a tonal geometric diamond pattern. Structured yet soft, it works as a stand-alone statement piece or layered under a jacket.",
+    bullets: ["Premium embossed jacquard (Jackword) fabric", "Smart casual regular fit, full sleeve", "Tonal geometric texture — subtle, elegant", "Soft hand feel, durable and long lasting", "Available in Grey, Green and White"] },
+  { id: "jackword-embossed-shirt-white", name: "Jackword Embossed Shirt - White", category: "Premium Mens Shirt",
+    price: 799, sourcePrice: 699, stock: "in",
+    sizes: ["M", "L", "XL"],
+    img: "images/jackword-embossed-shirt-white-1.jpg",
+    gallery: ["images/jackword-embossed-shirt-white-2.jpg", "images/jackword-embossed-shirt-white-3.jpg", "images/jackword-embossed-shirt-white-4.jpg"],
+    sizeChart: "images/sizechart-shirt-jackword.jpg",
+    desc: "Full-sleeve shirt in a premium embossed jacquard fabric with a tonal geometric diamond pattern. Structured yet soft, it works as a stand-alone statement piece or layered under a jacket.",
+    bullets: ["Premium embossed jacquard (Jackword) fabric", "Smart casual regular fit, full sleeve", "Tonal geometric texture — subtle, elegant", "Soft hand feel, durable and long lasting", "Available in Grey, Green and White"] },
+  // ═══ EXCLUSIVE OFFER ═══
+  { id: "premium-mens-white-and-grey-pinstripe-cotton-shirt", name: "Premium Men's White & Grey Pinstripe Cotton Shirt", category: "Exclusive Offer",
+    price: 599, sourcePrice: 499, stock: "in",
+    sizes: ["M", "L", "XL"],
+    img: "images/premium-mens-white-and-grey-pinstripe-cotton-shirt-1.jpg",
+    gallery: ["images/premium-mens-white-and-grey-pinstripe-cotton-shirt-2.jpg", "images/premium-mens-white-and-grey-pinstripe-cotton-shirt-3.jpg", "images/premium-mens-white-and-grey-pinstripe-cotton-shirt-4.jpg"],
+    sizeChart: "images/sizechart-shirt-casual.jpg",
+    desc: "Classic button-down casual shirt in a fine white-and-grey pinstripe cotton. Lightweight, breathable and easy to dress up or down — the kind of shirt you reach for every week.",
+    bullets: ["100% premium cotton, lightweight & breathable", "Button-down collar, full sleeve, regular fit", "Fine yarn-dyed pinstripe", "Embroidered chest logo", "Machine wash cold"] },
+  { id: "premium-mens-pink-and-white-striped-linen-blend-shirt", name: "Premium Men's Pink & White Striped Linen Blend Shirt", category: "Exclusive Offer",
+    price: 599, sourcePrice: 499, stock: "low",
+    sizes: ["M", "L", "XL"],
+    img: "images/premium-mens-pink-and-white-striped-linen-blend-shirt-1.jpg",
+    gallery: ["images/premium-mens-pink-and-white-striped-linen-blend-shirt-2.jpg", "images/premium-mens-pink-and-white-striped-linen-blend-shirt-3.jpg"],
+    sizeChart: "images/sizechart-shirt-casual.jpg",
+    desc: "Pink-and-white striped shirt in a linen-cotton blend — cool to the touch, slightly textured and perfect for warm weather. A relaxed regular fit with a button-down collar.",
+    bullets: ["Linen-cotton blend — cool, breathable, textured", "Button-down collar, full sleeve, regular fit", "Yarn-dyed stripe", "Embroidered chest logo", "Wash cold, hang to dry to keep the linen texture"] },
+  { id: "premium-mens-navy-blue-oxford-casual-shirt", name: "Premium Men's Navy Blue Oxford Casual Shirt", category: "Exclusive Offer",
+    price: 599, sourcePrice: 499, stock: "low",
+    sizes: ["M", "L", "XL"],
+    img: "images/premium-mens-navy-blue-oxford-casual-shirt-1.jpg",
+    gallery: ["images/premium-mens-navy-blue-oxford-casual-shirt-2.jpg", "images/premium-mens-navy-blue-oxford-casual-shirt-3.jpg"],
+    sizeChart: "images/sizechart-shirt-casual.jpg",
+    desc: "A wardrobe essential: premium oxford cotton casual shirt with a button-down collar and embroidered chest logo. Soft basket-weave cotton that gets better with every wash.",
+    bullets: ["Premium oxford cotton — soft, durable, breathable", "Button-down collar, full sleeve, regular fit", "Embroidered chest logo, contrast inner collar", "Adjustable button cuffs", "Machine wash cold, tumble dry low"] },
+  { id: "premium-mens-light-grey-oxford-cotton-shirt", name: "Premium Men's Light Grey Oxford Cotton Shirt", category: "Exclusive Offer",
+    price: 599, sourcePrice: 499, stock: "low",
+    sizes: ["M", "L", "XL"],
+    img: "images/premium-mens-light-grey-oxford-cotton-shirt-1.jpg",
+    gallery: ["images/premium-mens-light-grey-oxford-cotton-shirt-2.jpg", "images/premium-mens-light-grey-oxford-cotton-shirt-3.jpg"],
+    sizeChart: "images/sizechart-shirt-casual.jpg",
+    desc: "A wardrobe essential: premium oxford cotton casual shirt with a button-down collar and embroidered chest logo. Soft basket-weave cotton that gets better with every wash.",
+    bullets: ["Premium oxford cotton — soft, durable, breathable", "Button-down collar, full sleeve, regular fit", "Embroidered chest logo, contrast inner collar", "Adjustable button cuffs", "Machine wash cold, tumble dry low"] },
+  { id: "premium-mens-beige-oxford-cotton-shirt", name: "Premium Men's Beige Oxford Cotton Shirt", category: "Exclusive Offer",
+    price: 599, sourcePrice: 499, stock: "in",
+    sizes: ["M", "L", "XL"],
+    img: "images/premium-mens-beige-oxford-cotton-shirt-1.jpg",
+    gallery: ["images/premium-mens-beige-oxford-cotton-shirt-2.jpg", "images/premium-mens-beige-oxford-cotton-shirt-3.jpg"],
+    sizeChart: "images/sizechart-shirt-casual.jpg",
+    desc: "A wardrobe essential: premium oxford cotton casual shirt with a button-down collar and embroidered chest logo. Soft basket-weave cotton that gets better with every wash.",
+    bullets: ["Premium oxford cotton — soft, durable, breathable", "Button-down collar, full sleeve, regular fit", "Embroidered chest logo, contrast inner collar", "Adjustable button cuffs", "Machine wash cold, tumble dry low"] },
+  { id: "premium-mens-light-pink-oxford-cotton-shirt", name: "Premium Men's Light Pink Oxford Cotton Shirt", category: "Exclusive Offer",
+    price: 599, sourcePrice: 499, stock: "in",
+    sizes: ["M", "L", "XL"],
+    img: "images/premium-mens-light-pink-oxford-cotton-shirt-1.jpg",
+    gallery: ["images/premium-mens-light-pink-oxford-cotton-shirt-2.jpg", "images/premium-mens-light-pink-oxford-cotton-shirt-3.jpg"],
+    sizeChart: "images/sizechart-shirt-casual.jpg",
+    desc: "A wardrobe essential: premium oxford cotton casual shirt with a button-down collar and embroidered chest logo. Soft basket-weave cotton that gets better with every wash.",
+    bullets: ["Premium oxford cotton — soft, durable, breathable", "Button-down collar, full sleeve, regular fit", "Embroidered chest logo, contrast inner collar", "Adjustable button cuffs", "Machine wash cold, tumble dry low"] },
+  { id: "premium-mens-black-oxford-cotton-shirt", name: "Premium Men's Black Oxford Cotton Shirt", category: "Exclusive Offer",
+    price: 599, sourcePrice: 499, stock: "in",
+    sizes: ["M", "L", "XL"],
+    img: "images/premium-mens-black-oxford-cotton-shirt-1.jpg",
+    gallery: ["images/premium-mens-black-oxford-cotton-shirt-2.jpg", "images/premium-mens-black-oxford-cotton-shirt-3.jpg"],
+    sizeChart: "images/sizechart-shirt-casual.jpg",
+    desc: "A wardrobe essential: premium oxford cotton casual shirt with a button-down collar and embroidered chest logo. Soft basket-weave cotton that gets better with every wash.",
+    bullets: ["Premium oxford cotton — soft, durable, breathable", "Button-down collar, full sleeve, regular fit", "Embroidered chest logo, contrast inner collar", "Adjustable button cuffs", "Machine wash cold, tumble dry low"] },
+  { id: "lacoste-black-shirt", name: "Lacoste Black Casual Shirt", category: "Exclusive Offer",
+    price: 599, sourcePrice: 499, stock: "in",
+    sizes: ["M", "L", "XL"],
+    img: "images/lacoste-black-shirt-1.jpg",
+    gallery: ["images/lacoste-black-shirt-2.jpg", "images/lacoste-black-shirt-3.jpg"],
+    sizeChart: "images/sizechart-shirt-casual.jpg",
+    desc: "Premium oxford cotton casual shirt with the signature embroidered crocodile logo on the chest. Clean button-down styling, soft brushed hand feel and a comfortable regular fit.",
+    bullets: ["Premium oxford cotton, soft and breathable", "Button-down collar, full sleeve, regular fit", "Embroidered chest logo", "Reinforced seams and pearl buttons", "Machine wash cold"] },
+  { id: "lacoste-light-pink-shirt", name: "Lacoste Light Pink Casual Shirt", category: "Exclusive Offer",
+    price: 599, sourcePrice: 499, stock: "low",
+    sizes: ["M", "L", "XL"],
+    img: "images/lacoste-light-pink-shirt-1.jpg",
+    gallery: ["images/lacoste-light-pink-shirt-2.jpg", "images/lacoste-light-pink-shirt-3.jpg"],
+    sizeChart: "images/sizechart-shirt-casual.jpg",
+    desc: "Premium oxford cotton casual shirt with the signature embroidered crocodile logo on the chest. Clean button-down styling, soft brushed hand feel and a comfortable regular fit.",
+    bullets: ["Premium oxford cotton, soft and breathable", "Button-down collar, full sleeve, regular fit", "Embroidered chest logo", "Reinforced seams and pearl buttons", "Machine wash cold"] },
+  { id: "lacoste-maroon-shirt", name: "Lacoste Maroon Casual Shirt", category: "Exclusive Offer",
+    price: 599, sourcePrice: 499, stock: "low",
+    sizes: ["M", "L", "XL"],
+    img: "images/lacoste-maroon-shirt-1.jpg",
+    gallery: ["images/lacoste-maroon-shirt-2.jpg", "images/lacoste-maroon-shirt-3.jpg"],
+    sizeChart: "images/sizechart-shirt-casual.jpg",
+    desc: "Premium oxford cotton casual shirt with the signature embroidered crocodile logo on the chest. Clean button-down styling, soft brushed hand feel and a comfortable regular fit.",
+    bullets: ["Premium oxford cotton, soft and breathable", "Button-down collar, full sleeve, regular fit", "Embroidered chest logo", "Reinforced seams and pearl buttons", "Machine wash cold"] },
+  { id: "lacoste-coffee-brown-shirt", name: "Lacoste Coffee Brown Casual Shirt", category: "Exclusive Offer",
+    price: 599, sourcePrice: 499, stock: "low",
+    sizes: ["M", "L", "XL"],
+    img: "images/lacoste-coffee-brown-shirt-1.jpg",
+    gallery: ["images/lacoste-coffee-brown-shirt-2.jpg", "images/lacoste-coffee-brown-shirt-3.jpg"],
+    sizeChart: "images/sizechart-shirt-casual.jpg",
+    desc: "Premium oxford cotton casual shirt with the signature embroidered crocodile logo on the chest. Clean button-down styling, soft brushed hand feel and a comfortable regular fit.",
+    bullets: ["Premium oxford cotton, soft and breathable", "Button-down collar, full sleeve, regular fit", "Embroidered chest logo", "Reinforced seams and pearl buttons", "Machine wash cold"] },
+  { id: "premium-blue-and-white-checked-cotton-casual-shirt", name: "Premium Blue & White Checked Cotton Casual Shirt", category: "Exclusive Offer",
+    price: 599, sourcePrice: 499, stock: "in",
+    sizes: ["M", "L", "XL"],
+    img: "images/premium-blue-and-white-checked-cotton-casual-shirt-1.jpg",
+    gallery: ["images/premium-blue-and-white-checked-cotton-casual-shirt-2.jpg", "images/premium-blue-and-white-checked-cotton-casual-shirt-3.jpg", "images/premium-blue-and-white-checked-cotton-casual-shirt-4.jpg"],
+    sizeChart: "images/sizechart-shirt-casual.jpg",
+    desc: "Premium cotton check casual shirt with an embroidered chest logo. Yarn-dyed checks, soft brushed cotton and a comfortable regular fit — easy to wear tucked or untucked.",
+    bullets: ["100% premium cotton — soft, breathable", "Yarn-dyed check pattern (will not fade)", "Button-down collar, full sleeve, regular fit", "Embroidered chest logo", "Machine wash cold"] },
+  { id: "premium-beige-checked-cotton-casual-shirt", name: "Premium Beige Checked Cotton Casual Shirt", category: "Exclusive Offer",
+    price: 599, sourcePrice: 499, stock: "low",
+    sizes: ["M", "L", "XL"],
+    img: "images/premium-beige-checked-cotton-casual-shirt-1.jpg",
+    gallery: ["images/premium-beige-checked-cotton-casual-shirt-2.jpg", "images/premium-beige-checked-cotton-casual-shirt-3.jpg"],
+    sizeChart: "images/sizechart-shirt-casual.jpg",
+    desc: "Premium cotton check casual shirt with an embroidered chest logo. Yarn-dyed checks, soft brushed cotton and a comfortable regular fit — easy to wear tucked or untucked.",
+    bullets: ["100% premium cotton — soft, breathable", "Yarn-dyed check pattern (will not fade)", "Button-down collar, full sleeve, regular fit", "Embroidered chest logo", "Machine wash cold"] },
+  { id: "premium-mens-cotton-check-casual-shirt-white-multi-check", name: "Premium Cotton Check Casual Shirt - White Multi Check", category: "Exclusive Offer",
+    price: 599, sourcePrice: 499, stock: "in",
+    sizes: ["M", "L", "XL"],
+    img: "images/premium-mens-cotton-check-casual-shirt-white-multi-check-1.jpg",
+    gallery: ["images/premium-mens-cotton-check-casual-shirt-white-multi-check-2.jpg", "images/premium-mens-cotton-check-casual-shirt-white-multi-check-3.jpg", "images/premium-mens-cotton-check-casual-shirt-white-multi-check-4.jpg"],
+    sizeChart: "images/sizechart-shirt-casual.jpg",
+    desc: "Premium cotton check casual shirt with an embroidered chest logo. Yarn-dyed checks, soft brushed cotton and a comfortable regular fit — easy to wear tucked or untucked.",
+    bullets: ["100% premium cotton — soft, breathable", "Yarn-dyed check pattern (will not fade)", "Button-down collar, full sleeve, regular fit", "Embroidered chest logo", "Machine wash cold"] },
+  // ═══ BAGGY JEANS ═══
+  { id: "premium-export-semi-baggy-jeans-light-blue-wash", name: "Export Semi Baggy Jeans - Light Blue Wash", category: "Baggy Jeans",
+    price: 799, sourcePrice: 699, stock: "low",
+    sizes: ["M (30)", "L (32)", "XL (34)", "XXL (36)"],
+    img: "images/premium-export-semi-baggy-jeans-light-blue-wash-1.jpg",
+    gallery: ["images/premium-export-semi-baggy-jeans-light-blue-wash-2.jpg", "images/premium-export-semi-baggy-jeans-light-blue-wash-3.jpg"],
+    sizeChart: "images/sizechart-jeans-baggy.jpg",
+    desc: "Export-quality semi-baggy jeans in heavyweight non-stretch denim. A relaxed straight leg from hip to hem gives the modern, roomy silhouette without looking sloppy.",
+    bullets: ["Export quality 12 oz denim, non-stretch", "Semi-baggy relaxed fit, straight leg", "Five-pocket construction, YKK zip fly", "Reinforced bar-tacks and strong stitching", "Sizes by waist: M-30 / L-32 / XL-34 / XXL-36"] },
+  { id: "premium-export-semi-baggy-jeans-washed-black", name: "Export Semi Baggy Jeans - Washed Black", category: "Baggy Jeans",
+    price: 799, sourcePrice: 699, stock: "in",
+    sizes: ["M (30)", "L (32)", "XL (34)", "XXL (36)"],
+    img: "images/premium-export-semi-baggy-jeans-washed-black-1.jpg",
+    gallery: ["images/premium-export-semi-baggy-jeans-washed-black-2.jpg", "images/premium-export-semi-baggy-jeans-washed-black-3.jpg"],
+    sizeChart: "images/sizechart-jeans-baggy.jpg",
+    desc: "Export-quality semi-baggy jeans in heavyweight non-stretch denim. A relaxed straight leg from hip to hem gives the modern, roomy silhouette without looking sloppy.",
+    bullets: ["Export quality 12 oz denim, non-stretch", "Semi-baggy relaxed fit, straight leg", "Five-pocket construction, YKK zip fly", "Reinforced bar-tacks and strong stitching", "Sizes by waist: M-30 / L-32 / XL-34 / XXL-36"] },
+  { id: "premium-export-semi-baggy-jeans-dark-blue-wash", name: "Export Semi Baggy Jeans - Dark Blue Wash", category: "Baggy Jeans",
+    price: 799, sourcePrice: 699, stock: "in",
+    sizes: ["M (30)", "L (32)", "XL (34)", "XXL (36)"],
+    img: "images/premium-export-semi-baggy-jeans-dark-blue-wash-1.jpg",
+    gallery: ["images/premium-export-semi-baggy-jeans-dark-blue-wash-2.jpg", "images/premium-export-semi-baggy-jeans-dark-blue-wash-3.jpg"],
+    sizeChart: "images/sizechart-jeans-baggy.jpg",
+    desc: "Export-quality semi-baggy jeans in heavyweight non-stretch denim. A relaxed straight leg from hip to hem gives the modern, roomy silhouette without looking sloppy.",
+    bullets: ["Export quality 12 oz denim, non-stretch", "Semi-baggy relaxed fit, straight leg", "Five-pocket construction, YKK zip fly", "Reinforced bar-tacks and strong stitching", "Sizes by waist: M-30 / L-32 / XL-34 / XXL-36"] },
+  // ═══ REMI COTTON PANTS ═══
+  { id: "remi-cotton-pant-beige", name: "Remi Cotton Pant - Beige", category: "Remi Cotton Pants",
+    price: 650, sourcePrice: 550, stock: "in",
+    sizes: ["M (30)", "L (32)", "XL (34)", "XXL (36)"],
+    img: "images/remi-cotton-pant-beige-1.jpg",
+    gallery: ["images/remi-cotton-pant-beige-2.jpg", "images/remi-cotton-pant-beige-3.jpg"],
+    sizeChart: "images/sizechart-pant-remi.jpg",
+    desc: "Relaxed straight-fit trousers in soft Remi cotton with an elasticated drawstring waistband. Lightweight, breathable and wrinkle-friendly — an all-day comfort pant that still looks put together.",
+    bullets: ["Soft Remi cotton twill — breathable & lightweight", "Elastic waistband with drawstring, side & back pockets", "Relaxed straight fit, mid rise", "Embroidered logo at hip", "Machine wash cold"] },
+  { id: "remi-cotton-pant-coffee", name: "Remi Cotton Pant - Coffee", category: "Remi Cotton Pants",
+    price: 650, sourcePrice: 550, stock: "in",
+    sizes: ["M (30)", "L (32)", "XL (34)", "XXL (36)"],
+    img: "images/remi-cotton-pant-coffee-1.jpg",
+    gallery: ["images/remi-cotton-pant-coffee-2.jpg", "images/remi-cotton-pant-coffee-3.jpg"],
+    sizeChart: "images/sizechart-pant-remi.jpg",
+    desc: "Relaxed straight-fit trousers in soft Remi cotton with an elasticated drawstring waistband. Lightweight, breathable and wrinkle-friendly — an all-day comfort pant that still looks put together.",
+    bullets: ["Soft Remi cotton twill — breathable & lightweight", "Elastic waistband with drawstring, side & back pockets", "Relaxed straight fit, mid rise", "Embroidered logo at hip", "Machine wash cold"] },
+  { id: "remi-cotton-pant-black", name: "Remi Cotton Pant - Black", category: "Remi Cotton Pants",
+    price: 650, sourcePrice: 550, stock: "in",
+    sizes: ["M (30)", "L (32)", "XL (34)"],
+    img: "images/remi-cotton-pant-black-1.jpg",
+    gallery: ["images/remi-cotton-pant-black-2.jpg", "images/remi-cotton-pant-black-3.jpg"],
+    sizeChart: "images/sizechart-pant-remi.jpg",
+    desc: "Relaxed straight-fit trousers in soft Remi cotton with an elasticated drawstring waistband. Lightweight, breathable and wrinkle-friendly — an all-day comfort pant that still looks put together.",
+    bullets: ["Soft Remi cotton twill — breathable & lightweight", "Elastic waistband with drawstring, side & back pockets", "Relaxed straight fit, mid rise", "Embroidered logo at hip", "Machine wash cold"] },
+  { id: "remi-cotton-pant-white", name: "Remi Cotton Pant - White", category: "Remi Cotton Pants",
+    price: 650, sourcePrice: 550, stock: "in",
+    sizes: ["M (30)", "L (32)", "XL (34)", "XXL (36)"],
+    img: "images/remi-cotton-pant-white-1.jpg",
+    gallery: ["images/remi-cotton-pant-white-2.jpg", "images/remi-cotton-pant-white-3.jpg"],
+    sizeChart: "images/sizechart-pant-remi.jpg",
+    desc: "Relaxed straight-fit trousers in soft Remi cotton with an elasticated drawstring waistband. Lightweight, breathable and wrinkle-friendly — an all-day comfort pant that still looks put together.",
+    bullets: ["Soft Remi cotton twill — breathable & lightweight", "Elastic waistband with drawstring, side & back pockets", "Relaxed straight fit, mid rise", "Embroidered logo at hip", "Machine wash cold"] },
+  { id: "remi-cotton-pant-off-white", name: "Remi Cotton Pant - Off White", category: "Remi Cotton Pants",
+    price: 650, sourcePrice: 550, stock: "in",
+    sizes: ["M (30)", "L (32)", "XL (34)", "XXL (36)"],
+    img: "images/remi-cotton-pant-off-white-1.jpg",
+    gallery: ["images/remi-cotton-pant-off-white-2.jpg", "images/remi-cotton-pant-off-white-3.jpg"],
+    sizeChart: "images/sizechart-pant-remi.jpg",
+    desc: "Relaxed straight-fit trousers in soft Remi cotton with an elasticated drawstring waistband. Lightweight, breathable and wrinkle-friendly — an all-day comfort pant that still looks put together.",
+    bullets: ["Soft Remi cotton twill — breathable & lightweight", "Elastic waistband with drawstring, side & back pockets", "Relaxed straight fit, mid rise", "Embroidered logo at hip", "Machine wash cold"] },
+  // ═══ WAFFLE T-SHIRT ═══
+  { id: "waffle-t-shirt-base", name: "Waffle T-Shirt - Base Brown", category: "Waffle T-Shirt",
+    price: 450, sourcePrice: 350, stock: "in",
+    sizes: ["M", "L", "XL"],
+    img: "images/waffle-t-shirt-base-1.jpg",
+    gallery: ["images/waffle-t-shirt-base-2.jpg", "images/waffle-t-shirt-base-3.jpg"],
+    sizeChart: "images/sizechart-tee-waffle.jpg",
+    desc: "Relaxed-fit tee in a 220+ GSM export-quality waffle-knit cotton. The honeycomb texture is thick yet breathable, holds its shape and adds instant depth to a simple outfit.",
+    bullets: ["220+ GSM waffle-knit cotton, export quality", "Relaxed unisex fit, ribbed crew neck", "Textured honeycomb weave — no print to crack", "Double-needle hems for durability", "Machine wash cold, do not bleach"] },
+  { id: "waffle-t-shirt-charcoal", name: "Waffle T-Shirt - Charcoal", category: "Waffle T-Shirt",
+    price: 450, sourcePrice: 350, stock: "in",
+    sizes: ["M", "L", "XL"],
+    img: "images/waffle-t-shirt-charcoal-1.jpg",
+    gallery: ["images/waffle-t-shirt-charcoal-2.jpg", "images/waffle-t-shirt-charcoal-3.jpg"],
+    sizeChart: "images/sizechart-tee-waffle.jpg",
+    desc: "Relaxed-fit tee in a 220+ GSM export-quality waffle-knit cotton. The honeycomb texture is thick yet breathable, holds its shape and adds instant depth to a simple outfit.",
+    bullets: ["220+ GSM waffle-knit cotton, export quality", "Relaxed unisex fit, ribbed crew neck", "Textured honeycomb weave — no print to crack", "Double-needle hems for durability", "Machine wash cold, do not bleach"] },
+  { id: "waffle-t-shirt-black", name: "Waffle T-Shirt - Black", category: "Waffle T-Shirt",
+    price: 450, sourcePrice: 350, stock: "in",
+    sizes: ["M", "L", "XL"],
+    img: "images/waffle-t-shirt-black-1.jpg",
+    gallery: ["images/waffle-t-shirt-black-2.jpg", "images/waffle-t-shirt-black-3.jpg"],
+    sizeChart: "images/sizechart-tee-waffle.jpg",
+    desc: "Relaxed-fit tee in a 220+ GSM export-quality waffle-knit cotton. The honeycomb texture is thick yet breathable, holds its shape and adds instant depth to a simple outfit.",
+    bullets: ["220+ GSM waffle-knit cotton, export quality", "Relaxed unisex fit, ribbed crew neck", "Textured honeycomb weave — no print to crack", "Double-needle hems for durability", "Machine wash cold, do not bleach"] },
+  { id: "waffle-t-shirt-green", name: "Waffle T-Shirt - Green", category: "Waffle T-Shirt",
+    price: 450, sourcePrice: 350, stock: "in",
+    sizes: ["M", "L", "XL"],
+    img: "images/waffle-t-shirt-green-1.jpg",
+    gallery: ["images/waffle-t-shirt-green-2.jpg", "images/waffle-t-shirt-green-3.jpg"],
+    sizeChart: "images/sizechart-tee-waffle.jpg",
+    desc: "Relaxed-fit tee in a 220+ GSM export-quality waffle-knit cotton. The honeycomb texture is thick yet breathable, holds its shape and adds instant depth to a simple outfit.",
+    bullets: ["220+ GSM waffle-knit cotton, export quality", "Relaxed unisex fit, ribbed crew neck", "Textured honeycomb weave — no print to crack", "Double-needle hems for durability", "Machine wash cold, do not bleach"] },
+  { id: "waffle-t-shirt-maroon", name: "Waffle T-Shirt - Maroon", category: "Waffle T-Shirt",
+    price: 450, sourcePrice: 350, stock: "in",
+    sizes: ["M", "L", "XL"],
+    img: "images/waffle-t-shirt-maroon-1.jpg",
+    gallery: ["images/waffle-t-shirt-maroon-2.jpg", "images/waffle-t-shirt-maroon-3.jpg"],
+    sizeChart: "images/sizechart-tee-waffle.jpg",
+    desc: "Relaxed-fit tee in a 220+ GSM export-quality waffle-knit cotton. The honeycomb texture is thick yet breathable, holds its shape and adds instant depth to a simple outfit.",
+    bullets: ["220+ GSM waffle-knit cotton, export quality", "Relaxed unisex fit, ribbed crew neck", "Textured honeycomb weave — no print to crack", "Double-needle hems for durability", "Machine wash cold, do not bleach"] },
+  { id: "waffle-t-shirt-white", name: "Waffle T-Shirt - White", category: "Waffle T-Shirt",
+    price: 450, sourcePrice: 350, stock: "in",
+    sizes: ["M", "L", "XL"],
+    img: "images/waffle-t-shirt-white-1.jpg",
+    gallery: ["images/waffle-t-shirt-white-2.jpg", "images/waffle-t-shirt-white-3.jpg"],
+    sizeChart: "images/sizechart-tee-waffle.jpg",
+    desc: "Relaxed-fit tee in a 220+ GSM export-quality waffle-knit cotton. The honeycomb texture is thick yet breathable, holds its shape and adds instant depth to a simple outfit.",
+    bullets: ["220+ GSM waffle-knit cotton, export quality", "Relaxed unisex fit, ribbed crew neck", "Textured honeycomb weave — no print to crack", "Double-needle hems for durability", "Machine wash cold, do not bleach"] },
+  { id: "waffle-t-shirt-navy-blue", name: "Waffle T-Shirt - Navy Blue", category: "Waffle T-Shirt",
+    price: 450, sourcePrice: 350, stock: "in",
+    sizes: ["M", "L", "XL"],
+    img: "images/waffle-t-shirt-navy-blue-1.jpg",
+    gallery: ["images/waffle-t-shirt-navy-blue-2.jpg", "images/waffle-t-shirt-navy-blue-3.jpg"],
+    sizeChart: "images/sizechart-tee-waffle.jpg",
+    desc: "Relaxed-fit tee in a 220+ GSM export-quality waffle-knit cotton. The honeycomb texture is thick yet breathable, holds its shape and adds instant depth to a simple outfit.",
+    bullets: ["220+ GSM waffle-knit cotton, export quality", "Relaxed unisex fit, ribbed crew neck", "Textured honeycomb weave — no print to crack", "Double-needle hems for durability", "Machine wash cold, do not bleach"] },
+  // ═══ MOCK NECK T-SHIRT ═══
+  { id: "mock-neck-beige", name: "Mock Neck T-Shirt - Beige", category: "Mock Neck T-Shirt",
+    price: 600, sourcePrice: 500, stock: "in",
+    sizes: ["M", "L", "XL"],
+    img: "images/mock-neck-beige-1.jpg",
+    gallery: ["images/mock-neck-beige-2.jpg", "images/mock-neck-beige-3.jpg"],
+    sizeChart: "images/sizechart-tee-mock.jpg",
+    desc: "Minimal mock-neck tee in soft textured cotton with raglan shoulder seams. Slightly structured, subtly ribbed and cut in a slim regular fit — a clean, elevated basic.",
+    bullets: ["Soft textured cotton knit (celio quality)", "Mock neck, raglan sleeve, regular fit", "Ribbed hem and cuffs", "Woven brand patch at hem", "Machine wash cold, inside out"] },
+  { id: "mock-neck-boil-olive", name: "Mock Neck T-Shirt - Pale Aqua", category: "Mock Neck T-Shirt",
+    price: 600, sourcePrice: 500, stock: "in",
+    sizes: ["M", "L", "XL"],
+    img: "images/mock-neck-boil-olive-1.jpg",
+    gallery: ["images/mock-neck-boil-olive-2.jpg", "images/mock-neck-boil-olive-3.jpg"],
+    sizeChart: "images/sizechart-tee-mock.jpg",
+    desc: "Minimal mock-neck tee in soft textured cotton with raglan shoulder seams. Slightly structured, subtly ribbed and cut in a slim regular fit — a clean, elevated basic.",
+    bullets: ["Soft textured cotton knit (celio quality)", "Mock neck, raglan sleeve, regular fit", "Ribbed hem and cuffs", "Woven brand patch at hem", "Machine wash cold, inside out"] },
+  { id: "mock-neck-brick", name: "Mock Neck T-Shirt - Dusty Brick", category: "Mock Neck T-Shirt",
+    price: 600, sourcePrice: 500, stock: "in",
+    sizes: ["M", "L", "XL"],
+    img: "images/mock-neck-brick-1.jpg",
+    gallery: ["images/mock-neck-brick-2.jpg", "images/mock-neck-brick-3.jpg"],
+    sizeChart: "images/sizechart-tee-mock.jpg",
+    desc: "Minimal mock-neck tee in soft textured cotton with raglan shoulder seams. Slightly structured, subtly ribbed and cut in a slim regular fit — a clean, elevated basic.",
+    bullets: ["Soft textured cotton knit (celio quality)", "Mock neck, raglan sleeve, regular fit", "Ribbed hem and cuffs", "Woven brand patch at hem", "Machine wash cold, inside out"] },
+  { id: "mock-neck-lemon", name: "Mock Neck T-Shirt - Sage Lemon", category: "Mock Neck T-Shirt",
+    price: 600, sourcePrice: 500, stock: "in",
+    sizes: ["M", "L", "XL"],
+    img: "images/mock-neck-lemon-1.jpg",
+    gallery: ["images/mock-neck-lemon-2.jpg", "images/mock-neck-lemon-3.jpg"],
+    sizeChart: "images/sizechart-tee-mock.jpg",
+    desc: "Minimal mock-neck tee in soft textured cotton with raglan shoulder seams. Slightly structured, subtly ribbed and cut in a slim regular fit — a clean, elevated basic.",
+    bullets: ["Soft textured cotton knit (celio quality)", "Mock neck, raglan sleeve, regular fit", "Ribbed hem and cuffs", "Woven brand patch at hem", "Machine wash cold, inside out"] },
+  { id: "mock-neck-mint", name: "Mock Neck T-Shirt - Mint", category: "Mock Neck T-Shirt",
+    price: 600, sourcePrice: 500, stock: "in",
+    sizes: ["M", "L", "XL"],
+    img: "images/mock-neck-mint-1.jpg",
+    gallery: ["images/mock-neck-mint-2.jpg", "images/mock-neck-mint-3.jpg"],
+    sizeChart: "images/sizechart-tee-mock.jpg",
+    desc: "Minimal mock-neck tee in soft textured cotton with raglan shoulder seams. Slightly structured, subtly ribbed and cut in a slim regular fit — a clean, elevated basic.",
+    bullets: ["Soft textured cotton knit (celio quality)", "Mock neck, raglan sleeve, regular fit", "Ribbed hem and cuffs", "Woven brand patch at hem", "Machine wash cold, inside out"] },
+  { id: "mock-neck-pastle", name: "Mock Neck T-Shirt - Pastel Teal", category: "Mock Neck T-Shirt",
+    price: 600, sourcePrice: 500, stock: "in",
+    sizes: ["M", "L", "XL"],
+    img: "images/mock-neck-pastle-1.jpg",
+    gallery: ["images/mock-neck-pastle-2.jpg", "images/mock-neck-pastle-3.jpg"],
+    sizeChart: "images/sizechart-tee-mock.jpg",
+    desc: "Minimal mock-neck tee in soft textured cotton with raglan shoulder seams. Slightly structured, subtly ribbed and cut in a slim regular fit — a clean, elevated basic.",
+    bullets: ["Soft textured cotton knit (celio quality)", "Mock neck, raglan sleeve, regular fit", "Ribbed hem and cuffs", "Woven brand patch at hem", "Machine wash cold, inside out"] },
+  // ═══ WAFFLE CUBAN POLO ═══
+  { id: "waffel-cuban-polo-white", name: "Waffle Cuban Polo - White", category: "Waffle Cuban Polo",
+    price: 600, sourcePrice: 500, stock: "in",
+    sizes: ["M", "L", "XL"],
+    img: "images/waffel-cuban-polo-white-1.jpg",
+    gallery: ["images/waffel-cuban-polo-white-2.jpg", "images/waffel-cuban-polo-white-3.jpg"],
+    sizeChart: "images/sizechart-polo-cuban-waffle.jpg",
+    desc: "Open Cuban (revere) collar polo in 220+ GSM waffle-knit cotton. The relaxed collar and textured fabric make it a stand-out summer piece — dressy enough for evenings, comfortable enough for every day.",
+    bullets: ["220+ GSM waffle-knit cotton", "Cuban / revere open collar, half sleeve", "Regular fit with ribbed cuffs", "Breathable textured weave", "Machine wash cold"] },
+  { id: "waffle-cuban-polo-biscuit", name: "Waffle Cuban Polo - Biscuit", category: "Waffle Cuban Polo",
+    price: 600, sourcePrice: 500, stock: "in",
+    sizes: ["M", "L", "XL"],
+    img: "images/waffle-cuban-polo-biscuit-1.jpg",
+    gallery: ["images/waffle-cuban-polo-biscuit-2.jpg", "images/waffle-cuban-polo-biscuit-3.jpg"],
+    sizeChart: "images/sizechart-polo-cuban-waffle.jpg",
+    desc: "Open Cuban (revere) collar polo in 220+ GSM waffle-knit cotton. The relaxed collar and textured fabric make it a stand-out summer piece — dressy enough for evenings, comfortable enough for every day.",
+    bullets: ["220+ GSM waffle-knit cotton", "Cuban / revere open collar, half sleeve", "Regular fit with ribbed cuffs", "Breathable textured weave", "Machine wash cold"] },
+  { id: "waffle-cuban-polo-black", name: "Waffle Cuban Polo - Black", category: "Waffle Cuban Polo",
+    price: 600, sourcePrice: 500, stock: "in",
+    sizes: ["M", "L", "XL"],
+    img: "images/waffle-cuban-polo-black-1.jpg",
+    gallery: ["images/waffle-cuban-polo-black-2.jpg", "images/waffle-cuban-polo-black-3.jpg"],
+    sizeChart: "images/sizechart-polo-cuban-waffle.jpg",
+    desc: "Open Cuban (revere) collar polo in 220+ GSM waffle-knit cotton. The relaxed collar and textured fabric make it a stand-out summer piece — dressy enough for evenings, comfortable enough for every day.",
+    bullets: ["220+ GSM waffle-knit cotton", "Cuban / revere open collar, half sleeve", "Regular fit with ribbed cuffs", "Breathable textured weave", "Machine wash cold"] },
+  { id: "waffle-cuban-polo-coffee", name: "Waffle Cuban Polo - Coffee", category: "Waffle Cuban Polo",
+    price: 600, sourcePrice: 500, stock: "in",
+    sizes: ["M", "L", "XL"],
+    img: "images/waffle-cuban-polo-coffee-1.jpg",
+    gallery: ["images/waffle-cuban-polo-coffee-2.jpg", "images/waffle-cuban-polo-coffee-3.jpg"],
+    sizeChart: "images/sizechart-polo-cuban-waffle.jpg",
+    desc: "Open Cuban (revere) collar polo in 220+ GSM waffle-knit cotton. The relaxed collar and textured fabric make it a stand-out summer piece — dressy enough for evenings, comfortable enough for every day.",
+    bullets: ["220+ GSM waffle-knit cotton", "Cuban / revere open collar, half sleeve", "Regular fit with ribbed cuffs", "Breathable textured weave", "Machine wash cold"] },
+  { id: "waffle-cuban-polo-olive", name: "Waffle Cuban Polo - Olive", category: "Waffle Cuban Polo",
+    price: 600, sourcePrice: 500, stock: "in",
+    sizes: ["M", "L", "XL"],
+    img: "images/waffle-cuban-polo-olive-1.jpg",
+    gallery: ["images/waffle-cuban-polo-olive-2.jpg", "images/waffle-cuban-polo-olive-3.jpg"],
+    sizeChart: "images/sizechart-polo-cuban-waffle.jpg",
+    desc: "Open Cuban (revere) collar polo in 220+ GSM waffle-knit cotton. The relaxed collar and textured fabric make it a stand-out summer piece — dressy enough for evenings, comfortable enough for every day.",
+    bullets: ["220+ GSM waffle-knit cotton", "Cuban / revere open collar, half sleeve", "Regular fit with ribbed cuffs", "Breathable textured weave", "Machine wash cold"] },
+  // ═══ ZIPPER POLO ═══
+  { id: "maroon-contrast-zipper-polo", name: "Maroon Contrast Zipper Polo", category: "Zipper Polo",
+    price: 599, sourcePrice: 499, stock: "in",
+    sizes: ["M", "L", "XL", "2XL"],
+    img: "images/maroon-contrast-zipper-polo-1.jpg",
+    gallery: ["images/maroon-contrast-zipper-polo-2.jpg", "images/maroon-contrast-zipper-polo-3.jpg"],
+    sizeChart: "images/sizechart-polo-ribbed.jpg",
+    desc: "Premium ribbed-knit polo with a quarter-zip placket and structured collar. The fine vertical rib gives a slimming, elevated look; the stretch knit keeps it comfortable all day.",
+    bullets: ["Premium ribbed knit — soft, stretchy, breathable", "Quarter-zip placket with metal zipper", "Structured collar, ribbed cuffs", "Regular fit, half sleeve", "Machine wash cold, lay flat to dry"] },
+  { id: "white-contrast-zipper-polo", name: "White Contrast Zipper Polo", category: "Zipper Polo",
+    price: 599, sourcePrice: 499, stock: "in",
+    sizes: ["M", "L", "XL", "2XL"],
+    img: "images/white-contrast-zipper-polo-1.jpg",
+    gallery: ["images/white-contrast-zipper-polo-2.jpg", "images/white-contrast-zipper-polo-3.jpg"],
+    sizeChart: "images/sizechart-polo-ribbed.jpg",
+    desc: "Premium ribbed-knit polo with a quarter-zip placket and structured collar. The fine vertical rib gives a slimming, elevated look; the stretch knit keeps it comfortable all day.",
+    bullets: ["Premium ribbed knit — soft, stretchy, breathable", "Quarter-zip placket with metal zipper", "Structured collar, ribbed cuffs", "Regular fit, half sleeve", "Machine wash cold, lay flat to dry"] },
+  { id: "cream-contrast-zipper-polo", name: "Cream Contrast Zipper Polo", category: "Zipper Polo",
+    price: 599, sourcePrice: 499, stock: "in",
+    sizes: ["M", "L", "XL", "2XL"],
+    img: "images/cream-contrast-zipper-polo-1.jpg",
+    gallery: ["images/cream-contrast-zipper-polo-2.jpg", "images/cream-contrast-zipper-polo-3.jpg"],
+    sizeChart: "images/sizechart-polo-ribbed.jpg",
+    desc: "Premium ribbed-knit polo with a quarter-zip placket and structured collar. The fine vertical rib gives a slimming, elevated look; the stretch knit keeps it comfortable all day.",
+    bullets: ["Premium ribbed knit — soft, stretchy, breathable", "Quarter-zip placket with metal zipper", "Structured collar, ribbed cuffs", "Regular fit, half sleeve", "Machine wash cold, lay flat to dry"] },
+  { id: "black-contrast-zipper-polo", name: "Black Contrast Zipper Polo", category: "Zipper Polo",
+    price: 599, sourcePrice: 499, stock: "in",
+    sizes: ["M", "L", "XL", "2XL"],
+    img: "images/black-contrast-zipper-polo-1.jpg",
+    gallery: ["images/black-contrast-zipper-polo-2.jpg", "images/black-contrast-zipper-polo-3.jpg"],
+    sizeChart: "images/sizechart-polo-ribbed.jpg",
+    desc: "Premium ribbed-knit polo with a quarter-zip placket and structured collar. The fine vertical rib gives a slimming, elevated look; the stretch knit keeps it comfortable all day.",
+    bullets: ["Premium ribbed knit — soft, stretchy, breathable", "Quarter-zip placket with metal zipper", "Structured collar, ribbed cuffs", "Regular fit, half sleeve", "Machine wash cold, lay flat to dry"] },
+  { id: "solid-coffee-zipper-polo", name: "Solid Coffee Zipper Polo", category: "Zipper Polo",
+    price: 599, sourcePrice: 499, stock: "in",
+    sizes: ["M", "L", "XL", "2XL"],
+    img: "images/solid-coffee-zipper-polo-1.jpg",
+    gallery: ["images/solid-coffee-zipper-polo-2.jpg", "images/solid-coffee-zipper-polo-3.jpg"],
+    sizeChart: "images/sizechart-polo-ribbed.jpg",
+    desc: "Premium ribbed-knit polo with a quarter-zip placket and structured collar. The fine vertical rib gives a slimming, elevated look; the stretch knit keeps it comfortable all day.",
+    bullets: ["Premium ribbed knit — soft, stretchy, breathable", "Quarter-zip placket with metal zipper", "Structured collar, ribbed cuffs", "Regular fit, half sleeve", "Machine wash cold, lay flat to dry"] },
+  { id: "sky-blue-contrast-zipper-polo", name: "Sky Blue Contrast Zipper Polo", category: "Zipper Polo",
+    price: 599, sourcePrice: 499, stock: "in",
+    sizes: ["M", "L", "XL", "2XL"],
+    img: "images/sky-blue-contrast-zipper-polo-1.jpg",
+    gallery: ["images/sky-blue-contrast-zipper-polo-2.jpg", "images/sky-blue-contrast-zipper-polo-3.jpg"],
+    sizeChart: "images/sizechart-polo-ribbed.jpg",
+    desc: "Premium ribbed-knit polo with a quarter-zip placket and structured collar. The fine vertical rib gives a slimming, elevated look; the stretch knit keeps it comfortable all day.",
+    bullets: ["Premium ribbed knit — soft, stretchy, breathable", "Quarter-zip placket with metal zipper", "Structured collar, ribbed cuffs", "Regular fit, half sleeve", "Machine wash cold, lay flat to dry"] },
+  { id: "solid-black-zipper-polo", name: "Solid Black Zipper Polo", category: "Zipper Polo",
+    price: 599, sourcePrice: 499, stock: "in",
+    sizes: ["M", "L", "XL", "2XL"],
+    img: "images/solid-black-zipper-polo-1.jpg",
+    gallery: ["images/solid-black-zipper-polo-2.jpg", "images/solid-black-zipper-polo-3.jpg"],
+    sizeChart: "images/sizechart-polo-ribbed.jpg",
+    desc: "Premium ribbed-knit polo with a quarter-zip placket and structured collar. The fine vertical rib gives a slimming, elevated look; the stretch knit keeps it comfortable all day.",
+    bullets: ["Premium ribbed knit — soft, stretchy, breathable", "Quarter-zip placket with metal zipper", "Structured collar, ribbed cuffs", "Regular fit, half sleeve", "Machine wash cold, lay flat to dry"] },
+  { id: "solid-white-zipper-polo", name: "Solid White Zipper Polo", category: "Zipper Polo",
+    price: 599, sourcePrice: 499, stock: "in",
+    sizes: ["M", "L", "XL", "2XL"],
+    img: "images/solid-white-zipper-polo-1.jpg",
+    gallery: ["images/solid-white-zipper-polo-2.jpg", "images/solid-white-zipper-polo-3.jpg"],
+    sizeChart: "images/sizechart-polo-ribbed.jpg",
+    desc: "Premium ribbed-knit polo with a quarter-zip placket and structured collar. The fine vertical rib gives a slimming, elevated look; the stretch knit keeps it comfortable all day.",
+    bullets: ["Premium ribbed knit — soft, stretchy, breathable", "Quarter-zip placket with metal zipper", "Structured collar, ribbed cuffs", "Regular fit, half sleeve", "Machine wash cold, lay flat to dry"] },
+  { id: "solid-maroon-zipper-polo", name: "Solid Maroon Zipper Polo", category: "Zipper Polo",
+    price: 599, sourcePrice: 499, stock: "in",
+    sizes: ["M", "L", "XL", "2XL"],
+    img: "images/solid-maroon-zipper-polo-1.jpg",
+    gallery: ["images/solid-maroon-zipper-polo-2.jpg", "images/solid-maroon-zipper-polo-3.jpg"],
+    sizeChart: "images/sizechart-polo-ribbed.jpg",
+    desc: "Premium ribbed-knit polo with a quarter-zip placket and structured collar. The fine vertical rib gives a slimming, elevated look; the stretch knit keeps it comfortable all day.",
+    bullets: ["Premium ribbed knit — soft, stretchy, breathable", "Quarter-zip placket with metal zipper", "Structured collar, ribbed cuffs", "Regular fit, half sleeve", "Machine wash cold, lay flat to dry"] },
+  // ═══ CUBAN SHIRT ═══
+  { id: "white-cuban-shirt", name: "White Cuban Shirt", category: "Cuban Shirt",
+    price: 599, sourcePrice: 499, stock: "in",
+    sizes: ["M", "L", "XL", "2XL"],
+    img: "images/white-cuban-shirt-1.jpg",
+    gallery: ["images/white-cuban-shirt-2.jpg", "images/white-cuban-shirt-3.jpg"],
+    sizeChart: "images/sizechart-polo-ribbed.jpg",
+    desc: "Cuban-collar shirt in the same premium ribbed knit as our zipper polos. Relaxed open collar, clean button front and a soft, textured drape — pair with the matching ribbed stripe pant for a full set.",
+    bullets: ["Premium ribbed knit — soft, stretchy, breathable", "Cuban / camp collar, button front", "Regular fit, half sleeve", "Matches the ribbed stripe pant", "Machine wash cold"] },
+  { id: "black-cuban-shirt", name: "Black Cuban Shirt", category: "Cuban Shirt",
+    price: 599, sourcePrice: 499, stock: "in",
+    sizes: ["M", "L", "XL", "2XL"],
+    img: "images/black-cuban-shirt-1.jpg",
+    gallery: ["images/black-cuban-shirt-2.jpg", "images/black-cuban-shirt-3.jpg"],
+    sizeChart: "images/sizechart-polo-ribbed.jpg",
+    desc: "Cuban-collar shirt in the same premium ribbed knit as our zipper polos. Relaxed open collar, clean button front and a soft, textured drape — pair with the matching ribbed stripe pant for a full set.",
+    bullets: ["Premium ribbed knit — soft, stretchy, breathable", "Cuban / camp collar, button front", "Regular fit, half sleeve", "Matches the ribbed stripe pant", "Machine wash cold"] },
+  { id: "coffee-cuban-shirt", name: "Coffee Cuban Shirt", category: "Cuban Shirt",
+    price: 599, sourcePrice: 499, stock: "in",
+    sizes: ["M", "L", "XL", "2XL"],
+    img: "images/coffee-cuban-shirt-1.jpg",
+    gallery: ["images/coffee-cuban-shirt-2.jpg", "images/coffee-cuban-shirt-3.jpg"],
+    sizeChart: "images/sizechart-polo-ribbed.jpg",
+    desc: "Cuban-collar shirt in the same premium ribbed knit as our zipper polos. Relaxed open collar, clean button front and a soft, textured drape — pair with the matching ribbed stripe pant for a full set.",
+    bullets: ["Premium ribbed knit — soft, stretchy, breathable", "Cuban / camp collar, button front", "Regular fit, half sleeve", "Matches the ribbed stripe pant", "Machine wash cold"] },
+  { id: "maroon-cuban-shirt", name: "Maroon Cuban Shirt", category: "Cuban Shirt",
+    price: 599, sourcePrice: 499, stock: "in",
+    sizes: ["M", "L", "XL", "2XL"],
+    img: "images/maroon-cuban-shirt-1.jpg",
+    gallery: ["images/maroon-cuban-shirt-2.jpg", "images/maroon-cuban-shirt-3.jpg"],
+    sizeChart: "images/sizechart-polo-ribbed.jpg",
+    desc: "Cuban-collar shirt in the same premium ribbed knit as our zipper polos. Relaxed open collar, clean button front and a soft, textured drape — pair with the matching ribbed stripe pant for a full set.",
+    bullets: ["Premium ribbed knit — soft, stretchy, breathable", "Cuban / camp collar, button front", "Regular fit, half sleeve", "Matches the ribbed stripe pant", "Machine wash cold"] },
+  // ═══ CUBAN PANTS ═══
+  { id: "white-stripes-pant", name: "White Ribbed Stripe Pant", category: "Cuban Pants",
+    price: 599, sourcePrice: 499, stock: "in",
+    sizes: ["30", "32", "34", "36", "38"],
+    img: "images/white-stripes-pant-1.jpg",
+    gallery: ["images/white-stripes-pant-2.jpg", "images/white-stripes-pant-3.jpg"],
+    sizeChart: "images/sizechart-pant-ribbed.jpg",
+    desc: "Straight-fit pleated trouser in a premium ribbed knit with a fine vertical stripe texture. Elastic-back waistband, front pleats and a clean drape — wear as a set with the Cuban shirt or zipper polo.",
+    bullets: ["Premium ribbed stripe knit — stretch, wrinkle-friendly", "Elastic-back waistband with belt loops", "Front pleats, straight leg", "Side pockets and back welt pocket", "Machine wash cold"] },
+  { id: "black-stripes-pant", name: "Black Ribbed Stripe Pant", category: "Cuban Pants",
+    price: 599, sourcePrice: 499, stock: "in",
+    sizes: ["30", "32", "34", "36", "38"],
+    img: "images/black-stripes-pant-1.jpg",
+    gallery: ["images/black-stripes-pant-2.jpg", "images/black-stripes-pant-3.jpg"],
+    sizeChart: "images/sizechart-pant-ribbed.jpg",
+    desc: "Straight-fit pleated trouser in a premium ribbed knit with a fine vertical stripe texture. Elastic-back waistband, front pleats and a clean drape — wear as a set with the Cuban shirt or zipper polo.",
+    bullets: ["Premium ribbed stripe knit — stretch, wrinkle-friendly", "Elastic-back waistband with belt loops", "Front pleats, straight leg", "Side pockets and back welt pocket", "Machine wash cold"] },
+  // ═══ POLO ═══
+  { id: "mens-polo-shirt-maroon", name: "Classic Piqué Polo Shirt - Maroon", category: "Polo",
+    price: 450, sourcePrice: 320, stock: "in",
+    sizes: ["M", "L", "XL", "XXL"],
+    img: "images/mens-polo-shirt-maroon-1.jpg",
+    gallery: ["images/mens-polo-shirt-maroon-2.jpg", "images/mens-polo-shirt-maroon-3.jpg"],
+    sizeChart: "images/sizechart-polo-gentle.jpg",
+    desc: "Everyday comfort with a touch of elegance. This classic polo is cut from 100% cotton piqué knit — soft on the skin, breathable in the heat and colour-fast wash after wash. Tailored fit with a clean three-button placket.",
+    bullets: ["100% cotton piqué knit — soft, breathable, colour-fast", "Classic polo collar with three-button placket", "Tailored fit with ribbed collar and cuffs", "Embroidered chest logo, reinforced stitching", "Pairs with jeans, chinos or shorts"] },
+  { id: "mens-polo-shirt-navy-blue", name: "Classic Piqué Polo Shirt - Navy Blue", category: "Polo",
+    price: 450, sourcePrice: 320, stock: "in",
+    sizes: ["M", "L", "XL", "XXL"],
+    img: "images/mens-polo-shirt-navy-blue-1.jpg",
+    gallery: ["images/mens-polo-shirt-navy-blue-2.jpg", "images/mens-polo-shirt-navy-blue-3.jpg"],
+    sizeChart: "images/sizechart-polo-gentle.jpg",
+    desc: "Everyday comfort with a touch of elegance. This classic polo is cut from 100% cotton piqué knit — soft on the skin, breathable in the heat and colour-fast wash after wash. Tailored fit with a clean three-button placket.",
+    bullets: ["100% cotton piqué knit — soft, breathable, colour-fast", "Classic polo collar with three-button placket", "Tailored fit with ribbed collar and cuffs", "Embroidered chest logo, reinforced stitching", "Pairs with jeans, chinos or shorts"] },
+  { id: "mens-polo-shirt-bottle-green", name: "Classic Piqué Polo Shirt - Bottle Green", category: "Polo",
+    price: 450, sourcePrice: 320, stock: "in",
+    sizes: ["M", "L", "XL", "XXL"],
+    img: "images/mens-polo-shirt-bottle-green-1.jpg",
+    gallery: ["images/mens-polo-shirt-bottle-green-2.jpg", "images/mens-polo-shirt-bottle-green-3.jpg"],
+    sizeChart: "images/sizechart-polo-gentle.jpg",
+    desc: "Everyday comfort with a touch of elegance. This classic polo is cut from 100% cotton piqué knit — soft on the skin, breathable in the heat and colour-fast wash after wash. Tailored fit with a clean three-button placket.",
+    bullets: ["100% cotton piqué knit — soft, breathable, colour-fast", "Classic polo collar with three-button placket", "Tailored fit with ribbed collar and cuffs", "Embroidered chest logo, reinforced stitching", "Pairs with jeans, chinos or shorts"] },
+  { id: "mens-polo-shirt-pastel-sky-blue", name: "Classic Piqué Polo Shirt - Pastel Sky Blue", category: "Polo",
+    price: 450, sourcePrice: 320, stock: "in",
+    sizes: ["M", "L", "XL", "XXL"],
+    img: "images/mens-polo-shirt-pastel-sky-blue-1.jpg",
+    gallery: ["images/mens-polo-shirt-pastel-sky-blue-2.jpg", "images/mens-polo-shirt-pastel-sky-blue-3.jpg"],
+    sizeChart: "images/sizechart-polo-gentle.jpg",
+    desc: "Everyday comfort with a touch of elegance. This classic polo is cut from 100% cotton piqué knit — soft on the skin, breathable in the heat and colour-fast wash after wash. Tailored fit with a clean three-button placket.",
+    bullets: ["100% cotton piqué knit — soft, breathable, colour-fast", "Classic polo collar with three-button placket", "Tailored fit with ribbed collar and cuffs", "Embroidered chest logo, reinforced stitching", "Pairs with jeans, chinos or shorts"] },
+  { id: "mens-polo-shirt-off-white", name: "Classic Piqué Polo Shirt - Off White", category: "Polo",
+    price: 450, sourcePrice: 320, stock: "in",
+    sizes: ["M", "L", "XL", "XXL"],
+    img: "images/mens-polo-shirt-off-white-1.jpg",
+    gallery: ["images/mens-polo-shirt-off-white-2.jpg", "images/mens-polo-shirt-off-white-3.jpg"],
+    sizeChart: "images/sizechart-polo-gentle.jpg",
+    desc: "Everyday comfort with a touch of elegance. This classic polo is cut from 100% cotton piqué knit — soft on the skin, breathable in the heat and colour-fast wash after wash. Tailored fit with a clean three-button placket.",
+    bullets: ["100% cotton piqué knit — soft, breathable, colour-fast", "Classic polo collar with three-button placket", "Tailored fit with ribbed collar and cuffs", "Embroidered chest logo, reinforced stitching", "Pairs with jeans, chinos or shorts"] },
+  // ═══ WINTER COLLECTION ═══
+  { id: "the-north-face-700-black-2025", name: "The North Face 700 Puffer Jacket - Black", category: "Winter Collection",
+    price: 1450, sourcePrice: 1050, stock: "low",
+    sizes: ["S", "M", "L", "XL", "XXL"],
+    img: "images/the-north-face-700-black-2025-1.jpg",
+    gallery: ["images/the-north-face-700-black-2025-2.jpg", "images/the-north-face-700-black-2025-3.jpg"],
+    sizeChart: "images/sizechart-jacket-700.jpg",
+    desc: "Stay warm, protected and effortlessly stylish with The North Face 700 puffer. 700-fill insulation delivers serious warmth without bulk, wrapped in the iconic colour-blocked silhouette with a high stand-up collar and stowable hood.",
+    bullets: ["700-fill insulation — exceptional warmth, light weight", "Classic colour-blocked puffer design, stowable hood", "Full-zip front, high collar, elasticated cuffs, adjustable hem", "Two zip hand pockets", "Wind-resistant shell, smooth inner lining"] },
+  { id: "the-north-face-700-dark-olive-green-2025", name: "The North Face 700 Puffer Jacket - Dark Olive Green", category: "Winter Collection",
+    price: 1450, sourcePrice: 1050, stock: "low",
+    sizes: ["S", "M", "L", "XL", "XXL"],
+    img: "images/the-north-face-700-dark-olive-green-2025-1.jpg",
+    gallery: ["images/the-north-face-700-dark-olive-green-2025-2.jpg", "images/the-north-face-700-dark-olive-green-2025-3.jpg"],
+    sizeChart: "images/sizechart-jacket-700.jpg",
+    desc: "Stay warm, protected and effortlessly stylish with The North Face 700 puffer. 700-fill insulation delivers serious warmth without bulk, wrapped in the iconic colour-blocked silhouette with a high stand-up collar and stowable hood.",
+    bullets: ["700-fill insulation — exceptional warmth, light weight", "Classic colour-blocked puffer design, stowable hood", "Full-zip front, high collar, elasticated cuffs, adjustable hem", "Two zip hand pockets", "Wind-resistant shell, smooth inner lining"] },
+  { id: "the-north-face-700-patrol-2025", name: "The North Face 700 Puffer Jacket - Patrol", category: "Winter Collection",
+    price: 1450, sourcePrice: 1050, stock: "low",
+    sizes: ["S", "M", "L", "XL", "XXL"],
+    img: "images/the-north-face-700-patrol-2025-1.jpg",
+    gallery: ["images/the-north-face-700-patrol-2025-2.jpg", "images/the-north-face-700-patrol-2025-3.jpg"],
+    sizeChart: "images/sizechart-jacket-700.jpg",
+    desc: "Stay warm, protected and effortlessly stylish with The North Face 700 puffer. 700-fill insulation delivers serious warmth without bulk, wrapped in the iconic colour-blocked silhouette with a high stand-up collar and stowable hood.",
+    bullets: ["700-fill insulation — exceptional warmth, light weight", "Classic colour-blocked puffer design, stowable hood", "Full-zip front, high collar, elasticated cuffs, adjustable hem", "Two zip hand pockets", "Wind-resistant shell, smooth inner lining"] },
+  { id: "the-north-face-700-mint-2025", name: "The North Face 700 Puffer Jacket - Mint", category: "Winter Collection",
+    price: 1450, sourcePrice: 1050, stock: "low",
+    sizes: ["S", "M", "L", "XL", "XXL"],
+    img: "images/the-north-face-700-mint-2025-1.jpg",
+    gallery: ["images/the-north-face-700-mint-2025-2.jpg", "images/the-north-face-700-mint-2025-3.jpg"],
+    sizeChart: "images/sizechart-jacket-700.jpg",
+    desc: "Stay warm, protected and effortlessly stylish with The North Face 700 puffer. 700-fill insulation delivers serious warmth without bulk, wrapped in the iconic colour-blocked silhouette with a high stand-up collar and stowable hood.",
+    bullets: ["700-fill insulation — exceptional warmth, light weight", "Classic colour-blocked puffer design, stowable hood", "Full-zip front, high collar, elasticated cuffs, adjustable hem", "Two zip hand pockets", "Wind-resistant shell, smooth inner lining"] },
+  // ═══ SHIRT ═══
+  { id: "soft-chalk-shirt", name: "Soft Chalk Fancy Half Sleeve Shirt", category: "Shirt",
     price: 1190, sourcePrice: 1090, stock: "in",
-    sizes: ["M","L","XL","XXL"], img: "soft-chalk-shirt.webp" },
-
-  { name: "Light Ice Blue Half Sleeve Shirt", category: "Shirt",
+    sizes: ["M", "L", "XL", "XXL"],
+    img: "soft-chalk-shirt.webp",
+    gallery: ["images/soft-chalk-shirt-2.jpg", "images/soft-chalk-shirt-3.jpg"],
+    sizeChart: "images/sizechart-shirt-vostrave.jpg",
+    desc: "Premium half-sleeve casual shirt in soft, breathable cotton with a clean spread collar. Lightweight enough for Dhaka summers and smart enough for the office.",
+    bullets: ["Premium cotton fabric — soft & breathable", "Half sleeve, regular fit, spread collar", "Durable stitching, matte buttons", "Machine wash cold"] },
+  { id: "light-ice-blue-shirt", name: "Light Ice Blue Half Sleeve Shirt", category: "Shirt",
     price: 1190, sourcePrice: 1090, stock: "in",
-    sizes: ["M","L","XL","XXL"], img: "light-ice-blue-shirt.webp" },
-
-  { name: "Floral Print White Half Sleeve Shirt", category: "Shirt",
+    sizes: ["M", "L", "XL", "XXL"],
+    img: "light-ice-blue-shirt.webp",
+    gallery: ["images/light-ice-blue-shirt-2.jpg", "images/light-ice-blue-shirt-3.jpg"],
+    sizeChart: "images/sizechart-shirt-vostrave.jpg",
+    desc: "Premium half-sleeve casual shirt in soft, breathable cotton with a clean spread collar. Lightweight enough for Dhaka summers and smart enough for the office.",
+    bullets: ["Premium cotton fabric — soft & breathable", "Half sleeve, regular fit, spread collar", "Durable stitching, matte buttons", "Machine wash cold"] },
+  { id: "floral-white-shirt", name: "Floral Print White Half Sleeve Shirt", category: "Shirt",
     price: 1190, sourcePrice: 1090, stock: "low",
-    sizes: ["M","L","XL","XXL"], img: "floral-white-shirt.webp" },
-
-  { name: "White & Navy Micro-Stripe Oxford Shirt", category: "Shirt",
+    sizes: ["M", "L", "XL", "XXL"],
+    img: "floral-white-shirt.webp",
+    gallery: ["images/floral-white-shirt-2.jpg", "images/floral-white-shirt-3.jpg"],
+    sizeChart: "images/sizechart-shirt-vostrave.jpg",
+    desc: "Premium half-sleeve casual shirt in soft, breathable cotton with a clean spread collar. Lightweight enough for Dhaka summers and smart enough for the office.",
+    bullets: ["Premium cotton fabric — soft & breathable", "Half sleeve, regular fit, spread collar", "Durable stitching, matte buttons", "Machine wash cold"] },
+  { id: "white-navy-oxford", name: "White & Navy Micro-Stripe Oxford Shirt", category: "Shirt",
     price: 1449, sourcePrice: 1299, stock: "in",
-    sizes: ["M","L","XL","XXL"], img: "white-navy-oxford.webp" },
-
-  { name: "White & Black Micro-Stripe Oxford Shirt", category: "Shirt",
+    sizes: ["M", "L", "XL", "XXL"],
+    img: "white-navy-oxford.webp",
+    gallery: ["images/white-navy-oxford-2.jpg", "images/white-navy-oxford-3.jpg"],
+    sizeChart: "images/sizechart-shirt-vostrave.jpg",
+    desc: "Micro-stripe oxford shirt with a button-down collar. The fine yarn-dyed stripe reads as a solid from a distance and adds texture up close — a versatile, everyday smart shirt.",
+    bullets: ["Premium oxford cotton", "Button-down collar, full sleeve, regular fit", "Yarn-dyed micro stripe — will not fade", "Machine wash cold"] },
+  { id: "white-black-oxford", name: "White & Black Micro-Stripe Oxford Shirt", category: "Shirt",
     price: 1449, sourcePrice: 1299, stock: "in",
-    sizes: ["M","L","XL","XXL"], img: "white-black-oxford.webp" },
-
-  { name: "White & Rose Micro-Stripe Oxford Shirt", category: "Shirt",
+    sizes: ["M", "L", "XL", "XXL"],
+    img: "white-black-oxford.webp",
+    gallery: ["images/white-black-oxford-2.jpg", "images/white-black-oxford-3.jpg"],
+    sizeChart: "images/sizechart-shirt-vostrave.jpg",
+    desc: "Micro-stripe oxford shirt with a button-down collar. The fine yarn-dyed stripe reads as a solid from a distance and adds texture up close — a versatile, everyday smart shirt.",
+    bullets: ["Premium oxford cotton", "Button-down collar, full sleeve, regular fit", "Yarn-dyed micro stripe — will not fade", "Machine wash cold"] },
+  { id: "white-rose-oxford", name: "White & Rose Micro-Stripe Oxford Shirt", category: "Shirt",
     price: 1449, sourcePrice: 1299, stock: "low",
-    sizes: ["M","L","XL","XXL"], img: "white-rose-oxford.webp" },
-
-  { name: "Pine Green Chevron Dobby Cotton Shirt", category: "Shirt",
+    sizes: ["M", "L", "XL", "XXL"],
+    img: "white-rose-oxford.webp",
+    gallery: ["images/white-rose-oxford-2.jpg", "images/white-rose-oxford-3.jpg"],
+    sizeChart: "images/sizechart-shirt-vostrave.jpg",
+    desc: "Micro-stripe oxford shirt with a button-down collar. The fine yarn-dyed stripe reads as a solid from a distance and adds texture up close — a versatile, everyday smart shirt.",
+    bullets: ["Premium oxford cotton", "Button-down collar, full sleeve, regular fit", "Yarn-dyed micro stripe — will not fade", "Machine wash cold"] },
+  { id: "pine-green-dobby", name: "Pine Green Chevron Dobby Cotton Shirt", category: "Shirt",
     price: 1595, sourcePrice: 1495, stock: "low",
-    sizes: ["M","L","XL","XXL"], img: "pine-green-dobby.webp" },
-
-  { name: "Tobacco Brown Dobby Cotton Shirt", category: "Shirt",
+    sizes: ["M", "L", "XL", "XXL"],
+    img: "pine-green-dobby.webp",
+    gallery: ["images/pine-green-dobby-2.jpg", "images/pine-green-dobby-3.jpg"],
+    sizeChart: "images/sizechart-shirt-vostrave.jpg",
+    desc: "Full-sleeve dobby cotton shirt with a subtle chevron weave. Rich colour, soft hand feel and a structured collar — a refined choice for evenings and occasions.",
+    bullets: ["Dobby cotton with chevron texture", "Button-down collar, full sleeve, regular fit", "Soft hand feel, durable construction", "Machine wash cold"] },
+  { id: "tobacco-brown-dobby", name: "Tobacco Brown Dobby Cotton Shirt", category: "Shirt",
     price: 1595, sourcePrice: 1495, stock: "low",
-    sizes: ["M","L","XL","XXL"], img: "tobacco-brown-dobby.webp" },
-
-  // ═══ POLOS ═══
-  { name: "Knit Oversized Sage Frost Polo", category: "Polo",
+    sizes: ["M", "L", "XL", "XXL"],
+    img: "tobacco-brown-dobby.webp",
+    gallery: ["images/tobacco-brown-dobby-2.jpg", "images/tobacco-brown-dobby-3.jpg"],
+    sizeChart: "images/sizechart-shirt-vostrave.jpg",
+    desc: "Full-sleeve dobby cotton shirt with a subtle chevron weave. Rich colour, soft hand feel and a structured collar — a refined choice for evenings and occasions.",
+    bullets: ["Dobby cotton with chevron texture", "Button-down collar, full sleeve, regular fit", "Soft hand feel, durable construction", "Machine wash cold"] },
+  // ═══ POLO ═══
+  { id: "sage-frost-polo", name: "Knit Oversized Sage Frost Polo", category: "Polo",
     price: 1190, sourcePrice: 1090, stock: "in",
-    sizes: ["M","L","XL","XXL"], img: "sage-frost-polo.webp" },
-
-  { name: "Knit Oversized Rustic Wine Polo", category: "Polo",
+    sizes: ["M", "L", "XL", "XXL"],
+    img: "sage-frost-polo.webp",
+    gallery: ["images/sage-frost-polo-2.jpg", "images/sage-frost-polo-3.jpg"],
+    sizeChart: "images/sizechart-polo-vostrave.jpg",
+    desc: "Oversized knit polo with a contrast-tipped open collar. Soft, drapey knit fabric and a relaxed boxy cut for an effortless premium look.",
+    bullets: ["Soft knit fabric, oversized fit", "Open collar with contrast tipping", "Ribbed collar and cuffs", "Machine wash cold, lay flat to dry"] },
+  { id: "rustic-wine-polo", name: "Knit Oversized Rustic Wine Polo", category: "Polo",
     price: 1190, sourcePrice: 1090, stock: "in",
-    sizes: ["M","L","XL","XXL"], img: "rustic-wine-polo.webp" },
-
-  { name: "Rust Red Oversized Polo", category: "Polo",
+    sizes: ["M", "L", "XL", "XXL"],
+    img: "rustic-wine-polo.webp",
+    gallery: ["images/rustic-wine-polo-2.jpg", "images/rustic-wine-polo-3.jpg"],
+    sizeChart: "images/sizechart-polo-vostrave.jpg",
+    desc: "Oversized knit polo with a contrast-tipped open collar. Soft, drapey knit fabric and a relaxed boxy cut for an effortless premium look.",
+    bullets: ["Soft knit fabric, oversized fit", "Open collar with contrast tipping", "Ribbed collar and cuffs", "Machine wash cold, lay flat to dry"] },
+  { id: "rust-red-polo", name: "Rust Red Oversized Polo", category: "Polo",
     price: 1500, sourcePrice: 1350, stock: "low",
-    sizes: ["M","L","XL","XXL"], img: "rust-red-polo.webp" },
-
-  { name: "Graphite Oversized Polo", category: "Polo",
+    sizes: ["M", "L", "XL", "XXL"],
+    img: "rust-red-polo.webp",
+    gallery: ["images/rust-red-polo-2.jpg", "images/rust-red-polo-3.jpg"],
+    sizeChart: "images/sizechart-polo-vostrave.jpg",
+    desc: "Oversized knit polo with a contrast-tipped open collar. Soft, drapey knit fabric and a relaxed boxy cut for an effortless premium look.",
+    bullets: ["Soft knit fabric, oversized fit", "Open collar with contrast tipping", "Ribbed collar and cuffs", "Machine wash cold, lay flat to dry"] },
+  { id: "graphite-polo", name: "Graphite Oversized Polo", category: "Polo",
     price: 1500, sourcePrice: 1350, stock: "in",
-    sizes: ["M","L","XL","XXL"], img: "graphite-polo.webp" },
-
-  // ═══ KATUA (EMBER ৳750 → ৮৯০ | FORD ৳875 → ৯৯৯) ═══
-  { name: "EMBER Maroon Katua", category: "Katua",
+    sizes: ["M", "L", "XL", "XXL"],
+    img: "graphite-polo.webp",
+    gallery: ["images/graphite-polo-2.jpg", "images/graphite-polo-3.jpg"],
+    sizeChart: "images/sizechart-polo-vostrave.jpg",
+    desc: "Oversized knit polo with a contrast-tipped open collar. Soft, drapey knit fabric and a relaxed boxy cut for an effortless premium look.",
+    bullets: ["Soft knit fabric, oversized fit", "Open collar with contrast tipping", "Ribbed collar and cuffs", "Machine wash cold, lay flat to dry"] },
+  // ═══ KATUA ═══
+  { id: "ember-maroon-katua", name: "EMBER Maroon Katua", category: "Katua",
     price: 890, sourcePrice: 750, stock: "in",
-    sizes: ["S","M","L","XL","2XL"], img: "ember-maroon-katua.jpg" },
-
-  { name: "EMBER Cerulean Blue Katua", category: "Katua",
+    sizes: ["S", "M", "L", "XL", "2XL"],
+    img: "ember-maroon-katua.jpg",
+    gallery: ["images/ember-maroon-katua-2.jpg", "images/ember-maroon-katua-3.jpg"],
+    sizeChart: "images/sizechart-katua-vostrave.jpg",
+    desc: "Modern Katua in soft cotton with a mandarin collar and clean placket. Comfortable, breathable and easy to style — for everyday wear or festive occasions.",
+    bullets: ["Soft breathable cotton", "Mandarin collar, half sleeve", "Regular fit", "Machine wash cold"] },
+  { id: "ember-cerulean-katua", name: "EMBER Cerulean Blue Katua", category: "Katua",
     price: 890, sourcePrice: 750, stock: "in",
-    sizes: ["S","M","L","XL","2XL"], img: "ember-cerulean-katua.jpg" },
-
-  { name: "EMBER Steel Grey Katua", category: "Katua",
+    sizes: ["S", "M", "L", "XL", "2XL"],
+    img: "ember-cerulean-katua.jpg",
+    gallery: ["images/ember-cerulean-katua-2.jpg", "images/ember-cerulean-katua-3.jpg"],
+    sizeChart: "images/sizechart-katua-vostrave.jpg",
+    desc: "Modern Katua in soft cotton with a mandarin collar and clean placket. Comfortable, breathable and easy to style — for everyday wear or festive occasions.",
+    bullets: ["Soft breathable cotton", "Mandarin collar, half sleeve", "Regular fit", "Machine wash cold"] },
+  { id: "ember-steel-grey-katua", name: "EMBER Steel Grey Katua", category: "Katua",
     price: 890, sourcePrice: 750, stock: "in",
-    sizes: ["S","M","L","XL","2XL"], img: "ember-steel-grey-katua.jpg" },
-
-  { name: "EMBER Royal Blue Katua", category: "Katua",
+    sizes: ["S", "M", "L", "XL", "2XL"],
+    img: "ember-steel-grey-katua.jpg",
+    gallery: ["images/ember-steel-grey-katua-2.jpg", "images/ember-steel-grey-katua-3.jpg"],
+    sizeChart: "images/sizechart-katua-vostrave.jpg",
+    desc: "Modern Katua in soft cotton with a mandarin collar and clean placket. Comfortable, breathable and easy to style — for everyday wear or festive occasions.",
+    bullets: ["Soft breathable cotton", "Mandarin collar, half sleeve", "Regular fit", "Machine wash cold"] },
+  { id: "ember-royal-blue-katua", name: "EMBER Royal Blue Katua", category: "Katua",
     price: 890, sourcePrice: 750, stock: "in",
-    sizes: ["S","M","L","XL","2XL"], img: "ember-royal-blue-katua.jpg" },
-
-  { name: "FORD Soft Peach Katua", category: "Katua",
+    sizes: ["S", "M", "L", "XL", "2XL"],
+    img: "ember-royal-blue-katua.jpg",
+    gallery: ["images/ember-royal-blue-katua-2.jpg", "images/ember-royal-blue-katua-3.jpg"],
+    sizeChart: "images/sizechart-katua-vostrave.jpg",
+    desc: "Modern Katua in soft cotton with a mandarin collar and clean placket. Comfortable, breathable and easy to style — for everyday wear or festive occasions.",
+    bullets: ["Soft breathable cotton", "Mandarin collar, half sleeve", "Regular fit", "Machine wash cold"] },
+  { id: "ford-soft-peach-katua", name: "FORD Soft Peach Katua", category: "Katua",
     price: 999, sourcePrice: 875, stock: "in",
-    sizes: ["S","M","L","XL","XXL"], img: "ford-soft-peach-katua.jpg" },
-
-  { name: "FORD Cream White Katua", category: "Katua",
+    sizes: ["S", "M", "L", "XL", "XXL"],
+    img: "ford-soft-peach-katua.jpg",
+    gallery: ["images/ford-soft-peach-katua-2.jpg", "images/ford-soft-peach-katua-3.jpg"],
+    sizeChart: "images/sizechart-katua-vostrave.jpg",
+    desc: "Modern Katua in soft cotton with a mandarin collar and clean placket. Comfortable, breathable and easy to style — for everyday wear or festive occasions.",
+    bullets: ["Soft breathable cotton", "Mandarin collar, half sleeve", "Regular fit", "Machine wash cold"] },
+  { id: "ford-cream-white-katua", name: "FORD Cream White Katua", category: "Katua",
     price: 999, sourcePrice: 875, stock: "in",
-    sizes: ["S","M","L","XL","XXL"], img: "ford-cream-white-katua.jpg" }
+    sizes: ["S", "M", "L", "XL", "XXL"],
+    img: "ford-cream-white-katua.jpg",
+    gallery: ["images/ford-cream-white-katua-2.jpg", "images/ford-cream-white-katua-3.jpg"],
+    sizeChart: "images/sizechart-katua-vostrave.jpg",
+    desc: "Modern Katua in soft cotton with a mandarin collar and clean placket. Comfortable, breathable and easy to style — for everyday wear or festive occasions.",
+    bullets: ["Soft breathable cotton", "Mandarin collar, half sleeve", "Regular fit", "Machine wash cold"] }
 ];
-
-/* 🔔 শেষ চেক: ১ সেপ্টেম্বর ২০২৬, সোর্স শপের দাম/স্টক দেখে লেখা।
-   সোর্স শপে কিছু বদলালে এখানে price / stock আপডেট করে দাও। */
-
 </script>
 <script>
-/* ═══ VOSTRAVE — Site Logic (এই ফাইল না ছোঁয়াই ভালো) ═══ */
+/* ═══ VOSTRAVE — Site Logic ═══ */
 (function () {
   "use strict";
 
   const $ = (id) => document.getElementById(id);
   const tk = (n) => CONFIG.currency + Number(n).toLocaleString("en-US");
+  const esc = (s) => String(s).replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
 
-  /* ── টপবার / হিরো / কনfig থেকে টেক্সট বসানো ── */
-  $("topNote").textContent = CONFIG.launchNote;
+  /* ── config-driven text ── */
   $("dIn").textContent = CONFIG.deliveryInsideDhaka;
   $("dOut").textContent = CONFIG.deliveryOutsideDhaka;
+  $("dDelIn").textContent = CONFIG.deliveryInsideDhaka;
+  $("dDelOut").textContent = CONFIG.deliveryOutsideDhaka;
+  $("statCount").textContent = PRODUCTS.length + "+";
 
   const waBase = "https://wa.me/" + CONFIG.whatsapp;
-  const genericMsg = "আসসালামু আলাইকুম! VOSTRAVE থেকে পোশাক কিনতে চাই।";
+  const genericMsg = "Hello! I would like to order from VOSTRAVE.";
   const waGeneric = waBase + "?text=" + encodeURIComponent(genericMsg);
   $("heroWa").href = waGeneric; $("heroWa").target = "_blank";
   $("waCard").href = waGeneric; $("waCard").target = "_blank";
   $("waFloat").href = waGeneric; $("waFloat").target = "_blank";
 
-  /* ── টোস্ট ── */
+  /* ── toast ── */
   let toastTimer;
   function toast(msg, ms = 3400) {
     const t = $("toast");
@@ -511,88 +1322,207 @@ const PRODUCTS = [
     toastTimer = setTimeout(() => t.classList.remove("show"), ms);
   }
 
-  /* ── স্টক ব্যাজ ── */
+  /* ── stock badge ── */
   function badge(stock) {
-    if (stock === "low") return { cls: "badge-low", txt: "স্টক সীমিত" };
-    if (stock === "out") return { cls: "badge-out", txt: "স্টক শেষ" };
+    if (stock === "low") return { cls: "badge-low", txt: "Limited Stock" };
+    if (stock === "out") return { cls: "badge-out", txt: "Sold Out" };
     return { cls: "badge-in", txt: "✓ In Stock" };
   }
 
-  /* ── প্রোডাক্ট গ্রিড রেন্ডার ── */
+  /* ── filter chips ── */
+  const filters = $("filters");
+  CATEGORIES.forEach(c => {
+    if (!PRODUCTS.some(p => p.category === c)) return;
+    const b = document.createElement("button");
+    b.className = "chip"; b.dataset.filter = c; b.textContent = c;
+    filters.appendChild(b);
+  });
+
+  /* ── product grid ── */
   let currentFilter = "all";
   function renderProducts() {
     const grid = $("productGrid");
     grid.innerHTML = "";
     const list = PRODUCTS.filter(p => currentFilter === "all" || p.category === currentFilter);
+    if (!list.length) { grid.innerHTML = '<p class="empty">No products in this category yet.</p>'; return; }
     list.forEach((p) => {
       const idx = PRODUCTS.indexOf(p);
       const b = badge(p.stock);
       const out = p.stock === "out";
       const card = document.createElement("div");
       card.className = "pcard";
+      card.dataset.idx = idx;
       card.innerHTML =
         '<div class="pimg">' +
-          '<img src="' + p.img + '" alt="' + p.name + '" loading="lazy" onerror="this.src=\'fallback.png\'">' +
+          '<img src="' + p.img + '" alt="' + esc(p.name) + '" loading="lazy" onerror="this.onerror=null;this.src=\'fallback.png\'">' +
           '<span class="badge ' + b.cls + '">' + b.txt + "</span>" +
-          '<span class="cat-tag">' + p.category.toUpperCase() + "</span>" +
+          '<span class="cat-tag">' + esc(p.category.toUpperCase()) + "</span>" +
         "</div>" +
         '<div class="pbody">' +
-          '<div class="pname">' + p.name + "</div>" +
-          '<div class="pprice">' + tk(p.price) + ' <small>/ প্রতি পিস • COD</small></div>' +
-          '<div class="psizes">সাইজ: ' + p.sizes.join(" / ") + "</div>" +
+          '<div class="pname">' + esc(p.name) + "</div>" +
+          '<div class="pprice">' + tk(p.price) + ' <small>/ per piece • COD</small></div>' +
+          '<div class="psizes">Sizes: ' + p.sizes.join(" / ") + "</div>" +
           '<button class="pbtn" data-idx="' + idx + '"' + (out ? " disabled" : "") + ">" +
-            (out ? "স্টক শেষ — শীঘ্রই আসছে" : "🛍️ অর্ডার করুন") +
+            (out ? "Sold Out — Restocking Soon" : "🛍️ Order Now") +
           "</button>" +
+          '<div class="pview">View details & size chart →</div>' +
         "</div>";
       grid.appendChild(card);
     });
     grid.querySelectorAll(".pbtn:not([disabled])").forEach(btn =>
-      btn.addEventListener("click", () => openOrder(Number(btn.dataset.idx)))
+      btn.addEventListener("click", (e) => { e.stopPropagation(); openOrder(Number(btn.dataset.idx)); })
+    );
+    grid.querySelectorAll(".pcard").forEach(card =>
+      card.addEventListener("click", () => openDetail(Number(card.dataset.idx)))
     );
   }
   renderProducts();
 
-  /* ── ফিল্টার চিপ ── */
-  $("filters").querySelectorAll(".chip").forEach(chip => {
+  filters.querySelectorAll(".chip").forEach(chip => {
     chip.addEventListener("click", () => {
-      $("filters").querySelectorAll(".chip").forEach(c => c.classList.remove("active"));
+      filters.querySelectorAll(".chip").forEach(c => c.classList.remove("active"));
       chip.classList.add("active");
       currentFilter = chip.dataset.filter;
       renderProducts();
     });
   });
 
-  /* ── অর্ডার মোডাল ── */
+  /* ── body scroll lock (counts open layers) ── */
+  let locks = 0;
+  const lock = () => { locks++; document.body.style.overflow = "hidden"; };
+  const unlock = () => { locks = Math.max(0, locks - 1); if (!locks) document.body.style.overflow = ""; };
+
+  /* ══════════════ PRODUCT DETAIL ══════════════ */
+  const detail = $("detailModal");
+  let dProduct = null, dImages = [], dIndex = 0, dSize = "";
+
+  function openDetail(idx) {
+    dProduct = PRODUCTS[idx];
+    const p = dProduct;
+    dImages = [{ src: p.img, chart: false }]
+      .concat((p.gallery || []).map(s => ({ src: s, chart: false })));
+    if (p.sizeChart) dImages.push({ src: p.sizeChart, chart: true });
+    dIndex = 0; dSize = "";
+
+    $("dCat").textContent = p.category;
+    $("dName").textContent = p.name;
+    $("dPrice").textContent = tk(p.price);
+    const st = $("dStock");
+    st.className = "d-stock " + p.stock;
+    st.textContent = p.stock === "low" ? "⚠ Limited stock — order soon" : p.stock === "out" ? "Sold out — restocking soon" : "✓ In stock — ships within 24 hours";
+    $("dDesc").textContent = p.desc || "";
+    $("dBullets").innerHTML = (p.bullets || []).map(b => "<li>" + esc(b) + "</li>").join("");
+    const b = badge(p.stock); const bd = $("dBadge"); bd.className = "badge " + b.cls; bd.textContent = b.txt;
+
+    const sizes = $("dSizes"); sizes.innerHTML = "";
+    p.sizes.forEach(s => {
+      const pill = document.createElement("button");
+      pill.type = "button"; pill.className = "size-pill"; pill.textContent = s;
+      pill.addEventListener("click", () => {
+        sizes.querySelectorAll(".size-pill").forEach(x => x.classList.remove("active"));
+        pill.classList.add("active"); dSize = s;
+      });
+      sizes.appendChild(pill);
+    });
+
+    const thumbs = $("dThumbs"); thumbs.innerHTML = "";
+    dImages.forEach((im, i) => {
+      const t = document.createElement("div");
+      t.className = "d-thumb" + (im.chart ? " chart" : "");
+      t.innerHTML = '<img src="' + im.src + '" alt="" loading="lazy" onerror="this.onerror=null;this.src=\'fallback.png\'">' + (im.chart ? "<i>SIZE CHART</i>" : "");
+      t.addEventListener("click", () => showImage(i));
+      thumbs.appendChild(t);
+    });
+    showImage(0);
+
+    const ob = $("dOrder");
+    ob.disabled = p.stock === "out";
+    ob.textContent = p.stock === "out" ? "Sold Out" : "🛍️ Order Now";
+    ob.style.opacity = p.stock === "out" ? ".5" : "";
+    $("dWa").href = waBase + "?text=" + encodeURIComponent("Hello VOSTRAVE! I have a question about: " + p.name + " (" + tk(p.price) + ")");
+
+    detail.classList.add("open"); lock();
+    detail.scrollTop = 0;
+  }
+  function showImage(i) {
+    dIndex = (i + dImages.length) % dImages.length;
+    const im = dImages[dIndex];
+    const main = $("dMain"), img = $("dMainImg");
+    img.style.opacity = 0;
+    img.onerror = function () { this.onerror = null; this.src = "fallback.png"; };
+    img.src = im.src; img.alt = dProduct.name + (im.chart ? " — size chart" : " — view " + (dIndex + 1));
+    main.classList.toggle("chart", im.chart);
+    $("dBadge").style.display = im.chart ? "none" : "";
+    requestAnimationFrame(() => { img.style.opacity = 1; });
+    $("dThumbs").querySelectorAll(".d-thumb").forEach((t, k) => t.classList.toggle("active", k === dIndex));
+  }
+  function closeDetail() { if (!detail.classList.contains("open")) return; detail.classList.remove("open"); unlock(); }
+  $("detailClose").addEventListener("click", closeDetail);
+  detail.addEventListener("click", (e) => { if (e.target === detail) closeDetail(); });
+  $("dPrev").addEventListener("click", (e) => { e.stopPropagation(); showImage(dIndex - 1); });
+  $("dNext").addEventListener("click", (e) => { e.stopPropagation(); showImage(dIndex + 1); });
+  $("dChartLink").addEventListener("click", () => showImage(dImages.length - 1));
+  $("dOrder").addEventListener("click", () => { if (dProduct && dProduct.stock !== "out") openOrder(PRODUCTS.indexOf(dProduct), dSize); });
+
+  /* swipe on main image */
+  let tx = null;
+  $("dMain").addEventListener("touchstart", (e) => { tx = e.touches[0].clientX; }, { passive: true });
+  $("dMain").addEventListener("touchend", (e) => {
+    if (tx === null) return;
+    const dx = e.changedTouches[0].clientX - tx; tx = null;
+    if (Math.abs(dx) > 40) showImage(dIndex + (dx < 0 ? 1 : -1));
+  });
+
+  /* lightbox */
+  const lb = $("lightbox");
+  $("dMain").addEventListener("click", (e) => {
+    if (e.target.closest(".d-nav")) return;
+    $("lightboxImg").src = dImages[dIndex].src; lb.classList.add("open");
+  });
+  lb.addEventListener("click", () => lb.classList.remove("open"));
+
+  /* keyboard */
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape") {
+      if (lb.classList.contains("open")) { lb.classList.remove("open"); return; }
+      if (modal.classList.contains("open")) { closeModal(); return; }
+      closeDetail();
+    }
+    if (detail.classList.contains("open") && !modal.classList.contains("open")) {
+      if (e.key === "ArrowRight") showImage(dIndex + 1);
+      if (e.key === "ArrowLeft") showImage(dIndex - 1);
+    }
+  });
+
+  /* ══════════════ ORDER MODAL ══════════════ */
   const modal = $("orderModal");
   let current = null;
 
-  function openOrder(idx) {
+  function openOrder(idx, presetSize) {
     current = PRODUCTS[idx];
     $("oImg").src = current.img;
     $("oImg").alt = current.name;
     $("oName").textContent = current.name;
     $("oPrice").textContent = tk(current.price);
-    $("oStock").textContent = current.stock === "low" ? "⚠ স্টক সীমিত — তাড়াতাড়ি করুন" : "✓ In Stock — আজই ডিসপ্যাচ সম্ভব";
-    $("oStock").style.color = current.stock === "low" ? "#FFDFA8" : "";
+    $("oStock").textContent = current.stock === "low" ? "⚠ Limited stock — order soon" : "✓ In stock — can be dispatched today";
+    $("oStock").style.color = current.stock === "low" ? "#9A6A12" : "";
     const sz = $("fSize");
-    sz.innerHTML = '<option value="">সাইজ বাছুন…</option>' +
-      current.sizes.map(s => '<option value="' + s + '">' + s + "</option>").join("");
+    sz.innerHTML = '<option value="">Select size…</option>' +
+      current.sizes.map(s => '<option value="' + esc(s) + '"' + (presetSize === s ? " selected" : "") + ">" + esc(s) + "</option>").join("");
     $("fQty").value = 1;
     $("formErr").textContent = "";
     $("orderFormView").style.display = "block";
     $("orderSuccessView").classList.remove("show");
     calcTotal();
-    modal.classList.add("open");
-    document.body.style.overflow = "hidden";
+    modal.classList.add("open"); lock();
   }
 
   function closeModal() {
-    modal.classList.remove("open");
-    document.body.style.overflow = "";
+    if (!modal.classList.contains("open")) return;
+    modal.classList.remove("open"); unlock();
   }
   $("modalClose").addEventListener("click", closeModal);
   modal.addEventListener("click", (e) => { if (e.target === modal) closeModal(); });
-  document.addEventListener("keydown", (e) => { if (e.key === "Escape") closeModal(); });
 
   function getArea() {
     return document.querySelector('input[name="area"]:checked').value;
@@ -602,8 +1532,8 @@ const PRODUCTS = [
   }
   function areaText() {
     return getArea() === "inside"
-      ? "ঢাকার ভিতরে (+" + tk(CONFIG.deliveryInsideDhaka) + ")"
-      : "ঢাকার বাইরে (+" + tk(CONFIG.deliveryOutsideDhaka) + ")";
+      ? "Inside Dhaka (+" + tk(CONFIG.deliveryInsideDhaka) + ")"
+      : "Outside Dhaka (+" + tk(CONFIG.deliveryOutsideDhaka) + ")";
   }
   function calcTotal() {
     if (!current) return;
@@ -613,7 +1543,7 @@ const PRODUCTS = [
   $("fQty").addEventListener("input", calcTotal);
   document.querySelectorAll('input[name="area"]').forEach(r => r.addEventListener("change", calcTotal));
 
-  /* ── ভ্যালিডেশন ── */
+  /* ── validation ── */
   function markErr(el, on) { el.classList.toggle("err", !!on); }
   function validate() {
     const name = $("fName").value.trim();
@@ -625,40 +1555,41 @@ const PRODUCTS = [
     let ok = true;
     markErr($("fName"), name.length < 3); if (name.length < 3) ok = false;
     const phoneOk = /^01[3-9]\d{8}$/.test(phone);
-    markErr($("fPhone"), !phoneOk); if (!phoneOk) { ok = false; $("formErr").textContent = "সঠিক ১১ ডিজিটের মোবাইল নম্বর দিন (01 দিয়ে শুরু)"; }
+    markErr($("fPhone"), !phoneOk); if (!phoneOk) { ok = false; $("formErr").textContent = "Please enter a valid 11-digit mobile number (starting with 01)"; }
     markErr($("fAddress"), addr.length < 8); if (addr.length < 8) ok = false;
-    if (!size) { ok = false; $("formErr").textContent = "সাইজ বেছে নিন"; $("fSize").style.borderColor = "#E29A9A"; }
+    if (!size) { ok = false; $("formErr").textContent = "Please select a size"; $("fSize").style.borderColor = "#C0504D"; }
     else $("fSize").style.borderColor = "";
     if (ok) $("formErr").textContent = "";
+    else if (!$("formErr").textContent) $("formErr").textContent = "Please fill in the highlighted fields";
     return ok;
   }
   ["fName","fPhone","fAddress"].forEach(id => $(id).addEventListener("input", () => $(id).classList.remove("err")));
 
-  /* ── অর্ডার টেক্সট ── */
+  /* ── order summary text ── */
   function orderText() {
     const qty = parseInt($("fQty").value || "1", 10);
     const total = current.price * qty + deliveryCharge();
     const lines = [
-      "🛍️ নতুন অর্ডার — " + CONFIG.siteName,
+      "🛍️ New Order — " + CONFIG.siteName,
       "",
-      "▸ প্রোডাক্ট: " + current.name,
-      "▸ সাইজ: " + $("fSize").value,
-      "▸ পরিমাণ: " + qty + " পিস",
-      "▸ দাম: " + tk(current.price) + " × " + qty,
-      "▸ ডেলিভারি: " + areaText(),
+      "▸ Product: " + current.name,
+      "▸ Size: " + $("fSize").value,
+      "▸ Quantity: " + qty + " pc",
+      "▸ Price: " + tk(current.price) + " × " + qty,
+      "▸ Delivery: " + areaText(),
       "————————————",
-      "💰 মোট (COD): " + tk(total),
+      "💰 Total (COD): " + tk(total),
       "",
-      "👤 নাম: " + $("fName").value.trim(),
-      "📱 ফোন: " + $("fPhone").value.trim(),
-      "📍 ঠিকানা: " + $("fAddress").value.trim()
+      "👤 Name: " + $("fName").value.trim(),
+      "📱 Phone: " + $("fPhone").value.trim(),
+      "📍 Address: " + $("fAddress").value.trim()
     ];
     const note = $("fNote").value.trim();
-    if (note) lines.push("📝 নোট: " + note);
+    if (note) lines.push("📝 Note: " + note);
     return lines.join("\n");
   }
 
-  /* ── ইমেইল কপি (FormSubmit — একটানা সেটআপ লাগে, README দেখো) ── */
+  /* ── email copy (FormSubmit — unchanged delivery mechanism) ── */
   function emailCopy() {
     const qty = parseInt($("fQty").value || "1", 10);
     const total = current.price * qty + deliveryCharge();
@@ -666,42 +1597,40 @@ const PRODUCTS = [
       method: "POST",
       headers: { "Content-Type": "application/json", "Accept": "application/json" },
       body: JSON.stringify({
-        _subject: "🛍️ নতুন অর্ডার — VOSTRAVE",
+        _subject: "🛍️ New Order — VOSTRAVE",
         _template: "table",
-        প্রোডাক্ট: current.name,
-        সাইজ: $("fSize").value,
-        পরিমাণ: qty + " পিস",
-        দাম: tk(current.price),
-        ডেলিভারি: areaText(),
-        মোট_COD: tk(total),
-        নাম: $("fName").value.trim(),
-        ফোন: $("fPhone").value.trim(),
-        ঠিকানা: $("fAddress").value.trim(),
-        নোট: $("fNote").value.trim() || "—"
+        Product: current.name,
+        Category: current.category,
+        Size: $("fSize").value,
+        Quantity: qty + " pc",
+        Price: tk(current.price),
+        Delivery: areaText(),
+        Total_COD: tk(total),
+        Name: $("fName").value.trim(),
+        Phone: $("fPhone").value.trim(),
+        Address: $("fAddress").value.trim(),
+        Note: $("fNote").value.trim() || "—"
       })
-    }).catch(() => { /* WhatsApp-ই মূল চ্যানেল, ইমেইল ব্যুর্থ হলে সমস্যা নাই */ });
+    }).catch(() => { /* ignore network errors — order summary is still shown */ });
   }
 
-  /* ── সাবমিট ── */
+  /* ── submit ── */
   $("orderForm").addEventListener("submit", function (e) {
     e.preventDefault();
     if (!current) return;
     if (!validate()) return;
-    emailCopy(); // ব্যাকআপ কপি ইমেইলে (activate থাকলে)
-    // সাকসেস স্ক্রিন
+    emailCopy();
     $("successSummary").textContent = orderText();
     $("orderFormView").style.display = "none";
     $("orderSuccessView").classList.add("show");
-    toast("✅ অর্ডার পাঠানো হয়েছে! শীঘ্রই কনফার্সম করা হবে");
-    toast("✅ অর্ডার তৈরি! এখন WhatsApp-এ মেসেজটা Send করুন");
+    toast("✅ Order sent! We will confirm it shortly.");
   });
 
   $("successAgain").addEventListener("click", function () {
-    closeModal();
+    closeModal(); closeDetail();
     document.getElementById("collection").scrollIntoView({ behavior: "smooth" });
   });
 })();
-
 </script>
 </body>
 </html>
